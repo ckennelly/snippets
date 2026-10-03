@@ -33,7 +33,7 @@ struct Inputs {
   Inputs() : x(kN), n(kN) {
     // Fixed seed; the engine's output is specified by the standard, so every
     // machine sees the same inputs. (uniform_int_distribution is not.)
-    std::mt19937_64 rng(2026);
+    std::mt19937_64 rng(42);
     for (int i = 0; i < kN; ++i) {
       uint64_t r = rng();
       x[i] = static_cast<uint32_t>(r);
