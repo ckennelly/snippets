@@ -32,4 +32,4 @@ in three harnesses:
 ./run.sh            # builds into build-$(uname -m)/, writes results/<arch>-<cpu>.txt
 ```
 
-Results: see `results/`.
+Results: `results/SUMMARY.md`, raw output per machine alongside.
