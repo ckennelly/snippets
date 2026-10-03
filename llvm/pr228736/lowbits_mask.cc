@@ -210,8 +210,12 @@ void LatencyX(benchmark::State& state) {
       benchmark::Counter::kIs1000);
 }
 
-// n = K(x[i], n) & 31: the result selects the next mask, so the table index
-// (an address dependency) or the shift amount depends on the previous result.
+// n = (K(x[i], n) ^ n[i]) & 31: the result selects the next mask, so the table
+// index (an address dependency) or the shift amount depends on the previous
+// result. The xor with n[i] keeps n uniformly distributed; without it n falls
+// into the absorbing state n == 0 (mask(0) == 0) within a few elements, and
+// every iteration loads the same entry, which cores with load address/value
+// prediction (Apple M3 and later) can serve without waiting on the chain.
 template <class K>
 void LatencyN(benchmark::State& state) {
   const Inputs& in = inputs();
@@ -221,7 +225,7 @@ void LatencyN(benchmark::State& state) {
   uint64_t n = 7;
   for (auto _ : state) {
     for (int i = 0; i < kN; ++i)
-      n = K::Apply(in.x[i], static_cast<uint32_t>(n), a) & (kBits - 1);
+      n = (K::Apply(in.x[i], static_cast<uint32_t>(n), a) ^ in.n[i]) & (kBits - 1);
     Sink(n);
   }
   state.SetLabel(K::name());
