@@ -19,6 +19,7 @@
 #include <benchmark/benchmark.h>
 
 #include <cstdint>
+#include <random>
 #include <vector>
 
 namespace {
@@ -30,11 +31,13 @@ struct Inputs {
   std::vector<uint32_t> x, n;
   uint32_t table[kBits];
   Inputs() : x(kN), n(kN) {
-    uint64_t s = 0x9E3779B97F4A7C15ull;
+    // Fixed seed; the engine's output is specified by the standard, so every
+    // machine sees the same inputs. (uniform_int_distribution is not.)
+    std::mt19937_64 rng(2026);
     for (int i = 0; i < kN; ++i) {
-      s = s * 6364136223846793005ull + 1442695040888963407ull;
-      x[i] = static_cast<uint32_t>(s >> 32);
-      n[i] = static_cast<uint32_t>(s >> 11) % kBits;
+      uint64_t r = rng();
+      x[i] = static_cast<uint32_t>(r);
+      n[i] = static_cast<uint32_t>(r >> 32) % kBits;
     }
     for (uint32_t j = 0; j < kBits; ++j) table[j] = (1u << j) - 1;
   }
