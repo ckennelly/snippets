@@ -171,6 +171,14 @@ extern "C" __attribute__((noinline)) uint32_t ref_cxx_arith(uint32_t x, uint32_t
   return x & ((1u << n) - 1);
 }
 
+// benchmark::DoNotOptimize(v) uses a "+m,r" constraint, which makes v
+// address-taken and leaves a store in the inner loop; sinking a copy keeps the
+// loop-carried value in a register and the store per state iteration.
+template <class T>
+inline void Sink(T v) {
+  benchmark::DoNotOptimize(v);
+}
+
 template <class K>
 void Throughput(benchmark::State& state) {
   const Inputs& in = inputs();
@@ -178,7 +186,7 @@ void Throughput(benchmark::State& state) {
   for (auto _ : state) {
     uint32_t acc = 0;
     for (int i = 0; i < kN; ++i) acc ^= K::Apply(in.x[i], in.n[i], a);
-    benchmark::DoNotOptimize(acc);
+    Sink(acc);
   }
   state.SetLabel(K::name());
   state.counters["ns/elem"] = benchmark::Counter(
@@ -194,7 +202,7 @@ void LatencyX(benchmark::State& state) {
   uint32_t x = 0xFFFFFFFFu;
   for (auto _ : state) {
     for (int i = 0; i < kN; ++i) x = K::Apply(x, in.n[i], a) + in.x[i];
-    benchmark::DoNotOptimize(x);
+    Sink(x);
   }
   state.SetLabel(K::name());
   state.counters["ns/elem"] = benchmark::Counter(
@@ -208,10 +216,13 @@ template <class K>
 void LatencyN(benchmark::State& state) {
   const Inputs& in = inputs();
   Args a{in.table, 1u, ~0u};
-  uint32_t n = 7;
+  // 64-bit so the x86 table kernel's 64-bit index needs no zero-extension on
+  // the chain (n is reloaded from memory across the state loop otherwise).
+  uint64_t n = 7;
   for (auto _ : state) {
-    for (int i = 0; i < kN; ++i) n = K::Apply(in.x[i], n, a) & (kBits - 1);
-    benchmark::DoNotOptimize(n);
+    for (int i = 0; i < kN; ++i)
+      n = K::Apply(in.x[i], static_cast<uint32_t>(n), a) & (kBits - 1);
+    Sink(n);
   }
   state.SetLabel(K::name());
   state.counters["ns/elem"] = benchmark::Counter(
