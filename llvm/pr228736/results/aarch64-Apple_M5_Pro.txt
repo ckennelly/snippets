@@ -1,0 +1,68 @@
+# 2026-10-03T19:16Z aarch64 Apple M5 Pro
+# VM: none (MacBook Pro, bare metal, AC power)
+# Apple clang version 21.0.0 (clang-2100.1.1.101)
+
+-------------------------------------------------------------------------------------
+Benchmark                                Time             CPU   Iterations    ns/elem
+-------------------------------------------------------------------------------------
+Throughput<Table>_mean                1138 ns         1133 ns           10  276.603ps table(ldr+and)
+Throughput<Table>_median              1136 ns         1135 ns           10  277.181ps table(ldr+and)
+Throughput<Table>_stddev              21.5 ns         13.0 ns           10  3.16487ps table(ldr+and)
+Throughput<Table>_cv                  1.89 %          1.14 %            10      1.14% table(ldr+and)
+LatencyX<Table>_mean                  1997 ns         1987 ns           10  485.058ps table(ldr+and)
+LatencyX<Table>_median                1993 ns         1988 ns           10  485.343ps table(ldr+and)
+LatencyX<Table>_stddev                23.6 ns         7.18 ns           10  1.75362ps table(ldr+and)
+LatencyX<Table>_cv                    1.18 %          0.36 %            10      0.36% table(ldr+and)
+LatencyN<Table>_mean                  7398 ns         7367 ns           10  1.79868ns table(ldr+and)
+LatencyN<Table>_median                7392 ns         7378 ns           10  1.80125ns table(ldr+and)
+LatencyN<Table>_stddev                58.9 ns         40.3 ns           10  9.83187ps table(ldr+and)
+LatencyN<Table>_cv                    0.80 %          0.55 %            10      0.55% table(ldr+and)
+Throughput<LslBic>_mean               1351 ns         1255 ns           10  306.351ps lsl/bic
+Throughput<LslBic>_median             1245 ns         1243 ns           10  303.432ps lsl/bic
+Throughput<LslBic>_stddev              262 ns         25.1 ns           10  6.12738ps lsl/bic
+Throughput<LslBic>_cv                19.39 %          2.00 %            10      2.00% lsl/bic
+LatencyX<LslBic>_mean                 2043 ns         1992 ns           10  486.385ps lsl/bic
+LatencyX<LslBic>_median               2037 ns         1988 ns           10  485.467ps lsl/bic
+LatencyX<LslBic>_stddev               55.2 ns         18.0 ns           10  4.38664ps lsl/bic
+LatencyX<LslBic>_cv                   2.70 %          0.90 %            10      0.90% lsl/bic
+LatencyN<LslBic>_mean                 3954 ns         3938 ns           10  961.453ps lsl/bic
+LatencyN<LslBic>_median               3948 ns         3934 ns           10  960.554ps lsl/bic
+LatencyN<LslBic>_stddev               33.2 ns         28.0 ns           10  6.82375ps lsl/bic
+LatencyN<LslBic>_cv                   0.84 %          0.71 %            10      0.71% lsl/bic
+Throughput<LslSubAnd>_mean            1431 ns         1429 ns           10  348.863ps lsl/sub/and
+Throughput<LslSubAnd>_median          1431 ns         1428 ns           10  348.725ps lsl/sub/and
+Throughput<LslSubAnd>_stddev          4.19 ns         3.69 ns           10  901.698fs lsl/sub/and
+Throughput<LslSubAnd>_cv              0.29 %          0.26 %            10      0.26% lsl/sub/and
+LatencyX<LslSubAnd>_mean              2074 ns         1992 ns           10  486.395ps lsl/sub/and
+LatencyX<LslSubAnd>_median            2002 ns         1994 ns           10   486.87ps lsl/sub/and
+LatencyX<LslSubAnd>_stddev             144 ns         7.40 ns           10   1.8071ps lsl/sub/and
+LatencyX<LslSubAnd>_cv                6.94 %          0.37 %            10      0.37% lsl/sub/and
+LatencyN<LslSubAnd>_mean              4930 ns         4906 ns           10  1.19778ns lsl/sub/and
+LatencyN<LslSubAnd>_median            4929 ns         4893 ns           10  1.19469ns lsl/sub/and
+LatencyN<LslSubAnd>_stddev            57.7 ns         49.7 ns           10  12.1439ps lsl/sub/and
+LatencyN<LslSubAnd>_cv                1.17 %          1.01 %            10      1.01% lsl/sub/and
+Throughput<MovLslSubAnd>_mean         1439 ns         1427 ns           10  348.474ps mov/lsl/sub/and
+Throughput<MovLslSubAnd>_median       1419 ns         1415 ns           10  345.462ps mov/lsl/sub/and
+Throughput<MovLslSubAnd>_stddev       51.7 ns         29.5 ns           10  7.20358ps mov/lsl/sub/and
+Throughput<MovLslSubAnd>_cv           3.59 %          2.07 %            10      2.07% mov/lsl/sub/and
+LatencyX<MovLslSubAnd>_mean           1974 ns         1968 ns           10  480.522ps mov/lsl/sub/and
+LatencyX<MovLslSubAnd>_median         1972 ns         1967 ns           10  480.168ps mov/lsl/sub/and
+LatencyX<MovLslSubAnd>_stddev         13.4 ns         8.62 ns           10  2.10346ps mov/lsl/sub/and
+LatencyX<MovLslSubAnd>_cv             0.68 %          0.44 %            10      0.44% mov/lsl/sub/and
+LatencyN<MovLslSubAnd>_mean           5062 ns         4870 ns           10  1.18891ns mov/lsl/sub/and
+LatencyN<MovLslSubAnd>_median         4885 ns         4865 ns           10  1.18781ns mov/lsl/sub/and
+LatencyN<MovLslSubAnd>_stddev          546 ns         20.0 ns           10  4.88063ps mov/lsl/sub/and
+LatencyN<MovLslSubAnd>_cv            10.78 %          0.41 %            10      0.41% mov/lsl/sub/and
+
+## ref_cxx_table / ref_cxx_arith as compiled here
+0000000100000ef0 <_ref_cxx_table>:
+100000ef0:     	ldr	w8, [x2, w1, uxtw #2]
+100000ef4:     	and	w0, w8, w0
+100000ef8:     	ret
+
+0000000100000efc <_ref_cxx_arith>:
+100000efc:     	mov	w8, #-0x1               ; =-1
+100000f00:     	lsl	w8, w8, w1
+100000f04:     	bic	w0, w0, w8
+100000f08:     	ret
+

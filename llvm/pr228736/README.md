@@ -22,12 +22,15 @@ in three harnesses:
 - **LatencyN**: the result selects the next element's `n`, so the table index
   (an address dependency) or the shift amount depends on the previous result.
   This is the bit-reader shape: the next field width comes from decoded state.
+  The result is xored with `n[i]` before the `& 31`, so `n` keeps varying
+  instead of settling at 0 (where the load would always hit `tbl[0]`, which a
+  value-predicting core like Apple's M-series can then skip waiting on).
 
 `ref_cxx_table` / `ref_cxx_arith` are the plain C++ forms, left out of line so
 `run.sh` can record what the local compiler emits for them.
 
 ```
-./run.sh            # builds into build-$(uname -m)/, writes results/<arch>-<cpu>.txt
+./run.sh            # builds into build-$(uname -m)/, writes results/<arch>-<cpu>.txt (Linux or macOS)
 ```
 
 Results: `results/SUMMARY.md`, raw output per machine alongside.

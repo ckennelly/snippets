@@ -23,6 +23,12 @@ target_link_libraries(lowbits_mask benchmark::benchmark)
 # depend on it, the ref_cxx_* functions do.
 if(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64|arm64")
   target_compile_options(lowbits_mask PRIVATE -mcpu=native)
+  # Apple clang runs the MachineOutliner at -O2 on arm64, which pulls the
+  # shared tail of each inner loop (next load, & 31, increment, compare) into a
+  # function called once per element. Upstream clang on Linux does not.
+  if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    target_compile_options(lowbits_mask PRIVATE -mno-outline)
+  endif()
 else()
   target_compile_options(lowbits_mask PRIVATE -march=native)
 endif()
