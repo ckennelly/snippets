@@ -22,7 +22,7 @@ cmake --build build
 ./build/<name> --benchmark_repetitions=5 --benchmark_report_aggregates_only=true
 ```
 
-Google Benchmark is taken from the system (`libbenchmark-dev`) when present and
-fetched otherwise.
+
+Google Benchmark is fetched and pinned by each directory's CMakeLists.txt.
 
 MIT license.

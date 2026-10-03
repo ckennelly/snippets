@@ -10,10 +10,14 @@ cmake --build "$B" -j >/dev/null
 cpu=$(lscpu | sed -n 's/^Model name:[ ]*//p' | head -1 | tr ' ' '_' | tr -cd 'A-Za-z0-9_.-')
 out=results/$(uname -m)-${cpu:-unknown}.txt
 mkdir -p results
+# GCE machine type, when running on GCE; otherwise whatever VM_FAMILY says.
+md() { curl -sf -H Metadata-Flavor:Google "http://metadata.google.internal/computeMetadata/v1/instance/$1" 2>/dev/null; }
+family=${VM_FAMILY:-$(md machine-type | sed 's|.*/||')}
+[ -n "$family" ] && [ "$(md scheduling/preemptible)" = TRUE ] && family="$family (Spot)"
 {
   echo "# $(date -u +%Y-%m-%dT%H:%MZ) $(uname -m) $(lscpu | sed -n 's/^Model name:[ ]*//p' | head -1)"
+  echo "# VM: ${family:-unknown}"
   echo "# $($CXX --version | head -1)"
-  echo "# $(nproc) cpus, $(uname -r)"
   echo
   "$B/lowbits_mask" --benchmark_repetitions=${REPS:-10} --benchmark_report_aggregates_only=true \
                     --benchmark_counters_tabular=true "$@"

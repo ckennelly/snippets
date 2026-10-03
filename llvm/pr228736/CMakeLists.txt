@@ -7,17 +7,15 @@ if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
 
-# Google Benchmark: system package if present, otherwise fetch it.
-find_package(benchmark QUIET)
-if(NOT benchmark_FOUND)
-  include(FetchContent)
-  set(BENCHMARK_ENABLE_TESTING OFF)
-  set(BENCHMARK_ENABLE_GTEST_TESTS OFF)
-  FetchContent_Declare(benchmark
-    GIT_REPOSITORY https://github.com/google/benchmark.git
-    GIT_TAG v1.9.4)
-  FetchContent_MakeAvailable(benchmark)
-endif()
+# Google Benchmark, pinned. (Ubuntu's libbenchmark-dev is built without NDEBUG
+# and warns that timings may be affected, so it is not used.)
+include(FetchContent)
+set(BENCHMARK_ENABLE_TESTING OFF)
+set(BENCHMARK_ENABLE_GTEST_TESTS OFF)
+FetchContent_Declare(benchmark
+  GIT_REPOSITORY https://github.com/google/benchmark.git
+  GIT_TAG v1.9.4)
+FetchContent_MakeAvailable(benchmark)
 
 add_executable(lowbits_mask lowbits_mask.cc)
 target_link_libraries(lowbits_mask benchmark::benchmark)
