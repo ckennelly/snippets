@@ -45,9 +45,6 @@ kernels.
 - On AArch64, hoisting the constant makes no measurable difference
   (`lsl; sub; and` with and without the `mov`).
 
-The generic TTI cost model in PR 228736 scores the load at 1 and the shift plus
-subtract at 2, and so keeps the load on every target without an override. On
-these two machines that is the wrong call wherever the mask is on a dependency
-chain, and at best a fifth of a cycle where it is not. The microbenchmark is
-also generous to the table: the address materialization (`adrp; add` or a GOT
-load under PIC) and the cache line it occupies are hoisted and warm here.
+The microbenchmark is generous to the table: the address materialization
+(`adrp; add`, or a GOT load under PIC) and the cache line the table occupies
+are hoisted and warm here.

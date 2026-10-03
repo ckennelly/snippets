@@ -2,10 +2,8 @@
 
 [PR 228736](https://github.com/llvm/llvm-project/pull/228736) gates the
 AggressiveInstCombine fold of a low-bits mask table (`x & tbl[n]` with
-`tbl[n] == (1 << n) - 1`, as in zstd's `BIT_mask`) on a TTI cost comparison.
-With the generic cost model a load costs 1 and the shift plus subtract cost 2,
-so the fold is kept only on x86 with BMI2 (where the AND becomes one `bzhi`)
-and dropped everywhere else, AArch64 included.
+`tbl[n] == (1 << n) - 1`, as in zstd's `BIT_mask`) on a TTI cost comparison
+between the table load and the shift-and-subtract that replaces it.
 
 This measures the two forms directly, as fixed instruction sequences in inline
 asm, so the result does not depend on which compiler is installed:
