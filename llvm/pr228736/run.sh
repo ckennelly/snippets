@@ -1,0 +1,24 @@
+#!/bin/bash
+# Build and run, writing results/<arch>-<cpu>.txt with the environment, the
+# benchmark output and the compiler's codegen for the two C++ reference forms.
+set -euo pipefail
+cd "$(dirname "$0")"
+CXX=${CXX:-clang++}
+B=build-$(uname -m)
+cmake -S . -B "$B" -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" >/dev/null
+cmake --build "$B" -j >/dev/null
+cpu=$(lscpu | sed -n 's/^Model name:[ ]*//p' | head -1 | tr ' ' '_' | tr -cd 'A-Za-z0-9_.-')
+out=results/$(uname -m)-${cpu:-unknown}.txt
+mkdir -p results
+{
+  echo "# $(date -u +%Y-%m-%dT%H:%MZ) $(uname -m) $(lscpu | sed -n 's/^Model name:[ ]*//p' | head -1)"
+  echo "# $($CXX --version | head -1)"
+  echo "# $(nproc) cpus, $(uname -r)"
+  echo
+  "$B/lowbits_mask" --benchmark_repetitions=${REPS:-10} --benchmark_report_aggregates_only=true \
+                    --benchmark_counters_tabular=true "$@"
+  echo
+  echo "## ref_cxx_table / ref_cxx_arith as compiled here"
+  objdump -d --no-show-raw-insn "$B/lowbits_mask" | awk '/<ref_cxx_(table|arith)>:/{p=1} p{print} p&&/ret/{p=0; print ""}'
+} | tee "$out"
+echo "wrote $out"
