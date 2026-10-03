@@ -1,46 +1,46 @@
-# 2026-10-03T18:36Z x86_64 AMD EPYC 7B13
+# 2026-10-03T19:31Z x86_64 AMD EPYC 7B13
 # VM: n2d-standard-16 (Spot)
 # Ubuntu clang version 18.1.3 (1ubuntu1)
 
 ---------------------------------------------------------------------------------
 Benchmark                            Time             CPU   Iterations    ns/elem
 ---------------------------------------------------------------------------------
-Throughput<Table>_mean            2137 ns         2137 ns           10  521.666ps table(and mem)
-Throughput<Table>_median          2136 ns         2136 ns           10   521.45ps table(and mem)
-Throughput<Table>_stddev          2.71 ns         2.68 ns           10  653.697fs table(and mem)
-Throughput<Table>_cv              0.13 %          0.13 %            10      0.13% table(and mem)
-LatencyX<Table>_mean              2554 ns         2554 ns           10  623.499ps table(and mem)
-LatencyX<Table>_median            2552 ns         2552 ns           10  623.111ps table(and mem)
-LatencyX<Table>_stddev            2.68 ns         2.67 ns           10  652.046fs table(and mem)
-LatencyX<Table>_cv                0.10 %          0.10 %            10      0.10% table(and mem)
-LatencyN<Table>_mean              8946 ns         8946 ns           10  2.18408ns table(and mem)
-LatencyN<Table>_median            8946 ns         8946 ns           10  2.18411ns table(and mem)
-LatencyN<Table>_stddev            3.42 ns         3.23 ns           10  788.759fs table(and mem)
-LatencyN<Table>_cv                0.04 %          0.04 %            10      0.04% table(and mem)
-Throughput<Bzhi>_mean             1354 ns         1354 ns           10  330.576ps bzhi
-Throughput<Bzhi>_median           1355 ns         1355 ns           10  330.769ps bzhi
-Throughput<Bzhi>_stddev           2.32 ns         2.30 ns           10  560.744fs bzhi
-Throughput<Bzhi>_cv               0.17 %          0.17 %            10      0.17% bzhi
-LatencyX<Bzhi>_mean               2561 ns         2561 ns           10  625.246ps bzhi
-LatencyX<Bzhi>_median             2561 ns         2561 ns           10   625.13ps bzhi
-LatencyX<Bzhi>_stddev             2.62 ns         2.58 ns           10   630.26fs bzhi
-LatencyX<Bzhi>_cv                 0.10 %          0.10 %            10      0.10% bzhi
-LatencyN<Bzhi>_mean               2553 ns         2552 ns           10  623.157ps bzhi
-LatencyN<Bzhi>_median             2552 ns         2552 ns           10  623.096ps bzhi
-LatencyN<Bzhi>_stddev             1.05 ns         1.04 ns           10  254.264fs bzhi
-LatencyN<Bzhi>_cv                 0.04 %          0.04 %            10      0.04% bzhi
-Throughput<ShiftSub>_mean         2563 ns         2563 ns           10   625.78ps shl/dec/and
-Throughput<ShiftSub>_median       2563 ns         2563 ns           10   625.66ps shl/dec/and
-Throughput<ShiftSub>_stddev       2.96 ns         2.97 ns           10  723.971fs shl/dec/and
+Throughput<Table>_mean            2142 ns         2142 ns           10  522.921ps table(and mem)
+Throughput<Table>_median          2141 ns         2141 ns           10  522.734ps table(and mem)
+Throughput<Table>_stddev          2.15 ns         2.14 ns           10  521.832fs table(and mem)
+Throughput<Table>_cv              0.10 %          0.10 %            10      0.10% table(and mem)
+LatencyX<Table>_mean              2560 ns         2559 ns           10  624.863ps table(and mem)
+LatencyX<Table>_median            2560 ns         2560 ns           10  624.895ps table(and mem)
+LatencyX<Table>_stddev            2.78 ns         2.73 ns           10  666.901fs table(and mem)
+LatencyX<Table>_cv                0.11 %          0.11 %            10      0.11% table(and mem)
+LatencyN<Table>_mean             10229 ns        10228 ns           10  2.49707ns table(and mem)
+LatencyN<Table>_median           10228 ns        10228 ns           10  2.49699ns table(and mem)
+LatencyN<Table>_stddev            8.68 ns         8.46 ns           10  2.06507ps table(and mem)
+LatencyN<Table>_cv                0.08 %          0.08 %            10      0.08% table(and mem)
+Throughput<Bzhi>_mean             1355 ns         1355 ns           10  330.742ps bzhi
+Throughput<Bzhi>_median           1354 ns         1354 ns           10  330.573ps bzhi
+Throughput<Bzhi>_stddev           2.10 ns         2.11 ns           10  515.676fs bzhi
+Throughput<Bzhi>_cv               0.15 %          0.16 %            10      0.16% bzhi
+LatencyX<Bzhi>_mean               2565 ns         2565 ns           10  626.248ps bzhi
+LatencyX<Bzhi>_median             2564 ns         2564 ns           10  625.959ps bzhi
+LatencyX<Bzhi>_stddev             4.21 ns         4.24 ns           10   1.0357ps bzhi
+LatencyX<Bzhi>_cv                 0.16 %          0.17 %            10      0.17% bzhi
+LatencyN<Bzhi>_mean               3835 ns         3835 ns           10   936.31ps bzhi
+LatencyN<Bzhi>_median             3836 ns         3836 ns           10  936.484ps bzhi
+LatencyN<Bzhi>_stddev             2.34 ns         2.27 ns           10  553.745fs bzhi
+LatencyN<Bzhi>_cv                 0.06 %          0.06 %            10      0.06% bzhi
+Throughput<ShiftSub>_mean         2570 ns         2570 ns           10  627.385ps shl/dec/and
+Throughput<ShiftSub>_median       2571 ns         2571 ns           10  627.657ps shl/dec/and
+Throughput<ShiftSub>_stddev       3.00 ns         3.01 ns           10    735.4fs shl/dec/and
 Throughput<ShiftSub>_cv           0.12 %          0.12 %            10      0.12% shl/dec/and
-LatencyX<ShiftSub>_mean           2561 ns         2561 ns           10  625.151ps shl/dec/and
-LatencyX<ShiftSub>_median         2560 ns         2560 ns           10  625.085ps shl/dec/and
-LatencyX<ShiftSub>_stddev         2.08 ns         2.07 ns           10  505.411fs shl/dec/and
-LatencyX<ShiftSub>_cv             0.08 %          0.08 %            10      0.08% shl/dec/and
-LatencyN<ShiftSub>_mean           5105 ns         5105 ns           10  1.24632ns shl/dec/and
-LatencyN<ShiftSub>_median         5105 ns         5105 ns           10  1.24627ns shl/dec/and
-LatencyN<ShiftSub>_stddev         2.64 ns         2.58 ns           10  629.871fs shl/dec/and
-LatencyN<ShiftSub>_cv             0.05 %          0.05 %            10      0.05% shl/dec/and
+LatencyX<ShiftSub>_mean           2563 ns         2563 ns           10   625.62ps shl/dec/and
+LatencyX<ShiftSub>_median         2563 ns         2562 ns           10  625.568ps shl/dec/and
+LatencyX<ShiftSub>_stddev         1.09 ns         1.08 ns           10  262.611fs shl/dec/and
+LatencyX<ShiftSub>_cv             0.04 %          0.04 %            10      0.04% shl/dec/and
+LatencyN<ShiftSub>_mean           6387 ns         6386 ns           10  1.55917ns shl/dec/and
+LatencyN<ShiftSub>_median         6387 ns         6387 ns           10  1.55934ns shl/dec/and
+LatencyN<ShiftSub>_stddev         4.22 ns         4.20 ns           10  1.02574ps shl/dec/and
+LatencyN<ShiftSub>_cv             0.07 %          0.07 %            10      0.07% shl/dec/and
 
 ## ref_cxx_table / ref_cxx_arith as compiled here
 0000000000007c50 <ref_cxx_table>:

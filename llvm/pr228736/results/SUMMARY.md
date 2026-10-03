@@ -14,29 +14,25 @@ index on the LatencyN chain). What remains on the LatencyN chain besides the
 kernel is the `& 31` and, on x86, one register copy that applies equally to all
 kernels.
 
-**The Zen 3 and Neoverse-V2 LatencyN columns predate the LatencyN fix
-described under the M5 Pro.** Those cores do not predict load values, so the
-collapsed recurrence still measured a real dependent load each iteration.
-Their numbers are valid latencies for the old chain (kernel + `& 31`). They
-are about one cycle lower than a re-run with the current harness would give,
-since the fix adds an `eor` to the chain.
+All three machines were measured with the current harness, including the
+LatencyN recurrence fix described under the M5 Pro.
 
 ## x86-64: AMD EPYC 7B13 (Zen 3), GCE `n2d-standard-16` (Spot)
 
 | kernel | Throughput | LatencyX | LatencyN |
 |---|---:|---:|---:|
-| table `and (tbl,n,4), x` | 0.522 | 0.623 | **2.184** |
-| `bzhi` (BMI2) | **0.331** | 0.625 | **0.623** |
-| `mov 1; shl %cl; dec; and` (no BMI2) | 0.626 | 0.625 | **1.246** |
+| table `and (tbl,n,4), x` | 0.523 | 0.625 | **2.497** |
+| `bzhi` (BMI2) | **0.331** | 0.626 | **0.936** |
+| `mov 1; shl %cl; dec; and` (no BMI2) | 0.627 | 0.626 | **1.559** |
 
 ## AArch64: Neoverse-V2, GCE `c4a-standard-16` (Spot)
 
 | kernel | Throughput | LatencyX | LatencyN |
 |---|---:|---:|---:|
-| table `ldr [tbl, n, uxtw #2]; and` | **0.478** | 0.715 | **2.013** |
-| `lsl; bic` (-1 hoisted; what clang emits) | 0.574 | 0.717 | **1.020** |
-| `lsl; sub; and` (1 hoisted) | 0.624 | 0.772 | **1.354** |
-| `mov 1; lsl; sub; and` | 0.625 | 0.721 | **1.355** |
+| table `ldr [tbl, n, uxtw #2]; and` | **0.477** | 0.711 | **2.362** |
+| `lsl; bic` (-1 hoisted; what clang emits) | 0.573 | 0.714 | **1.382** |
+| `lsl; sub; and` (1 hoisted) | 0.619 | 0.743 | **1.705** |
+| `mov 1; lsl; sub; and` | 0.610 | 0.720 | **1.708** |
 
 ## AArch64: Apple M5 Pro, MacBook Pro (bare metal, AC power)
 
@@ -75,10 +71,12 @@ Two harness problems showed up on this machine, and both are fixed:
 ## Reading
 
 - **LatencyN** (the result selects the next mask, a bit reader's shape): the
-  dependent table load costs **2.0–2.2 ns** per element against **0.62 ns** for
-  `bzhi` and **1.02 ns** for `lsl; bic` — 2× to 3.5× slower on both machines.
-  On the M5 Pro it costs 1.80 ns against 0.96 ns for `lsl; bic`, about 1.9×
-  (3.4 extra cycles).
+  dependent table load costs **2.50 ns** per element on Zen 3 against
+  **0.94 ns** for `bzhi` (2.7×) and 1.56 ns for `shl; dec; and`; **2.36 ns** on
+  Neoverse-V2 against **1.38 ns** for `lsl; bic` (1.7×, about 2 extra cycles
+  at 2 GHz) and 1.71 ns for `lsl; sub; and`; **1.80 ns** on the M5 Pro against
+  **0.96 ns** for `lsl; bic` (1.9×, 3.4 extra cycles). Each chain includes the
+  harness's `eor; and #31`.
 - **LatencyX** (the result feeds the next `x`): identical within noise. The
   load's address does not depend on the previous result, so its latency hides.
 - **Throughput** (independent elements): on Zen 3 `bzhi` is clearly ahead
