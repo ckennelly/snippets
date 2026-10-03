@@ -12,7 +12,7 @@ out=results/$(uname -m)-${cpu:-unknown}.txt
 mkdir -p results
 # GCE machine type, when running on GCE; otherwise whatever VM_FAMILY says.
 md() { curl -sf -H Metadata-Flavor:Google "http://metadata.google.internal/computeMetadata/v1/instance/$1" 2>/dev/null; }
-family=${VM_FAMILY:-$(md machine-type | sed 's|.*/||')}
+family=${VM_FAMILY:-$(md machine-type | sed 's|.*/||' || true)}
 [ -n "$family" ] && [ "$(md scheduling/preemptible)" = TRUE ] && family="$family (Spot)"
 {
   echo "# $(date -u +%Y-%m-%dT%H:%MZ) $(uname -m) $(lscpu | sed -n 's/^Model name:[ ]*//p' | head -1)"
