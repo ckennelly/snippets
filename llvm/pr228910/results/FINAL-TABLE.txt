@@ -1,0 +1,20 @@
+benchmark (10 rounds, pinned)      Neoverse-V2            Zen 3                 
+---------------------------------- ---------------------- ----------------------
+Fleetbench compression (geomean)    +0.49% +/-  0.17%      +0.22% +/-  1.69%    
+  ZSTD compress                     +0.46% +/-  0.21%      -0.84% +/-  1.68%    
+  ZSTD decompress                   +1.02% +/-  0.78%      -0.62% +/-  1.66%    
+  Snappy compress                   +0.36% +/-  0.28%      +1.68% +/-  4.62%    
+  Snappy decompress                 +0.14% +/-  0.45%      +0.81% +/-  3.50%    
+zstd 1.5.7, enwik8                                                              
+  zstd compress   L1                +0.59% +/-  0.02%      -0.33% +/-  0.39%    
+  zstd compress   L3                +0.54% +/-  0.59%      -0.31% +/-  1.59%    
+  zstd compress   L9                -0.05% +/-  0.41%      -1.64% +/-  5.04%    
+  zstd decompress L1                +0.31% +/-  0.12%      +0.00% +/-  0.23%    
+  zstd decompress L3                -0.09% +/-  0.16%      +1.53% +/-  3.68%    
+  zstd decompress L9                +0.21% +/-  0.20%      -0.77% +/-  2.66%    
+brotli 1.1.0, enwik8                                                            
+  brotli compress   q5              -0.15% +/-  0.32%      +0.55% +/-  0.96%    
+  brotli compress   q9              +0.06% +/-  0.21%      +1.72% +/-  3.34%    
+  brotli decompress q5              +1.08% +/-  3.17%      +2.14% +/-  5.11%    
+  brotli decompress q9              +0.94% +/-  2.94%      +4.02% +/-  8.30%    
+snappy, 77 benchmarks (geomean)     -0.04% +/-  0.15%      -0.11% +/-  0.57%    

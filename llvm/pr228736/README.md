@@ -34,3 +34,5 @@ in three harnesses:
 ```
 
 Results: `results/SUMMARY.md`, raw output per machine alongside.
+
+End-to-end measurements of the resulting fix (PR 228910) are in `../pr228910/`.

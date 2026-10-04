@@ -1,0 +1,54 @@
+# 2026-10-04T01:31Z x86_64 AMD EPYC 7B13
+# VM: n2d-standard-16 (Spot)
+# main: clang version 24.0.0git (https://github.com/llvm/llvm-project.git 4428e953e2a5da4f870d819a30de3aaba08cf0af)
+# andnot: clang version 24.0.0git (https://github.com/llvm/llvm-project.git 425987637c69979f804138add38fac5bab23dc21)
+# zstd v1.5.7 unmodified, CFLAGS -O3 -march=native; enwik8; zstd -b<level> -i5; 7 rounds, builds alternated
+
+main: BIT_mask symbol: 0, .text 944501 bytes
+andnot: BIT_mask symbol: 0, .text 944501 bytes
+main: 133 bzhi
+andnot: 133 bzhi
+
+# build  zstd -b output: level  compressed-size  (ratio)  compress-MB/s  decompress-MB/s
+main -1 40675943 (2.458) 1150.41 MB/s 954.1 MB/s enwik8
+main -3 35445331 (2.821) 570.88 MB/s 742.9 MB/s enwik8
+main -9 31129511 (3.212) 108.79 MB/s 775.5 MB/s enwik8
+andnot -1 40675943 (2.458) 1146.26 MB/s 937.5 MB/s enwik8
+andnot -3 35445331 (2.821) 575.53 MB/s 757.6 MB/s enwik8
+andnot -9 31129511 (3.212) 105.86 MB/s 758.2 MB/s enwik8
+main -1 40675943 (2.458) 1126.26 MB/s 926.6 MB/s enwik8
+main -3 35445331 (2.821) 573.12 MB/s 710.5 MB/s enwik8
+main -9 31129511 (3.212) 114.99 MB/s 783.7 MB/s enwik8
+andnot -1 40675943 (2.458) 1144.96 MB/s 934.6 MB/s enwik8
+andnot -3 35445331 (2.821) 581.39 MB/s 764.4 MB/s enwik8
+andnot -9 31129511 (3.212) 112.73 MB/s 779.8 MB/s enwik8
+main -1 40675943 (2.458) 1129.93 MB/s 932.9 MB/s enwik8
+main -3 35445331 (2.821) 573.38 MB/s 746.4 MB/s enwik8
+main -9 31129511 (3.212) 113.15 MB/s 787.9 MB/s enwik8
+andnot -1 40675943 (2.458) 1141.99 MB/s 919.3 MB/s enwik8
+andnot -3 35445331 (2.821) 572.53 MB/s 754.5 MB/s enwik8
+andnot -9 31129511 (3.212) 107.12 MB/s 751.5 MB/s enwik8
+main -1 40675943 (2.458) 1146.28 MB/s 928.6 MB/s enwik8
+main -3 35445331 (2.821) 579.03 MB/s 726.2 MB/s enwik8
+main -9 31129511 (3.212) 110.27 MB/s 770.2 MB/s enwik8
+andnot -1 40675943 (2.458) 1117.77 MB/s 897.5 MB/s enwik8
+andnot -3 35445331 (2.821) 565.87 MB/s 747.3 MB/s enwik8
+andnot -9 31129511 (3.212) 103.85 MB/s 766.3 MB/s enwik8
+main -1 40675943 (2.458) 1113.36 MB/s 905.5 MB/s enwik8
+main -3 35445331 (2.821) 552.53 MB/s 732.7 MB/s enwik8
+main -9 31129511 (3.212) 103.67 MB/s 732.4 MB/s enwik8
+andnot -1 40675943 (2.458) 1096.28 MB/s 904.5 MB/s enwik8
+andnot -3 35445331 (2.821) 579.56 MB/s 744.2 MB/s enwik8
+andnot -9 31129511 (3.212) 99.75 MB/s 762.1 MB/s enwik8
+main -1 40675943 (2.458) 1095.19 MB/s 895.9 MB/s enwik8
+main -3 35445331 (2.821) 564.20 MB/s 744.1 MB/s enwik8
+main -9 31129511 (3.212) 105.48 MB/s 745.1 MB/s enwik8
+andnot -1 40675943 (2.458) 1098.27 MB/s 936.8 MB/s enwik8
+andnot -3 35445331 (2.821) 555.41 MB/s 745.1 MB/s enwik8
+andnot -9 31129511 (3.212) 101.14 MB/s 762.2 MB/s enwik8
+main -1 40675943 (2.458) 1101.66 MB/s 906.5 MB/s enwik8
+main -3 35445331 (2.821) 559.45 MB/s 706.0 MB/s enwik8
+main -9 31129511 (3.212) 109.90 MB/s 668.3 MB/s enwik8
+andnot -1 40675943 (2.458) 1073.69 MB/s 906.4 MB/s enwik8
+andnot -3 35445331 (2.821) 556.44 MB/s 723.4 MB/s enwik8
+andnot -9 31129511 (3.212) 100.75 MB/s 746.8 MB/s enwik8

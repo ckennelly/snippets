@@ -1,0 +1,78 @@
+# 2026-10-03T20:19Z aarch64 Neoverse-V2
+# VM: c4a-standard-16 (Spot)
+# nofold: clang version 24.0.0git (https://github.com/ckennelly/llvm-project.git 4faf0ae1d518d97381ed195c5e12d3923f770152)
+# fold: clang version 24.0.0git (https://github.com/ckennelly/llvm-project.git 394c8dd1493308cb9add77b18987aee2219a65c1)
+# pr: clang version 24.0.0git (https://github.com/ckennelly/llvm-project.git bbf36a6ebc79e9b8cccb53c625a9ca9ed4f47a34)
+# alt: clang version 24.0.0git (https://github.com/ckennelly/llvm-project.git 06e580d440352ad35c1a3743831edc4f52b13fb4)
+# zstd v1.5.7 unmodified, CFLAGS -O3 -mcpu=native; enwik8; zstd -b<level> -i5; 5 rounds, builds alternated
+
+nofold: BIT_mask symbol: 4, .text 779888 bytes
+fold: BIT_mask symbol: 0, .text 780144 bytes
+pr: BIT_mask symbol: 4, .text 779888 bytes
+alt: BIT_mask symbol: 0, .text 780144 bytes
+nofold: 411 ldr-uxtw#2, 0 bic, 0 mvn
+fold: 385 ldr-uxtw#2, 0 bic, 0 mvn
+pr: 411 ldr-uxtw#2, 0 bic, 0 mvn
+alt: 385 ldr-uxtw#2, 0 bic, 0 mvn
+
+# build  zstd -b output: level  compressed-size  (ratio)  compress-MB/s  decompress-MB/s
+nofold -1 40675943 (2.458) 1567.16 MB/s 1385.4 MB/s enwik8
+nofold -3 35445331 (2.821) 831.48 MB/s 1175.9 MB/s enwik8
+nofold -9 31129511 (3.212) 141.94 MB/s 1087.3 MB/s enwik8
+fold -1 40675943 (2.458) 1546.84 MB/s 1383.4 MB/s enwik8
+fold -3 35445331 (2.821) 826.51 MB/s 1175.5 MB/s enwik8
+fold -9 31129511 (3.212) 141.80 MB/s 1097.2 MB/s enwik8
+pr -1 40675943 (2.458) 1567.64 MB/s 1380.9 MB/s enwik8
+pr -3 35445331 (2.821) 834.76 MB/s 1179.5 MB/s enwik8
+pr -9 31129511 (3.212) 140.68 MB/s 1092.9 MB/s enwik8
+alt -1 40675943 (2.458) 1557.40 MB/s 1381.9 MB/s enwik8
+alt -3 35445331 (2.821) 824.51 MB/s 1175.3 MB/s enwik8
+alt -9 31129511 (3.212) 140.29 MB/s 1096.8 MB/s enwik8
+nofold -1 40675943 (2.458) 1567.62 MB/s 1383.8 MB/s enwik8
+nofold -3 35445331 (2.821) 821.08 MB/s 1169.4 MB/s enwik8
+nofold -9 31129511 (3.212) 141.37 MB/s 1068.0 MB/s enwik8
+fold -1 40675943 (2.458) 1547.51 MB/s 1386.2 MB/s enwik8
+fold -3 35445331 (2.821) 822.40 MB/s 1181.7 MB/s enwik8
+fold -9 31129511 (3.212) 139.48 MB/s 1091.3 MB/s enwik8
+pr -1 40675943 (2.458) 1567.17 MB/s 1382.0 MB/s enwik8
+pr -3 35445331 (2.821) 838.08 MB/s 1180.8 MB/s enwik8
+pr -9 31129511 (3.212) 139.43 MB/s 1092.7 MB/s enwik8
+alt -1 40675943 (2.458) 1556.18 MB/s 1379.4 MB/s enwik8
+alt -3 35445331 (2.821) 822.82 MB/s 1174.2 MB/s enwik8
+alt -9 31129511 (3.212) 138.97 MB/s 1070.9 MB/s enwik8
+nofold -1 40675943 (2.458) 1567.58 MB/s 1384.0 MB/s enwik8
+nofold -3 35445331 (2.821) 835.18 MB/s 1172.1 MB/s enwik8
+nofold -9 31129511 (3.212) 139.16 MB/s 1074.8 MB/s enwik8
+fold -1 40675943 (2.458) 1546.77 MB/s 1380.7 MB/s enwik8
+fold -3 35445331 (2.821) 810.80 MB/s 1170.6 MB/s enwik8
+fold -9 31129511 (3.212) 137.79 MB/s 1064.8 MB/s enwik8
+pr -1 40675943 (2.458) 1565.72 MB/s 1375.8 MB/s enwik8
+pr -3 35445331 (2.821) 820.28 MB/s 1182.1 MB/s enwik8
+pr -9 31129511 (3.212) 138.40 MB/s 1068.8 MB/s enwik8
+alt -1 40675943 (2.458) 1557.17 MB/s 1381.2 MB/s enwik8
+alt -3 35445331 (2.821) 818.59 MB/s 1174.6 MB/s enwik8
+alt -9 31129511 (3.212) 139.63 MB/s 1068.2 MB/s enwik8
+nofold -1 40675943 (2.458) 1565.97 MB/s 1378.2 MB/s enwik8
+nofold -3 35445331 (2.821) 832.55 MB/s 1175.4 MB/s enwik8
+nofold -9 31129511 (3.212) 138.93 MB/s 1074.1 MB/s enwik8
+fold -1 40675943 (2.458) 1547.09 MB/s 1379.0 MB/s enwik8
+fold -3 35445331 (2.821) 815.55 MB/s 1183.9 MB/s enwik8
+fold -9 31129511 (3.212) 138.81 MB/s 1071.6 MB/s enwik8
+pr -1 40675943 (2.458) 1566.42 MB/s 1382.2 MB/s enwik8
+pr -3 35445331 (2.821) 829.23 MB/s 1167.9 MB/s enwik8
+pr -9 31129511 (3.212) 138.81 MB/s 1112.0 MB/s enwik8
+alt -1 40675943 (2.458) 1557.01 MB/s 1379.3 MB/s enwik8
+alt -3 35445331 (2.821) 829.43 MB/s 1167.1 MB/s enwik8
+alt -9 31129511 (3.212) 139.18 MB/s 1070.5 MB/s enwik8
+nofold -1 40675943 (2.458) 1566.39 MB/s 1382.3 MB/s enwik8
+nofold -3 35445331 (2.821) 839.13 MB/s 1174.5 MB/s enwik8
+nofold -9 31129511 (3.212) 139.74 MB/s 1071.3 MB/s enwik8
+fold -1 40675943 (2.458) 1547.95 MB/s 1385.8 MB/s enwik8
+fold -3 35445331 (2.821) 821.22 MB/s 1173.8 MB/s enwik8
+fold -9 31129511 (3.212) 142.17 MB/s 1112.1 MB/s enwik8
+pr -1 40675943 (2.458) 1566.89 MB/s 1386.5 MB/s enwik8
+pr -3 35445331 (2.821) 826.10 MB/s 1171.2 MB/s enwik8
+pr -9 31129511 (3.212) 141.91 MB/s 1067.0 MB/s enwik8
+alt -1 40675943 (2.458) 1556.72 MB/s 1380.6 MB/s enwik8
+alt -3 35445331 (2.821) 827.01 MB/s 1173.4 MB/s enwik8
+alt -9 31129511 (3.212) 141.52 MB/s 1089.4 MB/s enwik8

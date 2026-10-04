@@ -1,0 +1,50 @@
+# 2026-10-04T03:37Z aarch64 Neoverse-V2
+# VM: c4a-standard-16 (Spot)
+# main: clang version 24.0.0git (https://github.com/ckennelly/llvm-project.git 4428e953e2a5da4f870d819a30de3aaba08cf0af)
+# andnot: clang version 24.0.0git (https://github.com/ckennelly/llvm-project.git 425987637c69979f804138add38fac5bab23dc21)
+# brotli v1.1.0, CFLAGS -O3 -mcpu=native; enwik8; qualities 5 9; 10 rounds, builds alternated; seconds, lower is better
+
+main: .text 381104
+andnot: .text 381136
+
+# build quality compress_s decompress_s(3 runs)
+main 5 3.004 0.837
+main 9 22.998 0.821
+andnot 5 3.012 0.758
+andnot 9 23.035 0.749
+main 5 2.996 0.757
+main 9 23.010 0.748
+andnot 5 3.017 0.756
+andnot 9 23.008 0.752
+main 5 3.003 0.756
+main 9 23.140 0.748
+andnot 5 2.994 0.756
+andnot 9 23.005 0.749
+main 5 3.010 0.756
+main 9 23.025 0.748
+andnot 5 3.003 0.755
+andnot 9 22.984 0.749
+main 5 3.003 0.758
+main 9 23.128 0.749
+andnot 5 3.014 0.767
+andnot 9 23.084 0.750
+main 5 3.016 0.766
+main 9 23.028 0.747
+andnot 5 3.015 0.756
+andnot 9 23.012 0.752
+main 5 3.010 0.756
+main 9 23.019 0.749
+andnot 5 3.007 0.756
+andnot 9 23.022 0.748
+main 5 2.996 0.756
+main 9 23.016 0.757
+andnot 5 3.014 0.756
+andnot 9 23.045 0.747
+main 5 3.003 0.757
+main 9 23.030 0.749
+andnot 5 3.004 0.755
+andnot 9 23.061 0.749
+main 5 3.003 0.755
+main 9 23.019 0.748
+andnot 5 3.010 0.757
+andnot 9 23.013 0.749

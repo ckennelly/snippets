@@ -1,0 +1,50 @@
+# 2026-10-04T04:56Z x86_64 AMD EPYC 7B13
+# VM: n2d-standard-16
+# main: clang version 24.0.0git (https://github.com/llvm/llvm-project.git 4428e953e2a5da4f870d819a30de3aaba08cf0af)
+# andnot: clang version 24.0.0git (https://github.com/llvm/llvm-project.git 425987637c69979f804138add38fac5bab23dc21)
+# brotli v1.1.0, CFLAGS -O3 -march=native; enwik8; qualities 5 9; 10 rounds, builds alternated; seconds, lower is better
+
+main: .text 491799
+andnot: .text 491799
+
+# build quality compress_s decompress_s(3 runs)
+main 5 3.961 1.041
+main 9 23.512 0.953
+andnot 5 3.941 0.887
+andnot 9 23.275 0.812
+main 5 4.037 0.883
+main 9 22.808 0.816
+andnot 5 3.919 0.878
+andnot 9 22.365 0.793
+main 5 3.964 0.882
+main 9 24.669 0.996
+andnot 5 3.945 0.879
+andnot 9 22.573 0.817
+main 5 3.927 0.898
+main 9 23.164 0.849
+andnot 5 3.948 0.889
+andnot 9 22.714 0.817
+main 5 3.918 0.884
+main 9 22.531 0.796
+andnot 5 3.935 0.868
+andnot 9 22.359 0.795
+main 5 3.985 0.874
+main 9 22.711 0.811
+andnot 5 3.933 0.878
+andnot 9 22.706 0.801
+main 5 3.933 0.877
+main 9 22.533 0.839
+andnot 5 3.923 0.876
+andnot 9 22.899 0.869
+main 5 3.945 0.890
+main 9 22.440 0.799
+andnot 5 3.929 0.893
+andnot 9 22.937 0.843
+main 5 3.938 0.893
+main 9 23.517 0.901
+andnot 5 3.935 0.891
+andnot 9 23.576 0.883
+main 5 3.907 0.884
+main 9 23.999 0.810
+andnot 5 3.893 0.878
+andnot 9 22.599 0.815

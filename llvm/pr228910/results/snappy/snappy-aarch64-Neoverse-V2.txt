@@ -1,0 +1,28 @@
+# 2026-10-04T03:47Z aarch64 Neoverse-V2
+# VM: c4a-standard-16 (Spot)
+# main: clang version 24.0.0git (https://github.com/ckennelly/llvm-project.git 4428e953e2a5da4f870d819a30de3aaba08cf0af)
+# andnot: clang version 24.0.0git (https://github.com/ckennelly/llvm-project.git 425987637c69979f804138add38fac5bab23dc21)
+# snappy 1.2.2 snappy_benchmark, CXXFLAGS -O3 -mcpu=native; 10 rounds, builds alternated; CSV per run below
+
+main: .text 242156
+andnot: .text 242156
+round 1 main: 77 rows -> results/snappy-aarch64-main-1.csv
+round 1 andnot: 77 rows -> results/snappy-aarch64-andnot-1.csv
+round 2 main: 77 rows -> results/snappy-aarch64-main-2.csv
+round 2 andnot: 77 rows -> results/snappy-aarch64-andnot-2.csv
+round 3 main: 77 rows -> results/snappy-aarch64-main-3.csv
+round 3 andnot: 77 rows -> results/snappy-aarch64-andnot-3.csv
+round 4 main: 77 rows -> results/snappy-aarch64-main-4.csv
+round 4 andnot: 77 rows -> results/snappy-aarch64-andnot-4.csv
+round 5 main: 77 rows -> results/snappy-aarch64-main-5.csv
+round 5 andnot: 77 rows -> results/snappy-aarch64-andnot-5.csv
+round 6 main: 77 rows -> results/snappy-aarch64-main-6.csv
+round 6 andnot: 77 rows -> results/snappy-aarch64-andnot-6.csv
+round 7 main: 77 rows -> results/snappy-aarch64-main-7.csv
+round 7 andnot: 77 rows -> results/snappy-aarch64-andnot-7.csv
+round 8 main: 77 rows -> results/snappy-aarch64-main-8.csv
+round 8 andnot: 77 rows -> results/snappy-aarch64-andnot-8.csv
+round 9 main: 77 rows -> results/snappy-aarch64-main-9.csv
+round 9 andnot: 77 rows -> results/snappy-aarch64-andnot-9.csv
+round 10 main: 77 rows -> results/snappy-aarch64-main-10.csv
+round 10 andnot: 77 rows -> results/snappy-aarch64-andnot-10.csv

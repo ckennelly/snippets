@@ -1,0 +1,5 @@
+name,iterations,real_time,cpu_time,time_unit,bytes_per_second,items_per_second,label,error_occurred,error_message,"avg_compression_ratio","compression_byte_rate","decompression_byte_rate"
+"BM_COMPRESSION_Snappy_COMPRESS_Fleet",401198400,0.914223,0.914171,ns,,,,,,1.79,1.09389e+09,0
+"BM_COMPRESSION_Snappy_DECOMPRESS_Fleet",1002866400,0.399532,0.399486,ns,,,,,,1.51,0,2.50322e+09
+"BM_COMPRESSION_ZSTD_COMPRESS_Fleet/compression_level:-1/window_log:15",200637312,1.70441,1.70442,ns,,,,,,2.83,5.8671e+08,0
+"BM_COMPRESSION_ZSTD_DECOMPRESS_Fleet/compression_level:0/window_log:0",501683200,0.679638,0.679608,ns,,,,,,2.39,0,1.47144e+09
