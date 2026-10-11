@@ -88,40 +88,63 @@ bodies, 7 of them X-Trans).
 GCP c3d-highcpu-16 (Spot), darktable `ef98688fc`, RelWithDebInfo, no OpenCL;
 5 repetitions of 60 actions per (library, layout, build). Every number below is
 the median over repetitions of the paired difference `candidate - base` in the
-per-run median, in ms per rating action, with [min, max] over repetitions. Each
-run's JSON is in `results/`.
+per-run median, in ms per rating action, with [min, max] over repetitions.
+Each run's JSON is in `results/`.
 
-**A/A control** (`results/ab2`, base against itself under another name): every
-cell is within ±0.2 ms GUI-thread / ±0.8 ms process, i.e. no order or
-position bias at n=5.
+`base` is a clean build of `ef98688fc`, made the same way as the candidates:
+an incremental `ninja` in one build directory, installed to its own prefix.
+Two controls run in the same interleaved A/B:
 
-**Baseline** GUI-thread / process CPU per action: 1k filemanager 15.5 / 16.6,
-1k culling 30.1 / 72.2, 50k filemanager 136.5 / 137.7, 50k culling 109.2 /
-151.6 (`ab2`; `ab1` read 10-20% higher on another boot of the same VM type,
-which the pairing cancels).
+* `base2`: the base binary under another name. It catches order and position
+  bias.
+* `dirty`: the same commit built from a dirty tree. Its `.text` matches the
+  base's except for RIP-relative displacements into `.rodata`, which moved
+  because the version string is 6 bytes longer (`-dirty`). It shows how far
+  code and heap layout alone move a cell.
 
-| branch | 1k filemanager | 1k culling | 50k filemanager | 50k culling |
+**Baseline** GUI-thread / process CPU per action: 1k filemanager 16.0 / 17.2,
+1k culling 28.7 / 68.6, 50k filemanager 139.8 / 140.4, 50k culling 108.9 /
+148.8.
+
+| build | 1k filemanager | 1k culling | 50k filemanager | 50k culling |
 |---|---|---|---|---|
-| `perf/map-proxy-view` (ab1) | gui +0.71 [+0.54, +1.94] | gui -0.26 [-1.50, +1.29] | gui -4.40 [-7.20, -0.94] (-2.8%) | gui -5.53 [-6.50, -4.74] (-4.4%) |
-| `perf/culling-keep-native-surface` (ab2) | gui +1.05 [+0.86, +2.18] (+6.8%) | gui -7.41 [-8.40, -7.24] (-24.7%); process -48.5 [-50.3, -46.6] (-67%) | gui +3.08 [+2.36, +3.94] (+2.3%) | gui -5.53 [-5.73, -4.65] (-5.1%); process -46.3 [-46.6, -44.3] (-31%) |
-| `perf/rating-flags-only-write` (ab1) | gui +0.56 [+0.02, +0.59] | gui +0.10 [-0.64, +0.42] | gui +1.80 [-1.12, +5.23] | gui +2.09 [-1.91, +5.74] |
-| `perf/sqlite-cache-size` (ab1) | gui +0.91 [+0.33, +2.15] | gui -0.35 [-0.44, +0.16] | gui -6.25 [-9.04, -4.50] (-4.1%) | gui -5.80 [-9.79, -2.61] (-4.7%) |
+| `base2` (A/A) | gui -0.06 [-0.10, +0.31] | gui +0.26 [-0.34, +0.35] | gui -0.11 [-3.88, +1.11] | gui +0.00 [-0.53, +0.36] |
+| `dirty` (layout) | gui -0.91 [-1.07, -0.02] | gui -0.23 [-0.49, +0.09] | gui -4.08 [-6.84, -1.89] | gui -1.11 [-2.16, -0.95] |
+| `perf/map-proxy-view` | gui -0.30 [-0.40, +0.15] | gui -0.15 [-0.54, +0.97] | gui -7.47 [-10.65, -5.68] (-5.3%) | gui -4.73 [-6.89, -3.33] (-4.3%) |
+| `perf/sqlite-cache-size` | gui +0.03 [-0.37, +0.10] | gui +0.30 [+0.05, +2.27] | gui -6.99 [-11.41, -5.82] (-5.0%) | gui -4.41 [-6.46, -3.06] (-4.0%) |
+| `perf/culling-keep-native-surface` | gui -0.02 [-0.04, +0.19] | gui -6.87 [-8.11, -6.60] (-23.8%); process -45.6 [-46.6, -44.8] (-66%) | gui -0.71 [-1.91, +3.85] | gui -6.92 [-8.27, -4.53] (-6.3%); process -45.6 [-47.6, -45.5] (-30%) |
+| `perf/rating-flags-only-write` | gui -0.45 [-0.52, +0.30] | gui +0.05 [-0.08, +0.36] | gui -0.70 [-4.22, +0.69] | gui +2.42 [-0.20, +4.05] |
 
-`ab1` ran before the A/A control existed. Its 1k filemanager column is
-+0.5-1.0 ms for all four candidates, including ones that cannot touch that
-path; treat that column as noise of about that size.
+All rows but the culling one are from `results/ab5`. The culling branch was
+reworked after ab5, so its row is from `results/ab6`, which measured the
+pushed branch against the same clean base, with its own A/A control (within
+±0.4 ms GUI in every cell). ab6 also re-ran the previous version of the
+branch, which ab5 measured: the two agree within 0.2 ms in the culling cells
+and within 0.7 ms at 50k filemanager, inside that cell's A/A range.
 
-The culling branch's filemanager cost is not work done by the patch. A
-`perf record -e page-faults` of the key loop (50k filemanager) counts 51K
-faults against 19K for the base, and nearly all of them are under SQLite's
-own `sqlite3Malloc`/`realloc` (sorter and b-tree inserts in
-`_dt_collection_compute_count` and `_rating_range_update`). Keeping the
-native surfaces alive changes the glibc heap layout so that the per-query
-scratch memory is returned to the kernel and faulted in again on every
-action.
+Reading it:
 
-`results/ab1/BUILDS` lists the revisions measured. `flags` (`e686dbe64`) and
-`cache` (`1052d2aa0`) were later split or reworded into the pushed commits
-with no code change; `culling` (`5539b7639`) is v1 of the culling branch,
-superseded by `culling2` in `ab2`, which adds the stale-surface and focus
-peaking checks.
+* The culling branch saves about 7 ms of GUI-thread CPU and 45 ms of process
+  CPU per action in the culling layout, mostly display color conversion on
+  OpenMP workers, far outside the layout control. It costs nothing in the
+  filemanager.
+* The map and SQLite cache branches save 4-7 ms (4-5%) at 50k images and
+  nothing measurable at 1k. The `dirty` row moves the 50k filemanager cell
+  by 4 ms on its own, so those two cells carry about that much layout
+  uncertainty.
+* The flags-only write has no consistent effect.
+
+### Earlier runs
+
+`results/ab1` to `ab3` compared against the `dirty` build, which was the only
+base build at the time. That made every candidate read +0.5 to +1.1 ms at 1k
+filemanager while the same-binary A/A read zero, and gave the culling branch
+an apparent +3 ms at 50k filemanager, which a `perf record -e page-faults`
+pinned on SQLite's own allocations (51K faults against 19K): a heap layout
+difference, not work the patch does. `results/ab4` measured `dirty` against
+the clean build directly: +0.95 [+0.60, +1.03] ms at 1k filemanager for the
+clean one. A same-binary A/A doesn't control for layout, so compare against a
+clean rebuild made the same way as the candidates.
+
+`results/ab5/preempted` holds the one group that a Spot preemption split
+across two boots; it was rerun from scratch and is not in the table.

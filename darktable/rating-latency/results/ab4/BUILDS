@@ -1,0 +1,2 @@
+base ef98688fc (built from a dirty tree; the ~/dt-ab/base used by ab1-ab3)
+base-rb ef98688fc (clean rebuild; .text differs only in .rodata displacements)
