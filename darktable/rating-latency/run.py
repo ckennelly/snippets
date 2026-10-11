@@ -53,6 +53,8 @@ def run(a):
     res = os.path.join(work, "result.txt")
     env = dict(os.environ, DISPLAY=a.display, DTB_OUT=res, DTB_KEYS=str(a.keys),
                DTB_GAP_MS=str(a.gap_ms), DTB_SETTLE_MS=str(a.settle_ms))
+    if a.quit:
+        env["DTB_QUIT"] = "1"
     cmd = [a.bin, "--configdir", cfg, "--library", os.path.join(cfg, "library.db"),
            "--cachedir", os.path.join(a.lib, "cache"),
            "--luacmd", f'dofile("{os.path.join(HERE, "bench.lua")}")']
@@ -68,12 +70,19 @@ def run(a):
             if lines and lines[-1] == "done":
                 break
         time.sleep(1)
+    if a.quit:
+        try:
+            p.wait(timeout=300)
+        except subprocess.TimeoutExpired:
+            pass
     try:
         os.killpg(p.pid, signal.SIGKILL)
     except ProcessLookupError:
         pass
     p.wait()
     log.close()
+    if a.log:
+        shutil.copy(os.path.join(work, "darktable.log"), a.log)
     if not lines or lines[-1] != "done":
         sys.exit(f"no result; see {work}/darktable.log")
 
@@ -117,4 +126,7 @@ if __name__ == "__main__":
     ap.add_argument("--display", default=":99")
     ap.add_argument("--label", default="")
     ap.add_argument("--out")
+    ap.add_argument("--quit", action="store_true",
+                    help="quit darktable normally after the run (for sanitizer exit reports)")
+    ap.add_argument("--log", help="save darktable's output here")
     run(ap.parse_args())

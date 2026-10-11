@@ -1,0 +1,22 @@
+Test 0168-lut3d-srgb-pyramid
+      Image mire1.cr2
+      Timing cpu 1.98s
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 0.49704
+      Avg dE                   : 0.00001
+      Std dE                   : 0.00141
+      ----------------------------------
+      Pixels below avg + 0 std : 99.99 %
+      Pixels below avg + 1 std : 99.99 %
+      Pixels below avg + 3 std : 99.99 %
+      Pixels below avg + 6 std : 99.99 %
+      Pixels below avg + 9 std : 99.99 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261011-171633.log

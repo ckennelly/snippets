@@ -1,0 +1,22 @@
+Test 0103-almost-all (not stable across computers)
+      Image mire1.cr2
+      Timing cpu 29.43s
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.41610
+      Avg dE                   : 0.07019
+      Std dE                   : 0.19048
+      ----------------------------------
+      Pixels below avg + 0 std : 86.93 %
+      Pixels below avg + 1 std : 87.50 %
+      Pixels below avg + 3 std : 96.77 %
+      Pixels below avg + 6 std : 100.00 %
+      Pixels below avg + 9 std : 100.00 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261011-171645.log

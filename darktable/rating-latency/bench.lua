@@ -55,3 +55,7 @@ end
 out:write(string.format("check rating=%d expected=%d\n", dt.collection[1].rating, keys % 2 == 0 and 2 or 4))
 out:write("done\n")
 out:close()
+-- leave through the quit action, so that exit handlers such as
+-- LeakSanitizer's run
+-- (without a size, an action is only read, not run)
+if os.getenv("DTB_QUIT") then dt.gui.action("global/quit", 1.0) end
