@@ -14,12 +14,12 @@ def blocks(path):
     return b
 def one(p): return sorted(glob.glob(os.path.join(R, p + "*")))[0]
 FIX = [  # (fix, pattern, base report, fixed report)
- ("fix/lsan-leaks thumbnail filename", "thumbnail.c:2418", "asan_ef98688fc/ubsan-filemanager.*", "asan_san_fixes/asan-filemanager.*"),
- ("fix/lsan-leaks ratings undo", "ratings.c:225", "asan_ef98688fc/ubsan-filemanager.*", "asan_san_fixes/asan-filemanager.*"),
- ("fix/lsan-leaks range block txt", "range.c:1901", "asan_ef98688fc/ubsan-filemanager.*", "asan_san_fixes/asan-filemanager.*"),
- ("fix/lsan-leaks dt_tag_get_list", "tags.c:792", "asan_ef98688fc/ubsan-filemanager.*", "asan_san_fixes/asan-filemanager.*"),
- ("fix/lsan-leaks colorlabels undo", "colorlabels.c:223", "sanx-base/asan.*", "sanx-fixes2/asan.*"),
- ("fix/lsan-leaks duplicate undo", "image.c:1556", "sanx-base/asan.*", "sanx-fixes2/asan.*"),
+ ("fix/lsan-leaks thumbnail filename", "thumbnail.c:2418", "asan_ef98688fc/ubsan-filemanager.*", "asan_fix_lsan-leaks/ubsan-filemanager.*"),
+ ("fix/lsan-leaks ratings undo", "ratings.c:225", "asan_ef98688fc/ubsan-filemanager.*", "asan_fix_lsan-leaks/ubsan-filemanager.*"),
+ ("fix/lsan-leaks range block txt", "range.c:1901", "asan_ef98688fc/ubsan-filemanager.*", "asan_fix_lsan-leaks/ubsan-filemanager.*"),
+ ("fix/lsan-leaks dt_tag_get_list", "tags.c:792", "asan_ef98688fc/ubsan-filemanager.*", "asan_fix_lsan-leaks/ubsan-filemanager.*"),
+ ("fix/lsan-leaks colorlabels undo", "colorlabels.c:223", "undo-base/asan.*", "undo-tip/asan.*"),
+ ("fix/lsan-leaks duplicate undo", "image.c:1556", "undo-base/asan.*", "undo-tip/asan.*"),
  ("fix/sqlite-stmt-leaks act_on statements", ("act_on.c", "sqlite3VdbeCreate"), "asan_ef98688fc/ubsan-hover.*", "asan_san_all/ubsan-hover.*"),
  ("fix/sqlite-stmt-leaks _image_get_set_name_id SELECT", ("_image_get_set_name_id", "sqlite3VdbeCreate"), "import-base/asan.*", "import-stmtfix/asan.*"),
  ("fix/introspection-int8-default", "imageop.c:273", "asan_ef98688fc/dt-filemanager.log", "asan_san_fixes/dt-filemanager.log"),

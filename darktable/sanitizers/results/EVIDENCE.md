@@ -1,7 +1,7 @@
 ## fix/lsan-leaks thumbnail filename
 
 reports matching `thumbnail.c:2418`: base 1 (266 B), with the fix 0
-base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_san_fixes/asan-filemanager.34399.gz`
+base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_fix_lsan-leaks/ubsan-filemanager.4682.gz`
 
 ```
 Direct leak of 266 byte(s) in 19 object(s) allocated from:
@@ -43,7 +43,7 @@ Direct leak of 266 byte(s) in 19 object(s) allocated from:
 ## fix/lsan-leaks ratings undo
 
 reports matching `ratings.c:225`: base 1 (240 B), with the fix 0
-base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_san_fixes/asan-filemanager.34399.gz`
+base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_fix_lsan-leaks/ubsan-filemanager.4682.gz`
 
 ```
 Direct leak of 240 byte(s) in 20 object(s) allocated from:
@@ -74,7 +74,7 @@ Direct leak of 240 byte(s) in 20 object(s) allocated from:
 ## fix/lsan-leaks range block txt
 
 reports matching `range.c:1901`: base 54 (5280 B), with the fix 0
-base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_san_fixes/asan-filemanager.34399.gz`
+base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_fix_lsan-leaks/ubsan-filemanager.4682.gz`
 
 ```
 Direct leak of 400 byte(s) in 20 object(s) allocated from:
@@ -92,7 +92,7 @@ Direct leak of 400 byte(s) in 20 object(s) allocated from:
 ## fix/lsan-leaks dt_tag_get_list
 
 reports matching `tags.c:792`: base 1 (240 B), with the fix 0
-base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_san_fixes/asan-filemanager.34399.gz`
+base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_fix_lsan-leaks/ubsan-filemanager.4682.gz`
 
 ```
 Direct leak of 240 byte(s) in 10 object(s) allocated from:
@@ -114,65 +114,65 @@ Direct leak of 240 byte(s) in 10 object(s) allocated from:
 
 ## fix/lsan-leaks colorlabels undo
 
-reports matching `colorlabels.c:223`: base 1 (80 B), with the fix 0
-base: `sanx-base/asan.44016.gz`, fixed: `sanx-fixes2/asan.64296.gz`
+reports matching `colorlabels.c:223`: base 1 (96 B), with the fix 0
+base: `undo-base/asan.6380.gz`, fixed: `undo-tip/asan.6935.gz`
 
 ```
-Direct leak of 80 byte(s) in 10 object(s) allocated from:
-    #0 0x71f3406fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
-    #1 0x71f33b096097 in _colorlabels_execute /home/exedev/darktable/src/common/colorlabels.c:223
-    #2 0x71f33b096b55 in dt_colorlabels_toggle_label_on_list /home/exedev/darktable/src/common/colorlabels.c:274
-    #3 0x71f33b09753e in _action_process_color_label /home/exedev/darktable/src/common/colorlabels.c:332
-    #4 0x71f33bc4e94c in _process_action /home/exedev/darktable/src/gui/accelerators.c:4148
-    #5 0x71f33bc50f2f in dt_action_process /home/exedev/darktable/src/gui/accelerators.c:4381
-    #6 0x71f33be2cdc9 in _action_cb /home/exedev/darktable/src/lua/gui.c:137
-    #7 0x71f33383e5e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #8 0x71f33383f0fc  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x120fc) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #9 0x71f333839f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #10 0x71f33385da85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #11 0x71f33383f23f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #12 0x71f33be1c688 in dt_lua_gtk_wrap_callback /home/exedev/darktable/src/lua/call.c:641
-    #13 0x71f3379c950d  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d50d) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
-    #14 0x71f337a28bf6  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbcbf6) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
-    #15 0x71f3379c9ff6 in g_main_loop_run (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5dff6) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
-    #16 0x71f33bc7a254 in dt_gui_gtk_run /home/exedev/darktable/src/gui/gtk.c:2244
-    #17 0x626a706fa584 in main /home/exedev/darktable/src/main.c:246
-    #18 0x71f33182a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
-    #19 0x71f33182a28a in __libc_start_main_impl ../csu/libc-start.c:360
-    #20 0x626a706fa734 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable+0x2734) (BuildId: 8de374a3db26251a224f929ef8a020be0c4ad649)
+Direct leak of 96 byte(s) in 12 object(s) allocated from:
+    #0 0x741f698fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x741f64296097 in _colorlabels_execute /home/exedev/darktable/src/common/colorlabels.c:223
+    #2 0x741f64296b55 in dt_colorlabels_toggle_label_on_list /home/exedev/darktable/src/common/colorlabels.c:274
+    #3 0x741f6429753e in _action_process_color_label /home/exedev/darktable/src/common/colorlabels.c:332
+    #4 0x741f64e4e94c in _process_action /home/exedev/darktable/src/gui/accelerators.c:4148
+    #5 0x741f64e50f2f in dt_action_process /home/exedev/darktable/src/gui/accelerators.c:4381
+    #6 0x741f6502cdc9 in _action_cb /home/exedev/darktable/src/lua/gui.c:137
+    #7 0x741f5d2885e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #8 0x741f5d2890fc  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x120fc) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #9 0x741f5d283f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #10 0x741f5d2a7a85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #11 0x741f5d28923f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #12 0x741f6501c688 in dt_lua_gtk_wrap_callback /home/exedev/darktable/src/lua/call.c:641
+    #13 0x741f60c2a50d  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d50d) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #14 0x741f60c89bf6  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbcbf6) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #15 0x741f60c2aff6 in g_main_loop_run (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5dff6) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #16 0x741f64e7a254 in dt_gui_gtk_run /home/exedev/darktable/src/gui/gtk.c:2244
+    #17 0x6368a8f49584 in main /home/exedev/darktable/src/main.c:246
+    #18 0x741f5aa2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #19 0x741f5aa2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #20 0x6368a8f49734 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable+0x2734) (BuildId: 8de374a3db26251a224f929ef8a020be0c4ad649)
 ```
 
 ## fix/lsan-leaks duplicate undo
 
-reports matching `image.c:1556`: base 1 (36 B), with the fix 0
-base: `sanx-base/asan.44016.gz`, fixed: `sanx-fixes2/asan.64296.gz`
+reports matching `image.c:1556`: base 1 (24 B), with the fix 0
+base: `undo-base/asan.6380.gz`, fixed: `undo-tip/asan.6935.gz`
 
 ```
-Direct leak of 36 byte(s) in 3 object(s) allocated from:
-    #0 0x71f3406fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
-    #1 0x71f33b30ee19 in _image_duplicate_with_version /home/exedev/darktable/src/common/image.c:1556
-    #2 0x71f33be21b86 in dt_lua_duplicate_image /home/exedev/darktable/src/lua/database.c:40
-    #3 0x71f33383e5e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #4 0x71f33384b672  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1e672) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #5 0x71f33383ef6d in lua_callk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x11f6d) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #6 0x71f333854104  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x27104) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #7 0x71f33383e5e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #8 0x71f33384b672  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1e672) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #9 0x71f33383f115  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x12115) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #10 0x71f333839f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #11 0x71f33385da85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #12 0x71f33383f23f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #13 0x71f33be35fe6 in run_early_script /home/exedev/darktable/src/lua/init.c:128
-    #14 0x71f33383e5e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #15 0x71f33383f0fc  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x120fc) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #16 0x71f333839f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #17 0x71f33385da85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #18 0x71f33383f23f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
-    #19 0x71f33be1eaea in run_async_thread_main /home/exedev/darktable/src/lua/call.c:136
-    #20 0x71f3379fd6a1  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x916a1) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
-    #21 0x71f3379f80e1  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x8c0e1) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
-    #22 0x71f34065ea41 in asan_thread_start ../../../../src/libsanitizer/asan/asan_interceptors.cpp:234
-    #23 0x71f33189cb83 in start_thread nptl/pthread_create.c:447
+Direct leak of 24 byte(s) in 2 object(s) allocated from:
+    #0 0x741f698fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x741f6450ee19 in _image_duplicate_with_version /home/exedev/darktable/src/common/image.c:1556
+    #2 0x741f65021b86 in dt_lua_duplicate_image /home/exedev/darktable/src/lua/database.c:40
+    #3 0x741f5d2885e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #4 0x741f5d295672  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1e672) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #5 0x741f5d288f6d in lua_callk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x11f6d) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #6 0x741f5d29e104  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x27104) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #7 0x741f5d2885e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #8 0x741f5d295672  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1e672) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #9 0x741f5d289115  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x12115) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #10 0x741f5d283f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #11 0x741f5d2a7a85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #12 0x741f5d28923f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #13 0x741f65035fe6 in run_early_script /home/exedev/darktable/src/lua/init.c:128
+    #14 0x741f5d2885e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #15 0x741f5d2890fc  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x120fc) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #16 0x741f5d283f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #17 0x741f5d2a7a85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #18 0x741f5d28923f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #19 0x741f6501eaea in run_async_thread_main /home/exedev/darktable/src/lua/call.c:136
+    #20 0x741f60c5e6a1  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x916a1) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #21 0x741f60c590e1  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x8c0e1) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #22 0x741f6985ea41 in asan_thread_start ../../../../src/libsanitizer/asan/asan_interceptors.cpp:234
+    #23 0x741f5aa9cb83 in start_thread nptl/pthread_create.c:447
 ```
 
 ## fix/sqlite-stmt-leaks act_on statements

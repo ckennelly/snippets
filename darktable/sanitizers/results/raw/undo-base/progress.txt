@@ -1,0 +1,27 @@
+PASS rating start 000
+PASS rating set 444
+PASS rating undo 333
+PASS rating undo 222
+PASS rating redo 333
+PASS rating undo x2 111
+PASS rating new 555
+PASS rating redo after drop is a no-op 555
+PASS rating undo 111
+PASS rating undo to start 000
+PASS rating redo 111
+PASS label toggled true
+PASS label undo falsefalsefalse
+PASS label undo truetruetrue
+PASS label redo falsefalsefalse
+PASS label new truetruetrue
+PASS label undo falsefalsefalse
+PASS duplicate 1002
+PASS duplicate undo 1001
+PASS duplicate redo 1002
+PASS duplicate undo x2 1000
+PASS duplicate redo 1001
+PASS rating after duplicate 222
+PASS rating undo 111
+PASS duplicate undo 1000
+fails 0
+done

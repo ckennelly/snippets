@@ -1,0 +1,32 @@
+Test project /home/exedev/darktable/build-asan
+      Start  1: test_sample
+ 1/13 Test  #1: test_sample ......................   Passed    0.01 sec
+      Start  2: test_hdr_alignment
+ 2/13 Test  #2: test_hdr_alignment ...............   Passed    0.27 sec
+      Start  3: test_hdr_alignment_internal
+ 3/13 Test  #3: test_hdr_alignment_internal ......   Passed    0.24 sec
+      Start  4: test_spektra_sim
+ 4/13 Test  #4: test_spektra_sim .................   Passed    0.24 sec
+      Start  5: test_spektra_pack
+ 5/13 Test  #5: test_spektra_pack ................   Passed    0.24 sec
+      Start  6: test_draw_curve
+ 6/13 Test  #6: test_draw_curve ..................   Passed    0.24 sec
+      Start  7: test_fixed_strings
+ 7/13 Test  #7: test_fixed_strings ...............   Passed    0.23 sec
+      Start  8: test_history_strings
+ 8/13 Test  #8: test_history_strings .............   Passed    0.24 sec
+      Start  9: test_dtdata
+ 9/13 Test  #9: test_dtdata ......................   Passed    0.29 sec
+      Start 10: test_filmicrgb
+10/13 Test #10: test_filmicrgb ...................   Passed    0.25 sec
+      Start 11: test_lut3d_bounds
+11/13 Test #11: test_lut3d_bounds ................   Passed    0.24 sec
+      Start 12: test_colorin_hsm
+12/13 Test #12: test_colorin_hsm .................   Passed    0.23 sec
+      Start 13: test_mcp_paths
+13/13 Test #13: test_mcp_paths ...................   Passed    0.24 sec
+
+100% tests passed, 0 tests failed out of 13
+
+Total Test time (real) =   3.02 sec
+ctest rc=0
