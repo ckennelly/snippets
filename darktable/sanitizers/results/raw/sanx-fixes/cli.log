@@ -1,0 +1,39 @@
+/home/exedev/darktable/src/gui/styles_dialog.c:930:9: runtime error: null pointer passed as argument 1, which is declared to never be null
+    #0 0x7c7e2c347b1a in dt_gui_style_content_dialog /home/exedev/darktable/src/gui/styles_dialog.c:930
+    #1 0x7c7e2c9f891d in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:287
+    #2 0x7c7e2ca06c82 in dt_style_save /home/exedev/darktable/src/common/styles.c:1608
+    #3 0x7c7e2ca06c82 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1676
+    #4 0x7c7e2ca0c557 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1843
+    #5 0x7c7e2c4d9071 in dt_init /home/exedev/darktable/src/common/darktable.c:1933
+    #6 0x5b2d4ef5f35c in main /home/exedev/darktable/src/cli/main.c:604
+    #7 0x7c7e22c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #8 0x7c7e22c2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #9 0x5b2d4ef645e4 in _start (/home/exedev/dt-asan/asan_san_fixes/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+/home/exedev/darktable/src/gui/styles_dialog.c:930:9: runtime error: null pointer passed as argument 2, which is declared to never be null
+    #0 0x7c7e2c347adf in dt_gui_style_content_dialog /home/exedev/darktable/src/gui/styles_dialog.c:930
+    #1 0x7c7e2c9f891d in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:287
+    #2 0x7c7e2ca06c82 in dt_style_save /home/exedev/darktable/src/common/styles.c:1608
+    #3 0x7c7e2ca06c82 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1676
+    #4 0x7c7e2ca0c557 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1843
+    #5 0x7c7e2c4d9071 in dt_init /home/exedev/darktable/src/common/darktable.c:1933
+    #6 0x5b2d4ef5f35c in main /home/exedev/darktable/src/cli/main.c:604
+    #7 0x7c7e22c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #8 0x7c7e22c2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #9 0x5b2d4ef645e4 in _start (/home/exedev/dt-asan/asan_san_fixes/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+     2.8319 [xmp_import] creating tag: darktable|format|cr3
+     2.8328 [xmp_import] creating tag: sanx|alpha
+     2.8337 [xmp_import] creating tag: sanx|beta
+     2.8345 [xmp_import] creating tag: sanx|gamma
+/home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:359:67: runtime error: left shift of negative value -1
+    #0 0x7c7e2c35685d in crxDecodeSymbolL1(CrxBandParam*, int, int) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:359
+    #1 0x7c7e2c35685d in crxDecodeLine(CrxBandParam*) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:379
+    #2 0x7c7e2d405b71 in crxDecodeLine(CrxBandParam*, unsigned char*) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:1021
+    #3 0x7c7e2d42c73f in LibRaw::crxDecodePlane(void*, unsigned int) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:1932
+    #4 0x7c7e2d42d6f1 in LibRaw::crxLoadDecodeLoop(void*, int) [clone ._omp_fn.0] /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:2627
+    #5 0x7c7e319cc79e  (/lib/x86_64-linux-gnu/libgomp.so.1+0x2279e) (BuildId: fa0c1b446610c4b7aca51e1183050acf5aa79503)
+    #6 0x7c7e31a5ea41 in asan_thread_start ../../../../src/libsanitizer/asan/asan_interceptors.cpp:234
+    #7 0x7c7e22c9cb83 in start_thread nptl/pthread_create.c:447
+    #8 0x7c7e22d29ecb in clone3 ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+

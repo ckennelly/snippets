@@ -1,0 +1,202 @@
+ninja: Entering directory `build'
+[0/2] Re-checking globbed directories...
+[1/199] Running utility command for deploy
+[2/199] Updating version string (git checkout)
+Version string: 5.7.0+1212~gf13c7b995
+[3/199] Building C object lib/darktable/views/CMakeFiles/map.dir/map.c.o
+[4/199] Building C object bin/cmstest/CMakeFiles/darktable-cmstest.dir/__/version_gen.c.o
+[5/199] Building C object bin/CMakeFiles/lib_darktable.dir/version_gen.c.o
+[6/199] Linking C executable bin/darktable-cmstest
+[7/199] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/culling.c.o
+[8/199] Building C object bin/CMakeFiles/lib_darktable.dir/views/view.c.o
+[9/199] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/thumbnail.c.o
+[10/199] Checking validity of noiseprofiles.json
+[11/199] Checking validity of wb_presets.json
+[12/199] Linking C shared library bin/libdarktable.so
+[13/199] Linking C shared module lib/darktable/plugins/lighttable/libcopy_history.so
+[14/199] Linking C shared module lib/darktable/views/libtethering.so
+[15/199] Linking C shared module lib/darktable/plugins/lighttable/librecentcollect.so
+[16/199] Linking C executable bin/darktable
+[17/199] Linking C shared module lib/darktable/plugins/lighttable/libselect.so
+[18/199] Linking C shared module lib/darktable/views/liblighttable.so
+[19/199] Linking C shared module lib/darktable/plugins/lighttable/libstyles.so
+[20/199] Linking C shared module lib/darktable/views/libmap.so
+[21/199] Linking C shared module lib/darktable/plugins/lighttable/libimport.so
+[22/199] Linking C shared module lib/darktable/views/libslideshow.so
+[23/199] Linking C shared module lib/darktable/views/libprint.so
+[24/199] Linking C shared module lib/darktable/plugins/lighttable/libexport.so
+[25/199] Linking C shared module lib/darktable/plugins/lighttable/libimage.so
+[26/199] Linking C shared module lib/darktable/plugins/lighttable/libcollect.so
+[27/199] Linking C shared module lib/darktable/plugins/lighttable/libtagging.so
+[28/199] Linking C shared module lib/darktable/plugins/lighttable/libmetadata_view.so
+[29/199] Linking C shared module lib/darktable/plugins/lighttable/libmetadata.so
+[30/199] Linking C shared module lib/darktable/views/libdarkroom.so
+[31/199] Linking C shared module lib/darktable/plugins/lighttable/libbackgroundjobs.so
+[32/199] Linking C shared module lib/darktable/plugins/lighttable/libsession.so
+[33/199] Linking C shared module lib/darktable/plugins/lighttable/libviewswitcher.so
+[34/199] Linking C shared module lib/darktable/plugins/lighttable/libfiltering.so
+[35/199] Linking C shared module lib/darktable/plugins/lighttable/libdarktable_label.so
+[36/199] Linking C shared module lib/darktable/plugins/lighttable/libduplicate.so
+[37/199] Linking C shared module lib/darktable/plugins/lighttable/libioporder.so
+[38/199] Linking C shared module lib/darktable/plugins/lighttable/libnavigation.so
+[39/199] Linking C shared module lib/darktable/plugins/lighttable/libcolorpicker.so
+[40/199] Linking C shared module lib/darktable/plugins/lighttable/libmodule_toolbox.so
+[41/199] Linking C shared module lib/darktable/plugins/lighttable/libsnapshots.so
+[42/199] Linking C shared module lib/darktable/plugins/lighttable/libhistogram.so
+[43/199] Linking C shared module lib/darktable/plugins/lighttable/libratings.so
+[44/199] Linking C shared module lib/darktable/plugins/lighttable/libview_toolbox.so
+[45/199] Linking C shared module lib/darktable/plugins/lighttable/libfilmstrip.so
+[46/199] Linking C shared module lib/darktable/plugins/lighttable/libcolorlabels.so
+[47/199] Linking C shared module lib/darktable/plugins/lighttable/libhistory.so
+[48/199] Linking C shared module lib/darktable/plugins/lighttable/libmasks.so
+[49/199] Linking C shared module lib/darktable/plugins/lighttable/libmodulegroups.so
+[50/199] Linking C shared module lib/darktable/plugins/lighttable/liblighttable_mode.so
+[51/199] Linking C shared module lib/darktable/plugins/lighttable/libfilter.so
+[52/199] Linking C shared module lib/darktable/plugins/lighttable/libgamepad.so
+[53/199] Linking C shared module lib/darktable/plugins/lighttable/libmidi.so
+[54/199] Linking C shared module lib/darktable/plugins/lighttable/liblog_history.so
+[55/199] Linking C shared module lib/darktable/plugins/lighttable/libhinter.so
+[56/199] Linking C shared module lib/darktable/plugins/lighttable/libmap_settings.so
+[57/199] Linking C shared module lib/darktable/plugins/lighttable/libmap_locations.so
+[58/199] Linking C shared module lib/darktable/plugins/lighttable/liblocation.so
+[59/199] Linking C shared module lib/darktable/plugins/lighttable/libtimeline.so
+[60/199] Linking C shared module lib/darktable/plugins/lighttable/libcamera.so
+[61/199] Linking C shared module lib/darktable/plugins/lighttable/libimage_infos.so
+[62/199] Linking C shared module lib/darktable/plugins/lighttable/libglobal_toolbox.so
+[63/199] Linking C shared module lib/darktable/plugins/lighttable/libgeotagging.so
+[64/199] Linking C shared module lib/darktable/plugins/lighttable/liblive_view.so
+[65/199] Linking C shared module lib/darktable/plugins/librawprepare.so
+[66/199] Linking C shared module lib/darktable/plugins/libbloom.so
+[67/199] Linking C shared module lib/darktable/plugins/lighttable/libprint_settings.so
+[68/199] Linking C shared module lib/darktable/plugins/libcolorharmonizer.so
+[69/199] Linking C shared module lib/darktable/plugins/libsoften.so
+[70/199] Linking C shared module lib/darktable/plugins/liblowpass.so
+[71/199] Linking C shared module lib/darktable/plugins/libgamma.so
+[72/199] Linking C shared module lib/darktable/plugins/libhighpass.so
+[73/199] Linking C shared module lib/darktable/plugins/libshadhi.so
+[74/199] Linking C shared module lib/darktable/plugins/libcolorreconstruct.so
+[75/199] Linking C shared module lib/darktable/plugins/libtonecurve.so
+[76/199] Linking CXX shared module lib/darktable/plugins/libtonemap.so
+[77/199] Linking C shared module lib/darktable/plugins/libcolorcorrection.so
+[78/199] Linking C shared module lib/darktable/plugins/libtemperature.so
+[79/199] Linking C shared module lib/darktable/plugins/libexposure.so
+[80/199] Linking C shared module lib/darktable/plugins/libequalizer.so
+[81/199] Linking C shared module lib/darktable/plugins/libcolisa.so
+[82/199] Linking C shared module lib/darktable/plugins/librgbcurve.so
+[83/199] Linking C shared module lib/darktable/plugins/libbasicadj.so
+[84/199] Linking C shared module lib/darktable/plugins/libcolorchecker.so
+[85/199] Linking C shared module lib/darktable/plugins/libcolorout.so
+[86/199] Linking C shared module lib/darktable/plugins/libcolorbalance.so
+[87/199] Linking C shared module lib/darktable/plugins/libcolorin.so
+[88/199] Linking C shared module lib/darktable/plugins/librawoverexposed.so
+[89/199] Linking C shared module lib/darktable/plugins/libsharpen.so
+[90/199] Linking C shared module lib/darktable/plugins/libclipping.so
+[91/199] Linking C shared module lib/darktable/plugins/libmonochrome.so
+[92/199] Linking C shared module lib/darktable/plugins/libdither.so
+[93/199] Linking C shared module lib/darktable/plugins/libcrop.so
+[94/199] Linking C shared module lib/darktable/plugins/libbasecurve.so
+[95/199] Linking C shared module lib/darktable/plugins/libenlargecanvas.so
+[96/199] Linking C shared module lib/darktable/plugins/libvignette.so
+[97/199] Linking C shared module lib/darktable/plugins/liboverlay.so
+[98/199] Linking C shared module lib/darktable/plugins/libvelvia.so
+[99/199] Linking C shared module lib/darktable/plugins/libhighlights.so
+[100/199] Linking C shared module lib/darktable/plugins/libcolorzones.so
+[101/199] Linking C shared module lib/darktable/plugins/libsplittoning.so
+[102/199] Linking C shared module lib/darktable/plugins/libgrain.so
+[103/199] Linking C shared module lib/darktable/plugins/libspektrafilm.so
+[104/199] Linking C shared module lib/darktable/plugins/libclahe.so
+[105/199] Linking CXX shared module lib/darktable/plugins/libbilateral.so
+[106/199] Linking C shared module lib/darktable/plugins/liboverexposed.so
+[107/199] Linking C shared module lib/darktable/plugins/libcolormapping.so
+[108/199] Linking C shared module lib/darktable/plugins/libscalepixels.so
+[109/199] Linking C shared module lib/darktable/plugins/libprofile_gamma.so
+[110/199] Linking CXX shared module lib/darktable/plugins/libdemosaic.so
+[111/199] Linking C shared module lib/darktable/plugins/libcolortransfer.so
+[112/199] Linking C shared module lib/darktable/plugins/libhotpixels.so
+[113/199] Linking C shared module lib/darktable/plugins/libgraduatednd.so
+[114/199] Linking C shared module lib/darktable/plugins/libchannelmixer.so
+[115/199] Linking C shared module lib/darktable/plugins/librotatepixels.so
+[116/199] Linking C shared module lib/darktable/plugins/librelight.so
+[117/199] Linking C shared module lib/darktable/plugins/libzonesystem.so
+[118/199] Linking C shared module lib/darktable/plugins/liblowlight.so
+[119/199] Linking C shared module lib/darktable/plugins/libcacorrect.so
+[120/199] Linking C shared module lib/darktable/plugins/libatrous.so
+[121/199] Linking C shared module lib/darktable/plugins/libspots.so
+[122/199] Linking C shared module lib/darktable/plugins/libcolorcontrast.so
+[123/199] Linking C shared module lib/darktable/plugins/libfinalscale.so
+[124/199] Linking C shared module lib/darktable/plugins/libretouch.so
+[125/199] Linking C shared module lib/darktable/plugins/librawdenoise.so
+[126/199] Linking C shared module lib/darktable/plugins/libdemosaicscale.so
+[127/199] Linking C shared module lib/darktable/plugins/libnlmeans.so
+[128/199] Linking C shared module lib/darktable/plugins/libliquify.so
+[129/199] Linking C shared module lib/darktable/plugins/liblevels.so
+[130/199] Linking C shared module lib/darktable/plugins/libborders.so
+[131/199] Linking C shared module lib/darktable/plugins/libflip.so
+[132/199] Linking C shared module lib/darktable/plugins/libinvert.so
+[133/199] Linking C shared module lib/darktable/plugins/libvibrance.so
+[134/199] Linking C shared module lib/darktable/plugins/libcolorize.so
+[135/199] Linking C shared module lib/darktable/plugins/libmask_manager.so
+[136/199] Linking C shared module lib/darktable/plugins/librgblevels.so
+[137/199] Linking C shared module lib/darktable/plugins/libbilat.so
+[138/199] Linking C shared module lib/darktable/plugins/libglobaltonemap.so
+[139/199] Linking C shared module lib/darktable/plugins/libdenoiseprofile.so
+[140/199] Linking C shared module lib/darktable/plugins/libfilmic.so
+[141/199] Linking C shared module lib/darktable/plugins/libdefringe.so
+[142/199] Linking C shared module lib/darktable/plugins/libhazeremoval.so
+[143/199] Linking C shared module lib/darktable/plugins/libfilmicrgb.so
+[144/199] Linking C shared module lib/darktable/plugins/libchannelmixerrgb.so
+[145/199] Linking C shared module lib/darktable/plugins/libcensorize.so
+[146/199] Linking C shared module lib/darktable/plugins/libashift.so
+[147/199] Linking C shared module lib/darktable/plugins/libnegadoctor.so
+[148/199] Linking C shared module lib/darktable/plugins/libcacorrectrgb.so
+[149/199] Linking C shared module lib/darktable/plugins/libtoneequal.so
+[150/199] Linking C shared module lib/darktable/plugins/libsigmoid.so
+[151/199] Linking C shared module lib/darktable/plugins/libdiffuse.so
+[152/199] Linking CXX shared module lib/darktable/plugins/liblut3d.so
+[153/199] Linking C shared module lib/darktable/plugins/libcolorbalancergb.so
+[154/199] Linking C shared module lib/darktable/plugins/libblurs.so
+[155/199] Linking C shared module lib/darktable/plugins/imageio/format/libppm.so
+[156/199] Linking C shared module lib/darktable/plugins/imageio/format/libpfm.so
+[157/199] Linking C shared module lib/darktable/plugins/libprimaries.so
+[158/199] Linking C shared module lib/darktable/plugins/libagx.so
+[159/199] Linking C shared module lib/darktable/plugins/imageio/format/libjpeg.so
+[160/199] Linking C shared module lib/darktable/plugins/imageio/format/libcopy.so
+[161/199] Linking C shared module lib/darktable/plugins/libcolorequal.so
+[162/199] Linking C shared module lib/darktable/plugins/librasterfile.so
+[163/199] Linking C shared module lib/darktable/plugins/imageio/format/libpdf.so
+[164/199] Linking C shared module lib/darktable/plugins/libcontrastntexture.so
+[165/199] Linking C shared module lib/darktable/plugins/libsatcurvergb.so
+[166/199] Linking C shared module lib/darktable/plugins/libwatermark.so
+[167/199] Linking C shared module lib/darktable/plugins/imageio/storage/libemail.so
+[168/199] Linking CXX shared module lib/darktable/plugins/liblens.so
+[169/199] Linking C shared module lib/darktable/plugins/imageio/format/libwebp.so
+[170/199] Linking C shared module lib/darktable/plugins/imageio/format/libtiff.so
+[171/199] Linking C shared module lib/darktable/plugins/imageio/storage/liblatex.so
+[172/199] Linking C shared module lib/darktable/plugins/imageio/format/libpng.so
+[173/199] Linking C shared module lib/darktable/plugins/imageio/format/libjpegxl.so
+[174/199] Linking C shared module lib/darktable/plugins/imageio/format/libheif.so
+[175/199] Linking C shared module lib/darktable/plugins/imageio/storage/libgallery.so
+[176/199] Linking C shared module lib/darktable/plugins/imageio/storage/libdisk.so
+[177/199] Linking C shared module lib/darktable/plugins/imageio/storage/libclipboard.so
+[178/199] Linking C shared module lib/darktable/plugins/imageio/format/libxcf.so
+[179/199] Linking C shared module lib/darktable/plugins/imageio/storage/libpiwigo.so
+[180/199] Linking C shared module lib/darktable/plugins/imageio/format/libavif.so
+[181/199] Linking C shared module lib/darktable/plugins/imageio/format/libj2k.so
+[182/199] Linking CXX shared module lib/darktable/plugins/imageio/format/libexr.so
+[183/199] Linking C executable bin/darktable-generate-cache
+[184/199] Linking C executable bin/tests/darktable-test-variables
+[185/199] Linking C executable bin/tests/unittests/test_hdr_alignment
+[186/199] Linking C executable bin/darktable-mcp
+[187/199] Linking C executable bin/darktable-cli
+[188/199] Linking C executable bin/tests/unittests/common/test_draw_curve
+[189/199] Linking C executable bin/tests/unittests/common/test_fixed_strings
+[190/199] Linking C executable bin/chart/darktable-chart
+[191/199] Linking C executable bin/tests/unittests/common/test_spektra_sim
+[192/199] Linking C executable bin/tests/unittests/common/test_spektra_pack
+[193/199] Linking C executable bin/tests/unittests/mcp/test_mcp_paths
+[194/199] Linking CXX executable bin/tests/unittests/test_hdr_alignment_internal
+[195/199] Linking C executable bin/tests/unittests/common/test_dtdata
+[196/199] Linking C executable bin/tests/unittests/iop/test_colorin_hsm
+[197/199] Linking C executable bin/tests/unittests/common/test_history_strings
+[198/199] Linking C executable bin/tests/unittests/iop/test_lut3d_bounds
+[199/199] Linking C executable bin/tests/unittests/iop/test_filmicrgb

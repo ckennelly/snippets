@@ -1,7 +1,7 @@
 # sansum.py: dedupe ASan/UBSan/LSan reports by kind + first darktable frame
-import re,sys,collections
+import gzip,re,sys,collections
 for f in sys.argv[1:]:
-    t=open(f,errors="replace").read()
+    t=(gzip.open if f.endswith(".gz") else open)(f,"rt",errors="replace").read()
     c=collections.Counter(); ex={}
     # UBSan runtime errors
     for m in re.finditer(r"^(\S+?):(\d+):\d+: runtime error: (.*)$",t,re.M):

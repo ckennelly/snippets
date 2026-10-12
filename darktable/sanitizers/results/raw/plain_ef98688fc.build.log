@@ -1,0 +1,891 @@
+ninja: Entering directory `build'
+[0/2] Re-checking globbed directories...
+[1/888] Running utility command for deploy
+[2/888] Building C object bin/external/libxcf/CMakeFiles/xcf.dir/xcf_names.c.o
+[3/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/CpuFeatures.cpp.o
+[4/888] Building C object bin/external/CMakeFiles/whereami.dir/whereami/src/whereami.c.o
+[5/888] Updating version string (git checkout)
+Version string: 5.7.0+1210~gef98688fc
+[6/888] Building C object bin/CMakeFiles/lib_darktable.dir/version_gen.c.o
+[7/888] Building C object bin/external/libxcf/CMakeFiles/xcf.dir/xcf.c.o
+[8/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/ErrorLog.cpp.o
+[9/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/GetNumberOfProcessorCores.cpp.o
+[10/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_get_number_of_processor_cores.dir/GetNumberOfProcessorCores.cpp.o
+[11/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/RawspeedException.cpp.o
+[12/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/TableLookUp.cpp.o
+[13/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/Common.cpp.o
+[14/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/atomic.c.o
+[15/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/metadata/CMakeFiles/rawspeed_metadata.dir/CameraMetadataException.cpp.o
+[16/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/bilateralcl.c.o
+[17/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/ChecksumFile.cpp.o
+[18/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/RawImageDataFloat.cpp.o
+[19/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/metadata/CMakeFiles/rawspeed_metadata.dir/Camera.cpp.o
+[20/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/RawImage.cpp.o
+[21/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/RawImageDataU16.cpp.o
+[22/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/metadata/CMakeFiles/rawspeed_metadata.dir/CameraMetaData.cpp.o
+[23/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/common/CMakeFiles/rawspeed_common.dir/DngOpcodes.cpp.o
+[24/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/calculator.c.o
+[25/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/curve_tools.c.o
+[26/888] Linking C static library bin/external/libwhereami.a
+[27/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/cache.c.o
+[28/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/color_harmony.c.o
+[29/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/bilinear.c.o
+[30/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/color_vocabulary.c.o
+[31/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/custom_primaries.c.o
+[32/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/bilateral.c.o
+[33/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/color_picker.c.o
+[34/888] Building CXX object bin/CMakeFiles/lib_darktable.dir/common/box_filters.cc.o
+[35/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/dlopencl.c.o
+[36/888] Building CXX object bin/CMakeFiles/lib_darktable_imageio_rawspeed.dir/imageio/imageio_rawspeed.cc.o
+[37/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/collection.c.o
+[38/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/curl_tools.c.o
+[39/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/dynload.c.o
+[40/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/act_on.c.o
+[41/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/colorlabels.c.o
+[42/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/database.c.o
+[43/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/colorspaces.c.o
+[44/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/dtpthread.c.o
+[45/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/datetime.c.o
+[46/888] Building C object bin/CMakeFiles/lib_darktable.dir/bauhaus/bauhaus.c.o
+[47/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/darktable.c.o
+[48/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/distance_transform.c.o
+[49/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/dbus.c.o
+[50/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/dng_opcode.c.o
+[51/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/file_location.c.o
+[52/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/dtdata.c.o
+[53/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/gaussian.c.o
+[54/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/grouping.c.o
+[55/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/dwt.c.o
+[56/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/film.c.o
+[57/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/gimp.c.o
+[58/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/eaw.c.o
+[59/888] Building CXX object bin/CMakeFiles/lib_darktable.dir/common/densecrf.cc.o
+[60/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/gpx.c.o
+[61/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/guided_filter.c.o
+[62/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/locallaplaciancl.c.o
+[63/888] Building CXX object bin/CMakeFiles/lib_darktable.dir/common/hdr_alignment.cc.o
+[64/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/heal.c.o
+[65/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/histogram.c.o
+[66/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/history_snapshot.c.o
+[67/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/history.c.o
+[68/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/l10n.c.o
+[69/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/interpolation.c.o
+[70/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/iop_order.c.o
+[71/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/image_cache.c.o
+[72/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/locallaplacian.c.o
+[73/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/map_locations.c.o
+[74/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/opencl.c.o
+[75/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/iop_group.c.o
+[76/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/matrices.c.o
+[77/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/image.c.o
+[78/888] Building CXX object bin/CMakeFiles/lib_darktable.dir/common/exif.cc.o
+[79/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/import_session.c.o
+[80/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/imagebuf.c.o
+[81/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/resource_limits.c.o
+[82/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/iop_profile.c.o
+[83/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/metadata_export.c.o
+[84/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/mipmap_cache.c.o
+[85/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/metadata.c.o
+[86/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/module.c.o
+[87/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/pfm.c.o
+[88/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/pwstorage/backend_kwallet.c.o
+[89/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/ras2vect.c.o
+[90/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/pdf.c.o
+[91/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/noiseprofiles.c.o
+[92/888] Building CXX object bin/CMakeFiles/lib_darktable.dir/common/splines.cpp.o
+[93/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/overlay.c.o
+[94/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/nlmeans_core.c.o
+[95/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/ratings.c.o
+[96/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/pwstorage/pwstorage.c.o
+[97/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/selection.c.o
+[98/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/spektra_core.c.o
+[99/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/presets.c.o
+[100/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/spektra_sim.c.o
+[101/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/spektra_fetch.c.o
+[102/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/system_signal_handling.c.o
+[103/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/styles.c.o
+[104/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/tags.c.o
+[105/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/utility.c.o
+[106/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/usermanual_url.c.o
+[107/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/variables.c.o
+[108/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/undo.c.o
+[109/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/conf.c.o
+[110/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/wb_presets.c.o
+[111/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/control.c.o
+[112/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/crawler.c.o
+[113/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs.c.o
+[114/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/control_jobs.c.o
+[115/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/develop_jobs.c.o
+[116/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/film_jobs.c.o
+[117/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/image_jobs.c.o
+[118/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/sidecar_jobs.c.o
+[119/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/progress.c.o
+[120/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/signal.c.o
+[121/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/blend.c.o
+[122/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/blends/blendif_raw.c.o
+[123/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/blends/blendif_rgb_jzczhz.c.o
+[124/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/blend_gui.c.o
+[125/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/blends/blendif_rgb_hsl.c.o
+[126/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/blends/blendif_lab.c.o
+[127/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/format.c.o
+[128/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/borders_helper.c.o
+[129/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/develop.c.o
+[130/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/imageop_math.c.o
+[131/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/imageop_gui.c.o
+[132/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/masks/brush.c.o
+[133/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/imageop.c.o
+[134/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/masks/gradient.c.o
+[135/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/masks/circle.c.o
+[136/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/masks/ellipse.c.o
+[137/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/lightroom.c.o
+[138/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/masks/group.c.o
+[139/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/masks/masks.c.o
+[140/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/drawingarea.c.o
+[141/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/preview_data.c.o
+[142/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/masks/path.c.o
+[143/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/button.c.o
+[144/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/pixelpipe.c.o
+[145/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/culling.c.o
+[146/888] Building C object bin/CMakeFiles/lib_darktable.dir/develop/tiling.c.o
+[147/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/expander.c.o
+[148/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/icon.c.o
+[149/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/gradientslider.c.o
+[150/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/paint_cell.c.o
+[151/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/paint.c.o
+[152/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/rating_stars.c.o
+[153/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/resetlabel.c.o
+[154/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/sidepanel.c.o
+[155/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/range.c.o
+[156/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/thumbnail_btn.c.o
+[157/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/stylemenu.c.o
+[158/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/thumbnail.c.o
+[159/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/togglebutton.c.o
+[160/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/gtkentry.c.o
+[161/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/about.c.o
+[162/888] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/thumbtable.c.o
+[163/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/accelerators.c.o
+[164/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/color_picker_proxy.c.o
+[165/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/metadata_tags.c.o
+[166/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/guides.c.o
+[167/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/gtk.c.o
+[168/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/import_metadata.c.o
+[169/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/hist_dialog.c.o
+[170/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/splash.c.o
+[171/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/styles_dialog.c.o
+[172/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/workspace.c.o
+[173/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/welcome.c.o
+[174/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/presets.c.o
+[175/888] Building C object bin/CMakeFiles/lib_darktable.dir/gui/preferences.c.o
+[176/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_jpeg.c.o
+[177/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_pfm.c.o
+[178/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_dng.c.o
+[179/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_png.c.o
+[180/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio.c.o
+[181/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_qoi.c.o
+[182/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_module.c.o
+[183/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_pnm.c.o
+[184/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_rgbe.c.o
+[185/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/sqliteicu.c.o
+[186/888] Building C object bin/CMakeFiles/lib_darktable.dir/libs/lib.c.o
+[187/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/ai.c.o
+[188/888] Building C object bin/CMakeFiles/lib_darktable.dir/views/view.c.o
+[189/888] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/camera_jobs.c.o
+[190/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/camera_control.c.o
+[191/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_webp.c.o
+[192/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_jpegxl.c.o
+[193/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_avif.c.o
+[194/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_heif.c.o
+[195/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/pwstorage/backend_libsecret.c.o
+[196/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/gettext.c.o
+[197/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/glist.c.o
+[198/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_tiff.c.o
+[199/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_j2k.c.o
+[200/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/cairo.c.o
+[201/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_libraw.c.o
+[202/888] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_gm.c.o
+[203/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/call.c.o
+[204/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/configuration.c.o
+[205/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/database.c.o
+[206/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/film.c.o
+[207/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/format.c.o
+[208/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/events.c.o
+[209/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/gui.c.o
+[210/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/guides.c.o
+[211/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/password.c.o
+[212/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/modules.c.o
+[213/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/metadata.c.o
+[214/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/init.c.o
+[215/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/image.c.o
+[216/888] Building CXX object bin/CMakeFiles/lib_darktable.dir/imageio/imageio_exr.cc.o
+[217/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/lua.c.o
+[218/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/lualib.c.o
+[219/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/preferences.c.o
+[220/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/luastorage.c.o
+[221/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/lib.c.o
+[222/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/storage.c.o
+[223/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/print.c.o
+[224/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/tags.c.o
+[225/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/styles.c.o
+[226/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/util.c.o
+[227/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/types.c.o
+[228/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/check_button.c.o
+[229/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/button.c.o
+[230/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/label.c.o
+[231/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/container.c.o
+[232/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/view.c.o
+[233/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/file_chooser.c.o
+[234/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/box.c.o
+[235/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/entry.c.o
+[236/888] Linking C static library bin/external/libxcf/libxcf.a
+[237/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/section_label.c.o
+[238/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/metadata/CMakeFiles/rawspeed_metadata.dir/CameraSensorInfo.cpp.o
+[239/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/separator.c.o
+[240/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/combobox.c.o
+[241/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/io/CMakeFiles/rawspeed_io.dir/FileIOException.cpp.o
+[242/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/io/CMakeFiles/rawspeed_io.dir/FileWriter.cpp.o
+[243/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/text_view.c.o
+[244/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/stack.c.o
+[245/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/io/CMakeFiles/rawspeed_io.dir/FileReader.cpp.o
+[246/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/metadata/CMakeFiles/rawspeed_metadata.dir/ColorFilterArray.cpp.o
+[247/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/io/CMakeFiles/rawspeed_io.dir/MMapReader.cpp.o
+[248/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/widget.c.o
+[249/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/io/CMakeFiles/rawspeed_io.dir/IOException.cpp.o
+[250/888] Building C object bin/CMakeFiles/lib_darktable.dir/lua/widget/slider.c.o
+[251/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/printing.c.o
+[252/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/tiff/CMakeFiles/rawspeed_tiff.dir/CiffEntry.cpp.o
+[253/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/tiff/CMakeFiles/rawspeed_tiff.dir/CiffIFD.cpp.o
+[254/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/parsers/CMakeFiles/rawspeed_parsers.dir/CiffParserException.cpp.o
+[255/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/parsers/CMakeFiles/rawspeed_parsers.dir/FiffParserException.cpp.o
+[256/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/tiff/CMakeFiles/rawspeed_tiff.dir/TiffIFD.cpp.o
+[257/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/printprof.c.o
+[258/888] Building C object bin/CMakeFiles/darktable.dir/main.c.o
+[259/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/parsers/CMakeFiles/rawspeed_parsers.dir/RawParserException.cpp.o
+[260/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/tiff/CMakeFiles/rawspeed_tiff.dir/TiffEntry.cpp.o
+[261/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/parsers/CMakeFiles/rawspeed_parsers.dir/CiffParser.cpp.o
+[262/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/parsers/CMakeFiles/rawspeed_parsers.dir/TiffParserException.cpp.o
+[263/888] Building C object bin/CMakeFiles/lib_darktable.dir/common/cups_print.c.o
+[264/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/parsers/CMakeFiles/rawspeed_parsers.dir/RawParser.cpp.o
+[265/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/parsers/CMakeFiles/rawspeed_parsers.dir/FiffParser.cpp.o
+[266/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/parsers/CMakeFiles/rawspeed_parsers.dir/TiffParser.cpp.o
+[267/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/AbstractDngDecompressor.cpp.o
+[268/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/AbstractLJpegDecoder.cpp.o
+[269/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/Cr2LJpegDecoder.cpp.o
+[270/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/DeflateDecompressor.cpp.o
+[271/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/FujiDecompressor.cpp.o
+[272/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/Cr2Decompressor.cpp.o
+[273/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/CrwDecompressor.cpp.o
+[274/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/JpegDecompressor.cpp.o
+[275/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/HasselbladDecompressor.cpp.o
+[276/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/LJpegDecoder.cpp.o
+[277/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/KodakDecompressor.cpp.o
+[278/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/LJpegDecompressor.cpp.o
+[279/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/HasselbladLJpegDecoder.cpp.o
+[280/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/NikonDecompressor.cpp.o
+[281/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/PanasonicV5Decompressor.cpp.o
+[282/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/PanasonicV4Decompressor.cpp.o
+[283/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/OlympusDecompressor.cpp.o
+[284/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/PanasonicV7Decompressor.cpp.o
+[285/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/SamsungV0Decompressor.cpp.o
+[286/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/PhaseOneDecompressor.cpp.o
+[287/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/SamsungV2Decompressor.cpp.o
+[288/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/PanasonicV8Decompressor.cpp.o
+[289/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/PanasonicV6Decompressor.cpp.o
+[290/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/SamsungV1Decompressor.cpp.o
+[291/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/SonyArw1Decompressor.cpp.o
+[292/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/PentaxDecompressor.cpp.o
+[293/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/SonyArw2Decompressor.cpp.o
+[294/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/UncompressedDecompressor.cpp.o
+[295/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decompressors/CMakeFiles/rawspeed_decompressors.dir/VC5Decompressor.cpp.o
+[296/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/AbstractTiffDecoder.cpp.o
+[297/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/interpolators/CMakeFiles/rawspeed_interpolators.dir/Cr2sRawInterpolator.cpp.o
+[298/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/ArwDecoder.cpp.o
+[299/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/Cr2Decoder.cpp.o
+[300/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/CrwDecoder.cpp.o
+[301/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/DcsDecoder.cpp.o
+[302/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/DngDecoder.cpp.o
+[303/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/ErfDecoder.cpp.o
+[304/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/DcrDecoder.cpp.o
+[305/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/MosDecoder.cpp.o
+[306/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/KdcDecoder.cpp.o
+[307/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/NakedDecoder.cpp.o
+[308/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/MrwDecoder.cpp.o
+[309/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/MefDecoder.cpp.o
+[310/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/IiqDecoder.cpp.o
+[311/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/OrfDecoder.cpp.o
+[312/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/RawDecoderException.cpp.o
+[313/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/NefDecoder.cpp.o
+[314/888] Building C object bin/external/LuaAutoC/CMakeFiles/lautoc.dir/lautoc.c.o
+[315/888] Linking C static library bin/external/LuaAutoC/liblautoc.a
+[316/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/RafDecoder.cpp.o
+[317/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/RawDecoder.cpp.o
+[318/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/PefDecoder.cpp.o
+[319/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/SrwDecoder.cpp.o
+[320/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/SimpleTiffDecoder.cpp.o
+[321/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/Rw2Decoder.cpp.o
+[322/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/StiDecoder.cpp.o
+[323/888] Building CXX object lib/darktable/rawspeed/src/utilities/identify/CMakeFiles/darktable-rs-identify.dir/rawspeed-identify.cpp.o
+[324/888] Building CXX object lib/darktable/rawspeed/src/librawspeed/decoders/CMakeFiles/rawspeed_decoders.dir/ThreefrDecoder.cpp.o
+[325/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/export.dir/export_metadata.c.o
+[326/888] Building C object lib/darktable/views/CMakeFiles/slideshow.dir/slideshow.c.o
+[327/888] Building C object lib/darktable/views/CMakeFiles/map.dir/map.c.o
+[328/888] Building C object lib/darktable/views/CMakeFiles/tethering.dir/tethering.c.o
+[329/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/import.dir/import.c.o
+[330/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/copy_history.dir/copy_history.c.o
+[331/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/export.dir/export.c.o
+[332/888] Building C object lib/darktable/views/CMakeFiles/darkroom.dir/darkroom.c.o
+[333/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/select.dir/select.c.o
+[334/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/collect.dir/collect.c.o
+[335/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/recentcollect.dir/recentcollect.c.o
+[336/888] Building C object lib/darktable/views/CMakeFiles/print.dir/print.c.o
+[337/888] Building C object lib/darktable/views/CMakeFiles/lighttable.dir/lighttable.c.o
+[338/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/image.dir/image.c.o
+[339/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/styles.dir/styles.c.o
+[340/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/tagging.dir/tagging.c.o
+[341/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/filtering.dir/filtering.c.o
+[342/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/metadata.dir/metadata.c.o
+[343/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/histogram.dir/histogram.c.o
+[344/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/navigation.dir/navigation.c.o
+[345/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/histogram.dir/scopes/histogram.c.o
+[346/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/metadata_view.dir/metadata_view.c.o
+[347/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/histogram.dir/scopes/split.c.o
+[348/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/histogram.dir/scopes/vectorscope.c.o
+[349/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/histogram.dir/scopes/waveform.c.o
+[350/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/history.dir/history.c.o
+[351/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/snapshots.dir/snapshots.c.o
+[352/888] Linking CXX static library lib/darktable/rawspeed/librawspeed.a
+[353/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/backgroundjobs.dir/backgroundjobs.c.o
+[354/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/modulegroups.dir/modulegroups.c.o
+[355/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/colorpicker.dir/colorpicker.c.o
+[356/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/masks.dir/masks.c.o
+[357/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/duplicate.dir/duplicate.c.o
+[358/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/session.dir/session.c.o
+[359/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/ioporder.dir/ioporder.c.o
+[360/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/viewswitcher.dir/tools/viewswitcher.c.o
+[361/888] Linking CXX static library lib/darktable/rawspeed/src/librawspeed/common/librawspeed_get_number_of_processor_cores.a
+[362/888] Linking CXX static library bin/liblib_darktable_imageio_rawspeed.a
+[363/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/darktable_label.dir/tools/darktable.c.o
+[364/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/ratings.dir/tools/ratings.c.o
+[365/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/colorlabels.dir/tools/colorlabels.c.o
+[366/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/view_toolbox.dir/tools/view_toolbox.c.o
+[367/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/module_toolbox.dir/tools/module_toolbox.c.o
+[368/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/lighttable_mode.dir/tools/lighttable.c.o
+[369/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/filter.dir/tools/filter.c.o
+[370/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/global_toolbox.dir/tools/global_toolbox.c.o
+[371/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/hinter.dir/tools/hinter.c.o
+[372/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/log_history.dir/tools/log_history.c.o
+[373/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/image_infos.dir/tools/image_infos.c.o
+[374/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/timeline.dir/tools/timeline.c.o
+[375/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/filmstrip.dir/tools/filmstrip.c.o
+[376/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/midi.dir/tools/midi.c.o
+[377/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/location.dir/location.c.o
+[378/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/live_view.dir/live_view.c.o
+[379/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/copy.dir/copy.c.o
+[380/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/map_settings.dir/map_settings.c.o
+[381/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/map_locations.dir/map_locations.c.o
+[382/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/geotagging.dir/geotagging.c.o
+[383/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/print_settings.dir/print_settings.c.o
+[384/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/camera.dir/camera.c.o
+[385/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/jpeg.dir/jpeg.c.o
+[386/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/ppm.dir/ppm.c.o
+[387/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/pdf.dir/pdf.c.o
+[388/888] Building C object lib/darktable/plugins/lighttable/CMakeFiles/gamepad.dir/tools/gamepad.c.o
+[389/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/pfm.dir/pfm.c.o
+[390/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/jxl_format.dir/jxl.c.o
+[391/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/png.dir/png.c.o
+[392/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/heif_format.dir/heif.c.o
+[393/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/webp.dir/webp.c.o
+[394/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/j2k.dir/j2k.c.o
+[395/888] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/clipboard.dir/clipboard.c.o
+[396/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/avif_format.dir/avif.c.o
+[397/888] Building C object bin/mcp/CMakeFiles/darktable-mcp.dir/mcp_jsonrpc.c.o
+[398/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/tiff.dir/tiff.c.o
+[399/888] Building C object bin/cmstest/CMakeFiles/darktable-cmstest.dir/__/version_gen.c.o
+[400/888] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/email.dir/email.c.o
+[401/888] Building C object lib/darktable/plugins/imageio/format/CMakeFiles/gimp_xcf.dir/xcf.c.o
+[402/888] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/disk.dir/disk.c.o
+[403/888] Building C object bin/mcp/CMakeFiles/darktable-mcp.dir/mcp_tools.c.o
+[404/888] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/gallery.dir/gallery.c.o
+[405/888] Building C object bin/mcp/CMakeFiles/darktable-mcp.dir/main.c.o
+[406/888] Building C object bin/chart/CMakeFiles/darktable-chart.dir/tonecurve.c.o
+[407/888] Building C object bin/cli/CMakeFiles/darktable-cli.dir/main.c.o
+[408/888] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/latex.dir/latex.c.o
+[409/888] Building C object bin/cmstest/CMakeFiles/darktable-cmstest.dir/main.c.o
+[410/888] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/piwigo.dir/piwigo.c.o
+[411/888] Building C object bin/tests/unittests/CMakeFiles/test_sample.dir/test_sample.c.o
+[412/888] Linking C executable bin/tests/unittests/test_sample
+[413/888] Linking C executable bin/darktable-cmstest
+[414/888] Building C object bin/mcp/CMakeFiles/darktable-mcp.dir/dt_bridge.c.o
+[415/888] Building C object bin/generate-cache/CMakeFiles/darktable-generate-cache.dir/main.c.o
+[416/888] Building C object bin/chart/CMakeFiles/darktable-chart.dir/colorchart.c.o
+[417/888] Building C object bin/chart/CMakeFiles/darktable-chart.dir/common.c.o
+[418/888] Building C object bin/chart/CMakeFiles/darktable-chart.dir/thinplate.c.o
+[419/888] Building C object bin/chart/CMakeFiles/darktable-chart.dir/deltaE.c.o
+[420/888] Building C object bin/chart/CMakeFiles/darktable-chart.dir/__/common/pfm.c.o
+[421/888] Building CXX object lib/darktable/plugins/imageio/format/CMakeFiles/exr.dir/exr.cc.o
+[422/888] Building C object bin/chart/CMakeFiles/darktable-chart.dir/main.c.o
+[423/888] Building C object bin/chart/CMakeFiles/darktable-chart.dir/dtcairo.c.o
+[424/888] Building C object bin/tests/unittests/CMakeFiles/test_hdr_alignment.dir/test_hdr_alignment.c.o
+[425/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/canon_600.cpp.o
+[426/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/crx.cpp.o
+[427/888] Building C object bin/tests/unittests/iop/CMakeFiles/test_filmicrgb.dir/__/util/testimg.c.o
+[428/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/decoders_dcraw.cpp.o
+[429/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/dng.cpp.o
+[430/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/decoders_libraw.cpp.o
+[431/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/fp_dng.cpp.o
+[432/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/decoders_libraw_dcrdefs.cpp.o
+[433/888] Building C object bin/tests/CMakeFiles/darktable-test-variables.dir/variables.c.o
+[434/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/fuji_compressed.cpp.o
+[435/888] Building C object bin/tests/unittests/common/CMakeFiles/test_fixed_strings.dir/test_fixed_strings.c.o
+[436/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/generic.cpp.o
+[437/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/kodak_decoders.cpp.o
+[438/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/load_mfbacks.cpp.o
+[439/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/olympus14.cpp.o
+[440/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/smal.cpp.o
+[441/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/sonycc.cpp.o
+[442/888] Building C object bin/tests/unittests/common/CMakeFiles/test_draw_curve.dir/test_draw_curve.c.o
+[443/888] Linking CXX executable lib/darktable/rawspeed/src/utilities/identify/darktable-rs-identify
+[444/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/pana8.cpp.o
+[445/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/unpack_thumb.cpp.o
+[446/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decoders/unpack.cpp.o
+[447/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/demosaic/aahd_demosaic.cpp.o
+[448/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/demosaic/ahd_demosaic.cpp.o
+[449/888] Building C object bin/tests/unittests/common/CMakeFiles/test_dtdata.dir/test_dtdata.c.o
+[450/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/decompressors/losslessjpeg.cpp.o
+[451/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/demosaic/dht_demosaic.cpp.o
+[452/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/demosaic/dcb_demosaic.cpp.o
+[453/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/demosaic/misc_demosaic.cpp.o
+[454/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/demosaic/xtrans_demosaic.cpp.o
+[455/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/integration/dngsdk_glue.cpp.o
+[456/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/integration/rawspeed_glue.cpp.o
+[457/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/libraw_c_api.cpp.o
+[458/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/adobepano.cpp.o
+[459/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/libraw_datastream.cpp.o
+[460/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/canon.cpp.o
+[461/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/ciff.cpp.o
+[462/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/cr3_parser.cpp.o
+[463/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/exif_gps.cpp.o
+[464/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/epson.cpp.o
+[465/888] Building CXX object bin/tests/unittests/CMakeFiles/test_hdr_alignment_internal.dir/test_hdr_alignment_internal.cc.o
+[466/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/fuji.cpp.o
+[467/888] Building C object bin/tests/unittests/common/CMakeFiles/test_history_strings.dir/test_history_strings.c.o
+[468/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/hasselblad_model.cpp.o
+[469/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/kodak.cpp.o
+[470/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/identify.cpp.o
+[471/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/identify_tools.cpp.o
+[472/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/leica.cpp.o
+[473/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/misc_parsers.cpp.o
+[474/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/makernotes.cpp.o
+[475/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/minolta.cpp.o
+[476/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/mediumformat.cpp.o
+[477/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/nikon.cpp.o
+[478/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/normalize_model.cpp.o
+[479/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/olympus.cpp.o
+[480/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/p1.cpp.o
+[481/888] Building C object bin/tests/unittests/iop/CMakeFiles/test_lut3d_bounds.dir/test_lut3d_bounds.c.o
+[482/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/samsung.cpp.o
+[483/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/pentax.cpp.o
+[484/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/sony.cpp.o
+[485/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/postprocessing/aspect_ratio.cpp.o
+[486/888] Building C object bin/tests/unittests/mcp/CMakeFiles/test_mcp_paths.dir/test_mcp_paths.c.o
+[487/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/metadata/tiff.cpp.o
+[488/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/postprocessing/postprocessing_aux.cpp.o
+[489/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/postprocessing/mem_image.cpp.o
+[490/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/postprocessing/postprocessing_utils_dcrdefs.cpp.o
+[491/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/postprocessing/postprocessing_utils.cpp.o
+[492/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/preprocessing/raw2image.cpp.o
+[493/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/postprocessing/dcraw_process.cpp.o
+[494/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/preprocessing/ext_preprocess.cpp.o
+[495/888] Building C object bin/tests/unittests/iop/CMakeFiles/test_colorin_hsm.dir/test_colorin_hsm.c.o
+[496/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/preprocessing/subtract_black.cpp.o
+[497/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/tables/colorconst.cpp.o
+[498/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/tables/cameralist.cpp.o
+[499/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/x3f/x3f_parse_process.cpp.o
+[500/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/x3f/x3f_utils_patched.cpp.o
+[501/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/tables/wblists.cpp.o
+[502/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/utils/curves.cpp.o
+[503/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/utils/decoder_info.cpp.o
+[504/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/utils/phaseone_processing.cpp.o
+[505/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/tables/colordata.cpp.o
+[506/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/utils/open.cpp.o
+[507/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/utils/read_utils.cpp.o
+[508/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/utils/init_close_utils.cpp.o
+[509/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/utils/thumb_utils.cpp.o
+[510/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/utils/utils_dcraw.cpp.o
+[511/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/write/apply_profile.cpp.o
+[512/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/write/file_write.cpp.o
+[513/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/utils/utils_libraw.cpp.o
+[514/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw.dir/__/LibRaw/src/write/tiff_writer.cpp.o
+[515/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/crx.cpp.o
+[516/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/canon_600.cpp.o
+[517/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/decoders_dcraw.cpp.o
+[518/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/decoders_libraw_dcrdefs.cpp.o
+[519/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/fp_dng.cpp.o
+[520/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/fuji_compressed.cpp.o
+[521/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/generic.cpp.o
+[522/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/load_mfbacks.cpp.o
+[523/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/kodak_decoders.cpp.o
+[524/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/dng.cpp.o
+[525/888] Linking CXX static library bin/external/LibRaw-cmake/libraw.a
+[526/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/decoders_libraw.cpp.o
+[527/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/smal.cpp.o
+[528/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/olympus14.cpp.o
+[529/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/pana8.cpp.o
+[530/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/unpack_thumb.cpp.o
+[531/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/sonycc.cpp.o
+[532/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decoders/unpack.cpp.o
+[533/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/demosaic/aahd_demosaic.cpp.o
+[534/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/demosaic/dht_demosaic.cpp.o
+[535/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/decompressors/losslessjpeg.cpp.o
+[536/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/demosaic/ahd_demosaic.cpp.o
+[537/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/demosaic/dcb_demosaic.cpp.o
+[538/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/integration/dngsdk_glue.cpp.o
+[539/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/libraw_c_api.cpp.o
+[540/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/demosaic/misc_demosaic.cpp.o
+[541/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/demosaic/xtrans_demosaic.cpp.o
+[542/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/integration/rawspeed_glue.cpp.o
+[543/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/libraw_datastream.cpp.o
+[544/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/adobepano.cpp.o
+[545/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/cr3_parser.cpp.o
+[546/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/canon.cpp.o
+[547/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/ciff.cpp.o
+[548/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/identify.cpp.o
+[549/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/epson.cpp.o
+[550/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/exif_gps.cpp.o
+[551/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/fuji.cpp.o
+[552/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/identify_tools.cpp.o
+[553/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/kodak.cpp.o
+[554/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/leica.cpp.o
+[555/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/hasselblad_model.cpp.o
+[556/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/makernotes.cpp.o
+[557/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/mediumformat.cpp.o
+[558/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/minolta.cpp.o
+[559/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/misc_parsers.cpp.o
+[560/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/normalize_model.cpp.o
+[561/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/olympus.cpp.o
+[562/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/pentax.cpp.o
+[563/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/nikon.cpp.o
+[564/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/samsung.cpp.o
+[565/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/postprocessing/aspect_ratio.cpp.o
+[566/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/tiff.cpp.o
+[567/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/sony.cpp.o
+[568/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/postprocessing/dcraw_process.cpp.o
+[569/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/metadata/p1.cpp.o
+[570/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/postprocessing/mem_image.cpp.o
+[571/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/preprocessing/ext_preprocess.cpp.o
+[572/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/postprocessing/postprocessing_utils_dcrdefs.cpp.o
+[573/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/postprocessing/postprocessing_utils.cpp.o
+[574/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/postprocessing/postprocessing_aux.cpp.o
+[575/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/preprocessing/raw2image.cpp.o
+[576/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/tables/cameralist.cpp.o
+[577/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/preprocessing/subtract_black.cpp.o
+[578/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/tables/colordata.cpp.o
+[579/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/tables/wblists.cpp.o
+[580/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/tables/colorconst.cpp.o
+[581/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/utils/curves.cpp.o
+[582/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/x3f/x3f_utils_patched.cpp.o
+[583/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/x3f/x3f_parse_process.cpp.o
+[584/888] Building C object bin/tests/unittests/iop/CMakeFiles/test_filmicrgb.dir/test_filmicrgb.c.o
+[585/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/utils/init_close_utils.cpp.o
+[586/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/utils/decoder_info.cpp.o
+[587/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/utils/open.cpp.o
+[588/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/utils/phaseone_processing.cpp.o
+[589/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/utils/utils_libraw.cpp.o
+[590/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/utils/thumb_utils.cpp.o
+[591/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/utils/read_utils.cpp.o
+[592/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/utils/utils_dcraw.cpp.o
+[593/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/write/apply_profile.cpp.o
+[594/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/write/file_write.cpp.o
+[595/888] Building CXX object bin/external/LibRaw-cmake/CMakeFiles/raw_r.dir/__/LibRaw/src/write/tiff_writer.cpp.o
+[596/888] Linking CXX static library bin/external/LibRaw-cmake/libraw_r.a
+[597/888] Building C object bin/tests/unittests/common/CMakeFiles/test_spektra_sim.dir/test_spektra_sim.c.o
+[598/888] Checking validity of noiseprofiles.json
+[599/888] Building C object bin/tests/unittests/common/CMakeFiles/test_spektra_pack.dir/test_spektra_pack.c.o
+[600/888] Checking validity of wb_presets.json
+[601/888] Linking C shared library bin/libdarktable.so
+[602/888] Linking C shared module lib/darktable/views/libtethering.so
+[603/888] Linking C shared module lib/darktable/plugins/lighttable/libcopy_history.so
+[604/888] Linking C shared module lib/darktable/views/libprint.so
+[605/888] Linking C shared module lib/darktable/plugins/lighttable/libstyles.so
+[606/888] Linking C shared module lib/darktable/views/liblighttable.so
+[607/888] Linking C shared module lib/darktable/views/libslideshow.so
+[608/888] Linking C shared module lib/darktable/plugins/lighttable/libexport.so
+[609/888] Linking C shared module lib/darktable/plugins/lighttable/libselect.so
+[610/888] Linking C shared module lib/darktable/plugins/lighttable/librecentcollect.so
+[611/888] Linking C shared module lib/darktable/plugins/lighttable/libtagging.so
+[612/888] Linking C shared module lib/darktable/plugins/lighttable/libimage.so
+[613/888] Linking C shared module lib/darktable/plugins/lighttable/libimport.so
+[614/888] Linking C shared module lib/darktable/plugins/lighttable/libcollect.so
+[615/888] Linking C shared module lib/darktable/views/libmap.so
+[616/888] Linking C executable bin/darktable
+[617/888] Linking C shared module lib/darktable/plugins/lighttable/libfiltering.so
+[618/888] Linking C shared module lib/darktable/plugins/lighttable/libmetadata.so
+[619/888] Linking C shared module lib/darktable/views/libdarkroom.so
+[620/888] Linking C shared module lib/darktable/plugins/lighttable/libbackgroundjobs.so
+[621/888] Linking C shared module lib/darktable/plugins/lighttable/libmetadata_view.so
+[622/888] Linking C shared module lib/darktable/plugins/lighttable/libsession.so
+[623/888] Linking C shared module lib/darktable/plugins/lighttable/libviewswitcher.so
+[624/888] Linking C shared module lib/darktable/plugins/lighttable/libduplicate.so
+[625/888] Linking C shared module lib/darktable/plugins/lighttable/libdarktable_label.so
+[626/888] Linking C shared module lib/darktable/plugins/lighttable/libnavigation.so
+[627/888] Linking C shared module lib/darktable/plugins/lighttable/libcolorpicker.so
+[628/888] Linking C shared module lib/darktable/plugins/lighttable/libview_toolbox.so
+[629/888] Linking C shared module lib/darktable/plugins/lighttable/libhistory.so
+[630/888] Linking C shared module lib/darktable/plugins/lighttable/libcolorlabels.so
+[631/888] Linking C shared module lib/darktable/plugins/lighttable/libioporder.so
+[632/888] Linking C shared module lib/darktable/plugins/lighttable/libsnapshots.so
+[633/888] Linking C shared module lib/darktable/plugins/lighttable/liblighttable_mode.so
+[634/888] Linking C shared module lib/darktable/plugins/lighttable/libfilter.so
+[635/888] Linking C shared module lib/darktable/plugins/lighttable/libmodule_toolbox.so
+[636/888] Linking C shared module lib/darktable/plugins/lighttable/libhistogram.so
+[637/888] Linking C shared module lib/darktable/plugins/lighttable/libmodulegroups.so
+[638/888] Linking C shared module lib/darktable/plugins/lighttable/libmasks.so
+[639/888] Linking C shared module lib/darktable/plugins/lighttable/libratings.so
+[640/888] Linking C shared module lib/darktable/plugins/lighttable/libfilmstrip.so
+[641/888] Linking C shared module lib/darktable/plugins/lighttable/libgamepad.so
+[642/888] Linking C shared module lib/darktable/plugins/lighttable/libhinter.so
+[643/888] Linking C shared module lib/darktable/plugins/lighttable/libimage_infos.so
+[644/888] Linking C shared module lib/darktable/plugins/lighttable/libmap_settings.so
+[645/888] Linking C shared module lib/darktable/plugins/lighttable/libcamera.so
+[646/888] Linking C shared module lib/darktable/plugins/lighttable/liblog_history.so
+[647/888] Linking C shared module lib/darktable/plugins/lighttable/liblocation.so
+[648/888] Linking C shared module lib/darktable/plugins/lighttable/libmidi.so
+[649/888] Linking C shared module lib/darktable/plugins/lighttable/libmap_locations.so
+[650/888] Linking C shared module lib/darktable/plugins/lighttable/libglobal_toolbox.so
+[651/888] Linking C shared module lib/darktable/plugins/lighttable/liblive_view.so
+[652/888] Linking C shared module lib/darktable/plugins/lighttable/libtimeline.so
+[653/888] Linking C shared module lib/darktable/plugins/lighttable/libgeotagging.so
+[654/888] Building C object lib/darktable/plugins/CMakeFiles/colorharmonizer.dir/introspection_colorharmonizer.c.o
+[655/888] Linking C shared module lib/darktable/plugins/lighttable/libprint_settings.so
+[656/888] Building C object lib/darktable/plugins/CMakeFiles/rawprepare.dir/introspection_rawprepare.c.o
+[657/888] Building C object lib/darktable/plugins/CMakeFiles/highpass.dir/introspection_highpass.c.o
+[658/888] Building C object lib/darktable/plugins/CMakeFiles/soften.dir/introspection_soften.c.o
+[659/888] Building C object lib/darktable/plugins/CMakeFiles/bloom.dir/introspection_bloom.c.o
+[660/888] Building C object lib/darktable/plugins/CMakeFiles/lowpass.dir/introspection_lowpass.c.o
+[661/888] Building C object lib/darktable/plugins/CMakeFiles/shadhi.dir/introspection_shadhi.c.o
+[662/888] Building C object lib/darktable/plugins/CMakeFiles/gamma.dir/introspection_gamma.c.o
+[663/888] Linking C shared module lib/darktable/plugins/libcolorharmonizer.so
+[664/888] Building C object lib/darktable/plugins/CMakeFiles/colorreconstruct.dir/introspection_colorreconstruction.c.o
+[665/888] Building C object lib/darktable/plugins/CMakeFiles/tonecurve.dir/introspection_tonecurve.c.o
+[666/888] Building C object lib/darktable/plugins/CMakeFiles/temperature.dir/introspection_temperature.c.o
+[667/888] Linking C shared module lib/darktable/plugins/libhighpass.so
+[668/888] Building C object lib/darktable/plugins/CMakeFiles/colisa.dir/introspection_colisa.c.o
+[669/888] Linking C shared module lib/darktable/plugins/libsoften.so
+[670/888] Building C object lib/darktable/plugins/CMakeFiles/colorcorrection.dir/introspection_colorcorrection.c.o
+[671/888] Building C object lib/darktable/plugins/CMakeFiles/equalizer.dir/introspection_equalizer.c.o
+[672/888] Building C object lib/darktable/plugins/CMakeFiles/exposure.dir/introspection_exposure.c.o
+[673/888] Building C object lib/darktable/plugins/CMakeFiles/basicadj.dir/introspection_basicadj.c.o
+[674/888] Linking C shared module lib/darktable/plugins/librawprepare.so
+[675/888] Building C object lib/darktable/plugins/CMakeFiles/rgbcurve.dir/introspection_rgbcurve.c.o
+[676/888] Building CXX object lib/darktable/plugins/CMakeFiles/tonemap.dir/introspection_tonemap.cc.o
+[677/888] Linking C shared module lib/darktable/plugins/libgamma.so
+[678/888] Linking C shared module lib/darktable/plugins/libbloom.so
+[679/888] Linking C shared module lib/darktable/plugins/liblowpass.so
+[680/888] Linking C shared module lib/darktable/plugins/libshadhi.so
+[681/888] Linking C shared module lib/darktable/plugins/libcolorcorrection.so
+[682/888] Building C object lib/darktable/plugins/CMakeFiles/colorbalance.dir/introspection_colorbalance.c.o
+[683/888] Building C object lib/darktable/plugins/CMakeFiles/colorout.dir/introspection_colorout.c.o
+[684/888] Linking C shared module lib/darktable/plugins/libtonecurve.so
+[685/888] Building C object lib/darktable/plugins/CMakeFiles/colorin.dir/introspection_colorin.c.o
+[686/888] Linking C shared module lib/darktable/plugins/libtemperature.so
+[687/888] Linking C shared module lib/darktable/plugins/libcolorreconstruct.so
+[688/888] Linking CXX shared module lib/darktable/plugins/libtonemap.so
+[689/888] Building C object lib/darktable/plugins/CMakeFiles/colorchecker.dir/introspection_colorchecker.c.o
+[690/888] Linking C shared module lib/darktable/plugins/libcolisa.so
+[691/888] Linking C shared module lib/darktable/plugins/libexposure.so
+[692/888] Linking C shared module lib/darktable/plugins/libequalizer.so
+[693/888] Linking C shared module lib/darktable/plugins/libbasicadj.so
+[694/888] Building C object lib/darktable/plugins/CMakeFiles/clipping.dir/introspection_clipping.c.o
+[695/888] Linking C shared module lib/darktable/plugins/librgbcurve.so
+[696/888] Linking C shared module lib/darktable/plugins/libcolorbalance.so
+[697/888] Linking C shared module lib/darktable/plugins/libcolorin.so
+[698/888] Building C object lib/darktable/plugins/CMakeFiles/sharpen.dir/introspection_sharpen.c.o
+[699/888] Building C object lib/darktable/plugins/CMakeFiles/enlargecanvas.dir/introspection_enlargecanvas.c.o
+[700/888] Linking C shared module lib/darktable/plugins/libcolorchecker.so
+[701/888] Building C object lib/darktable/plugins/CMakeFiles/crop.dir/introspection_crop.c.o
+[702/888] Linking C shared module lib/darktable/plugins/libcolorout.so
+[703/888] Building C object lib/darktable/plugins/CMakeFiles/dither.dir/introspection_dither.c.o
+[704/888] Building C object lib/darktable/plugins/CMakeFiles/monochrome.dir/introspection_monochrome.c.o
+[705/888] Linking C shared module lib/darktable/plugins/libclipping.so
+[706/888] Building C object lib/darktable/plugins/CMakeFiles/basecurve.dir/introspection_basecurve.c.o
+[707/888] Building C object lib/darktable/plugins/CMakeFiles/overlay.dir/introspection_overlay.c.o
+[708/888] Building C object lib/darktable/plugins/CMakeFiles/rawoverexposed.dir/introspection_rawoverexposed.c.o
+[709/888] Building C object lib/darktable/plugins/CMakeFiles/highlights.dir/introspection_highlights.c.o
+[710/888] Building C object lib/darktable/plugins/CMakeFiles/colorzones.dir/introspection_colorzones.c.o
+[711/888] Building C object lib/darktable/plugins/CMakeFiles/velvia.dir/introspection_velvia.c.o
+[712/888] Linking C shared module lib/darktable/plugins/libenlargecanvas.so
+[713/888] Building C object lib/darktable/plugins/CMakeFiles/vignette.dir/introspection_vignette.c.o
+[714/888] Linking C shared module lib/darktable/plugins/libsharpen.so
+[715/888] Linking C shared module lib/darktable/plugins/libcrop.so
+[716/888] Building C object lib/darktable/plugins/CMakeFiles/splittoning.dir/introspection_splittoning.c.o
+[717/888] Linking C shared module lib/darktable/plugins/libdither.so
+[718/888] Building C object lib/darktable/plugins/CMakeFiles/grain.dir/introspection_grain.c.o
+[719/888] Linking C shared module lib/darktable/plugins/librawoverexposed.so
+[720/888] Building C object lib/darktable/plugins/CMakeFiles/spektrafilm.dir/introspection_spektrafilm.c.o
+[721/888] Building C object lib/darktable/plugins/CMakeFiles/clahe.dir/introspection_clahe.c.o
+[722/888] Linking C shared module lib/darktable/plugins/libmonochrome.so
+[723/888] Linking C shared module lib/darktable/plugins/libbasecurve.so
+[724/888] Building C object lib/darktable/plugins/CMakeFiles/profile_gamma.dir/introspection_profile_gamma.c.o
+[725/888] Building CXX object lib/darktable/plugins/CMakeFiles/bilateral.dir/introspection_bilateral.cc.o
+[726/888] Linking C shared module lib/darktable/plugins/liboverlay.so
+[727/888] Building C object lib/darktable/plugins/CMakeFiles/colortransfer.dir/introspection_colortransfer.c.o
+[728/888] Linking C shared module lib/darktable/plugins/libcolorzones.so
+[729/888] Linking C shared module lib/darktable/plugins/libvelvia.so
+[730/888] Linking C shared module lib/darktable/plugins/libhighlights.so
+[731/888] Building C object lib/darktable/plugins/CMakeFiles/colormapping.dir/introspection_colormapping.c.o
+[732/888] Building C object lib/darktable/plugins/CMakeFiles/channelmixer.dir/introspection_channelmixer.c.o
+[733/888] Building C object lib/darktable/plugins/CMakeFiles/relight.dir/introspection_relight.c.o
+[734/888] Linking C shared module lib/darktable/plugins/libsplittoning.so
+[735/888] Linking C shared module lib/darktable/plugins/libvignette.so
+[736/888] Building C object lib/darktable/plugins/CMakeFiles/graduatednd.dir/introspection_graduatednd.c.o
+[737/888] Linking C shared module lib/darktable/plugins/libclahe.so
+[738/888] Linking C shared module lib/darktable/plugins/libgrain.so
+[739/888] Linking C shared module lib/darktable/plugins/libspektrafilm.so
+[740/888] Linking C shared module lib/darktable/plugins/libprofile_gamma.so
+[741/888] Linking C shared module lib/darktable/plugins/libcolortransfer.so
+[742/888] Linking CXX shared module lib/darktable/plugins/libbilateral.so
+[743/888] Linking C shared module lib/darktable/plugins/libcolormapping.so
+[744/888] Building C object lib/darktable/plugins/CMakeFiles/demosaic.dir/introspection_demosaic.c.o
+[745/888] Building C object lib/darktable/plugins/CMakeFiles/zonesystem.dir/introspection_zonesystem.c.o
+[746/888] Linking C shared module lib/darktable/plugins/librelight.so
+[747/888] Building CXX object lib/darktable/plugins/CMakeFiles/demosaic.dir/demosaicing/amaze.cc.o
+[748/888] Building C object lib/darktable/plugins/CMakeFiles/rotatepixels.dir/introspection_rotatepixels.c.o
+[749/888] Linking C shared module lib/darktable/plugins/libchannelmixer.so
+[750/888] Building C object lib/darktable/plugins/CMakeFiles/scalepixels.dir/introspection_scalepixels.c.o
+[751/888] Building C object lib/darktable/plugins/CMakeFiles/atrous.dir/introspection_atrous.c.o
+[752/888] Linking C shared module lib/darktable/plugins/libgraduatednd.so
+[753/888] Building C object lib/darktable/plugins/CMakeFiles/lowlight.dir/introspection_lowlight.c.o
+[754/888] Building C object lib/darktable/plugins/CMakeFiles/spots.dir/introspection_spots.c.o
+[755/888] Building C object lib/darktable/plugins/CMakeFiles/overexposed.dir/introspection_overexposed.c.o
+[756/888] Building C object lib/darktable/plugins/CMakeFiles/hotpixels.dir/introspection_hotpixels.c.o
+[757/888] Building C object lib/darktable/plugins/CMakeFiles/cacorrect.dir/introspection_cacorrect.c.o
+[758/888] Linking C shared module lib/darktable/plugins/librotatepixels.so
+[759/888] Linking C shared module lib/darktable/plugins/libzonesystem.so
+[760/888] Linking C shared module lib/darktable/plugins/libscalepixels.so
+[761/888] Linking CXX shared module lib/darktable/plugins/libdemosaic.so
+[762/888] Building C object lib/darktable/plugins/CMakeFiles/liquify.dir/introspection_liquify.c.o
+[763/888] Building C object lib/darktable/plugins/CMakeFiles/retouch.dir/introspection_retouch.c.o
+[764/888] Linking C shared module lib/darktable/plugins/libatrous.so
+[765/888] Building C object lib/darktable/plugins/CMakeFiles/borders.dir/introspection_borders.c.o
+[766/888] Linking C shared module lib/darktable/plugins/liboverexposed.so
+[767/888] Building C object lib/darktable/plugins/CMakeFiles/rawdenoise.dir/introspection_rawdenoise.c.o
+[768/888] Building C object lib/darktable/plugins/CMakeFiles/nlmeans.dir/introspection_nlmeans.c.o
+[769/888] Building C object lib/darktable/plugins/CMakeFiles/colorcontrast.dir/introspection_colorcontrast.c.o
+[770/888] Linking C shared module lib/darktable/plugins/libspots.so
+[771/888] Linking C shared module lib/darktable/plugins/libhotpixels.so
+[772/888] Building C object lib/darktable/plugins/CMakeFiles/levels.dir/introspection_levels.c.o
+[773/888] Building C object lib/darktable/plugins/CMakeFiles/rgblevels.dir/introspection_rgblevels.c.o
+[774/888] Linking C shared module lib/darktable/plugins/libcacorrect.so
+[775/888] Linking C shared module lib/darktable/plugins/liblowlight.so
+[776/888] Building C object lib/darktable/plugins/CMakeFiles/colorize.dir/introspection_colorize.c.o
+[777/888] Linking C shared module lib/darktable/plugins/libliquify.so
+[778/888] Linking C shared module lib/darktable/plugins/libretouch.so
+[779/888] Linking C shared module lib/darktable/plugins/libcolorcontrast.so
+[780/888] Linking C shared module lib/darktable/plugins/libnlmeans.so
+[781/888] Linking C shared module lib/darktable/plugins/libborders.so
+[782/888] Building C object lib/darktable/plugins/CMakeFiles/invert.dir/introspection_invert.c.o
+[783/888] Building C object lib/darktable/plugins/CMakeFiles/finalscale.dir/introspection_finalscale.c.o
+[784/888] Building C object lib/darktable/plugins/CMakeFiles/flip.dir/introspection_flip.c.o
+[785/888] Building C object lib/darktable/plugins/CMakeFiles/demosaicscale.dir/introspection_demosaicscale.c.o
+[786/888] Linking C shared module lib/darktable/plugins/librawdenoise.so
+[787/888] Building C object lib/darktable/plugins/CMakeFiles/vibrance.dir/introspection_vibrance.c.o
+[788/888] Linking C shared module lib/darktable/plugins/librgblevels.so
+[789/888] Linking C shared module lib/darktable/plugins/liblevels.so
+[790/888] Building C object lib/darktable/plugins/CMakeFiles/bilat.dir/introspection_bilat.c.o
+[791/888] Building C object lib/darktable/plugins/CMakeFiles/denoiseprofile.dir/introspection_denoiseprofile.c.o
+[792/888] Linking C shared module lib/darktable/plugins/libfinalscale.so
+[793/888] Building C object lib/darktable/plugins/CMakeFiles/globaltonemap.dir/introspection_globaltonemap.c.o
+[794/888] Linking C shared module lib/darktable/plugins/libcolorize.so
+[795/888] Linking C shared module lib/darktable/plugins/libdemosaicscale.so
+[796/888] Linking C shared module lib/darktable/plugins/libvibrance.so
+[797/888] Linking C shared module lib/darktable/plugins/libinvert.so
+[798/888] Linking C shared module lib/darktable/plugins/libflip.so
+[799/888] Building C object lib/darktable/plugins/CMakeFiles/defringe.dir/introspection_defringe.c.o
+[800/888] Building C object lib/darktable/plugins/CMakeFiles/mask_manager.dir/introspection_mask_manager.c.o
+[801/888] Building C object lib/darktable/plugins/CMakeFiles/hazeremoval.dir/introspection_hazeremoval.c.o
+[802/888] Building C object lib/darktable/plugins/CMakeFiles/ashift.dir/introspection_ashift.c.o
+[803/888] Linking C shared module lib/darktable/plugins/libbilat.so
+[804/888] Building C object lib/darktable/plugins/CMakeFiles/filmic.dir/introspection_filmic.c.o
+[805/888] Building C object lib/darktable/plugins/CMakeFiles/lut3d.dir/introspection_lut3d.c.o
+[806/888] Linking C shared module lib/darktable/plugins/libglobaltonemap.so
+[807/888] Linking C shared module lib/darktable/plugins/libdenoiseprofile.so
+[808/888] Linking C shared module lib/darktable/plugins/libmask_manager.so
+[809/888] Building C object lib/darktable/plugins/CMakeFiles/toneequal.dir/introspection_toneequal.c.o
+[810/888] Building CXX object lib/darktable/plugins/CMakeFiles/lut3d.dir/lut3dgmic.cpp.o
+[811/888] Linking C shared module lib/darktable/plugins/libdefringe.so
+[812/888] Building C object lib/darktable/plugins/CMakeFiles/negadoctor.dir/introspection_negadoctor.c.o
+[813/888] Building C object lib/darktable/plugins/CMakeFiles/channelmixerrgb.dir/__/chart/common.c.o
+[814/888] Building C object lib/darktable/plugins/CMakeFiles/filmicrgb.dir/introspection_filmicrgb.c.o
+[815/888] Linking C shared module lib/darktable/plugins/libhazeremoval.so
+[816/888] Building C object lib/darktable/plugins/CMakeFiles/channelmixerrgb.dir/introspection_channelmixerrgb.c.o
+[817/888] Linking C shared module lib/darktable/plugins/libfilmic.so
+[818/888] Building C object lib/darktable/plugins/CMakeFiles/censorize.dir/introspection_censorize.c.o
+[819/888] Linking C shared module lib/darktable/plugins/libashift.so
+[820/888] Building C object lib/darktable/plugins/CMakeFiles/colorbalancergb.dir/introspection_colorbalancergb.c.o
+[821/888] Building C object lib/darktable/plugins/CMakeFiles/cacorrectrgb.dir/introspection_cacorrectrgb.c.o
+[822/888] Building C object lib/darktable/plugins/CMakeFiles/blurs.dir/introspection_blurs.c.o
+[823/888] Building C object lib/darktable/plugins/CMakeFiles/diffuse.dir/introspection_diffuse.c.o
+[824/888] Building C object lib/darktable/plugins/CMakeFiles/sigmoid.dir/introspection_sigmoid.c.o
+[825/888] Linking C shared module lib/darktable/plugins/libnegadoctor.so
+[826/888] Building C object lib/darktable/plugins/CMakeFiles/agx.dir/introspection_agx.c.o
+[827/888] Linking CXX shared module lib/darktable/plugins/liblut3d.so
+[828/888] Building C object lib/darktable/plugins/CMakeFiles/contrastntexture.dir/introspection_contrastntexture.c.o
+[829/888] Building C object lib/darktable/plugins/CMakeFiles/primaries.dir/introspection_primaries.c.o
+[830/888] Linking C shared module lib/darktable/plugins/libtoneequal.so
+[831/888] Linking C shared module lib/darktable/plugins/libchannelmixerrgb.so
+[832/888] Building C object lib/darktable/plugins/CMakeFiles/colorequal.dir/introspection_colorequal.c.o
+[833/888] Building C object lib/darktable/plugins/CMakeFiles/rasterfile.dir/introspection_rasterfile.c.o
+[834/888] Linking C shared module lib/darktable/plugins/libfilmicrgb.so
+[835/888] Building C object lib/darktable/plugins/CMakeFiles/watermark.dir/introspection_watermark.c.o
+[836/888] Linking C shared module lib/darktable/plugins/libcensorize.so
+[837/888] Building C object lib/darktable/plugins/CMakeFiles/satcurvergb.dir/introspection_satcurvergb.c.o
+[838/888] Linking C shared module lib/darktable/plugins/libcolorbalancergb.so
+[839/888] Linking C shared module lib/darktable/plugins/libcacorrectrgb.so
+[840/888] Linking C shared module lib/darktable/plugins/imageio/format/libcopy.so
+[841/888] Linking C shared module lib/darktable/plugins/imageio/format/libppm.so
+[842/888] Linking C shared module lib/darktable/plugins/imageio/format/libpdf.so
+[843/888] Linking C shared module lib/darktable/plugins/imageio/format/libpfm.so
+[844/888] Linking C shared module lib/darktable/plugins/libdiffuse.so
+[845/888] Linking C shared module lib/darktable/plugins/libblurs.so
+[846/888] Linking C shared module lib/darktable/plugins/imageio/format/libjpeg.so
+[847/888] Building CXX object lib/darktable/plugins/CMakeFiles/lens.dir/introspection_lens.cc.o
+[848/888] Linking C shared module lib/darktable/plugins/libcontrastntexture.so
+[849/888] Linking C shared module lib/darktable/plugins/libagx.so
+[850/888] Linking C shared module lib/darktable/plugins/libsigmoid.so
+[851/888] Linking C shared module lib/darktable/plugins/imageio/format/libwebp.so
+[852/888] Linking C shared module lib/darktable/plugins/libcolorequal.so
+[853/888] Linking C shared module lib/darktable/plugins/librasterfile.so
+[854/888] Linking C shared module lib/darktable/plugins/libprimaries.so
+[855/888] Linking C shared module lib/darktable/plugins/libwatermark.so
+[856/888] Linking C shared module lib/darktable/plugins/libsatcurvergb.so
+[857/888] Linking C shared module lib/darktable/plugins/imageio/storage/libemail.so
+[858/888] Linking C shared module lib/darktable/plugins/imageio/format/libpng.so
+[859/888] Linking C shared module lib/darktable/plugins/imageio/format/libheif.so
+[860/888] Linking C shared module lib/darktable/plugins/imageio/format/libtiff.so
+[861/888] Linking C shared module lib/darktable/plugins/imageio/storage/liblatex.so
+[862/888] Linking C shared module lib/darktable/plugins/imageio/format/libjpegxl.so
+[863/888] Linking C shared module lib/darktable/plugins/imageio/storage/libgallery.so
+[864/888] Linking C shared module lib/darktable/plugins/imageio/storage/libclipboard.so
+[865/888] Linking C shared module lib/darktable/plugins/imageio/format/libj2k.so
+[866/888] Linking CXX shared module lib/darktable/plugins/imageio/format/libexr.so
+[867/888] Linking C shared module lib/darktable/plugins/imageio/storage/libpiwigo.so
+[868/888] Linking C shared module lib/darktable/plugins/imageio/storage/libdisk.so
+[869/888] Linking C shared module lib/darktable/plugins/imageio/format/libavif.so
+[870/888] Linking C shared module lib/darktable/plugins/imageio/format/libxcf.so
+[871/888] Linking CXX shared module lib/darktable/plugins/liblens.so
+[872/888] Linking C executable bin/darktable-cli
+[873/888] Linking C executable bin/darktable-mcp
+[874/888] Linking C executable bin/tests/unittests/common/test_draw_curve
+[875/888] Linking C executable bin/darktable-generate-cache
+[876/888] Linking C executable bin/tests/darktable-test-variables
+[877/888] Linking C executable bin/tests/unittests/common/test_fixed_strings
+[878/888] Linking C executable bin/tests/unittests/test_hdr_alignment
+[879/888] Linking C executable bin/tests/unittests/common/test_dtdata
+[880/888] Linking C executable bin/tests/unittests/mcp/test_mcp_paths
+[881/888] Linking C executable bin/tests/unittests/common/test_spektra_pack
+[882/888] Linking C executable bin/tests/unittests/common/test_history_strings
+[883/888] Linking C executable bin/tests/unittests/common/test_spektra_sim
+[884/888] Linking C executable bin/chart/darktable-chart
+[885/888] Linking C executable bin/tests/unittests/iop/test_lut3d_bounds
+[886/888] Linking C executable bin/tests/unittests/iop/test_filmicrgb
+[887/888] Linking C executable bin/tests/unittests/iop/test_colorin_hsm
+[888/888] Linking CXX executable bin/tests/unittests/test_hdr_alignment_internal

@@ -1,0 +1,259 @@
+-- Found OpenMP_C: -fopenmp (found suitable version "4.5", minimum required is "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found suitable version "4.5", minimum required is "4.5") 
+-- Found OpenMP: TRUE (found suitable version "4.5", minimum required is "4.5")  
+-- Performing Test C_COMPILER_UNDERSTANDS_-Wno-error=varargs
+-- Performing Test C_COMPILER_UNDERSTANDS_-Wno-error=varargs - Success
+-- Performing Test CXX_COMPILER_UNDERSTANDS_-Wno-error=varargs
+-- Performing Test CXX_COMPILER_UNDERSTANDS_-Wno-error=varargs - Success
+-- Performing Test C_COMPILER_UNDERSTANDS_-Wno-error=address-of-packed-member
+-- Performing Test C_COMPILER_UNDERSTANDS_-Wno-error=address-of-packed-member - Success
+-- Performing Test CXX_COMPILER_UNDERSTANDS_-Wno-error=address-of-packed-member
+-- Performing Test CXX_COMPILER_UNDERSTANDS_-Wno-error=address-of-packed-member - Success
+-- Looking for external programs
+-- Found perl
+-- Found intltool-merge
+-- Missing desktop-file-validate, problems in org.darktable.darktable.desktop might go unnoticed
+-- Found jsonschema
+-- Found xsltproc
+-- Missing xmllint
+-- All external programs found
+-- The following REQUIRED packages have been found:
+
+ * OpenMP (required version >= 4.5)
+ * Threads
+ * Gettext
+ * cmocka (required version >= 1.1.0)
+ * ZLIB
+
+-- Performing basic integral type checks
+-- Performing basic integral type checks - Success
+-- Looking for OpenMP
+-- Found OpenMP_C: -fopenmp (found version "4.5") 
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
+-- Found OpenMP: TRUE (found version "4.5")  
+-- Looking for OpenMP - found (system)
+-- Looking for pugixml
+-- Found Pugixml 1.14
+-- Looking for pugixml - found (system)
+-- Looking for JPEG
+-- Looking for JPEG - found
+-- Looking for ZLIB
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found suitable version "1.3", minimum required is "1.2.11")  
+-- Looking for ZLIB - found (system)
+-- The following features have been enabled:
+
+ * OpenMP-based threading, used for parallelization of the library
+ * XML reading, used for loading of data/cameras.xml
+ * Lossy JPEG decoding, used for DNG Lossy JPEG compression decoding
+ * ZLIB decoding, used for DNG Deflate compression decoding
+
+-- The following RECOMMENDED packages have been found:
+
+ * JPEG, free library for handling the JPEG image data format, implements a JPEG codec
+   Used for decoding DNG Lossy JPEG compression
+
+-- The following REQUIRED packages have been found:
+
+ * Threads
+ * Gettext
+ * cmocka (required version >= 1.1.0)
+ * OpenMP, Open Multi-Processing, <https://www.openmp.org/>
+   Used for parallelization of the library
+ * Pugixml (required version >= 1.8), Light-weight, simple and fast XML parser, <http://pugixml.org/>
+   Used for loading of data/cameras.xml
+ * ZLIB (required version >= 1.2.11), software library used for data compression
+   Used for decoding DNG Deflate compression
+
+-- Found Glib 2.80.0
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  
+-- Building LibRaw from intree copy
+-- Found GIO 
+-- Found JsonGlib 
+-- AI features: disabled
+-- Exiv2 >= 0.27.4 found with ISOBMFF support (CR3, AVIF, HEIF)
+-- The imported target "openjpip" references the file
+   "/usr/lib/x86_64-linux-gnu/libopenjpip.so.2.5.0"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/x86_64-linux-gnu/openjpeg-2.1/OpenJPEGTargets.cmake"
+but not all the files it references.
+
+-- The imported target "opj_decompress" references the file
+   "/usr/bin/opj_decompress"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/x86_64-linux-gnu/openjpeg-2.1/OpenJPEGTargets.cmake"
+but not all the files it references.
+
+-- The imported target "opj_compress" references the file
+   "/usr/bin/opj_compress"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/x86_64-linux-gnu/openjpeg-2.1/OpenJPEGTargets.cmake"
+but not all the files it references.
+
+-- The imported target "opj_dump" references the file
+   "/usr/bin/opj_dump"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/x86_64-linux-gnu/openjpeg-2.1/OpenJPEGTargets.cmake"
+but not all the files it references.
+
+-- The imported target "opj_jpip_addxml" references the file
+   "/usr/bin/opj_jpip_addxml"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/x86_64-linux-gnu/openjpeg-2.1/OpenJPEGTargets.cmake"
+but not all the files it references.
+
+-- The imported target "opj_server" references the file
+   "/usr/bin/opj_server"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/x86_64-linux-gnu/openjpeg-2.1/OpenJPEGTargets.cmake"
+but not all the files it references.
+
+-- The imported target "opj_dec_server" references the file
+   "/usr/bin/opj_dec_server"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/x86_64-linux-gnu/openjpeg-2.1/OpenJPEGTargets.cmake"
+but not all the files it references.
+
+-- The imported target "opj_jpip_transcode" references the file
+   "/usr/bin/opj_jpip_transcode"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/x86_64-linux-gnu/openjpeg-2.1/OpenJPEGTargets.cmake"
+but not all the files it references.
+
+-- The imported target "opj_jpip_test" references the file
+   "/usr/bin/opj_jpip_test"
+but this file does not exist.  Possible reasons include:
+* The file was deleted, renamed, or moved to another location.
+* An install or uninstall procedure did not complete successfully.
+* The installation package was faulty and contained
+   "/usr/lib/x86_64-linux-gnu/openjpeg-2.1/OpenJPEGTargets.cmake"
+but not all the files it references.
+
+-- Found GraphicsMagick 1.3.42
+-- Found GMIC 
+-- OpenCV not found: HDR exposure-bracket auto-alignment disabled
+-- Found the following ICU libraries:
+--   i18n (required): /usr/lib/x86_64-linux-gnu/libicui18n.so
+--   data (required): /usr/lib/x86_64-linux-gnu/libicudata.so
+--   uc (required): /usr/lib/x86_64-linux-gnu/libicuuc.so
+-- Does the compiler support __builtin_cpu_supports(): 1
+-- Checking for -march=native support
+-- Lua support: Enabled
+-- Found Pugixml 1.14
+-- Map mode: enabled
+-- Print mode: enabled (CUPS)
+-- Signal debug: print-trace possible
+-- building darktable-cmstest with colord support. nice.
+-- LibRaw string version: 0.22.0
+-- LibRaw ID version:     0x0220
+-- LibRaw SO version:     26.0.0
+-- 
+-- ----------------------------------------------------------------------------------
+--  Libraw 0.22.0 configuration            <http://www.libraw.org>
+-- 
+--  Libraw will be compiled with OpenMP support .................. YES
+--  Libraw will be compiled with LCMS support .................... NO
+--  Libraw will be compiled with example command-line programs ... NO
+--  Libraw will be compiled with RedCine codec support ........... NO
+--  Libraw will be compiled with DNG deflate codec support ....... YES
+--  Libraw will be compiled with DNG lossy codec support ......... YES
+--  Libraw will be compiled with RawSpeed support ................ NO
+--  Libraw will be compiled with debug message from dcraw ........ NO
+--  Libraw will be compiled with Foveon X3F support .............. NO
+--  Libraw will be compiled with Raspberry Pi RAW support ........ NO
+--  Libraw will be compiled as a static library
+-- ----------------------------------------------------------------------------------
+-- 
+Missing po4a-translate. Can NOT create translated manpages
+Missing po4a-updatepo. Can NOT update manpage translations
+-- The following features have been enabled:
+
+ * OpenMP-based threading, used for parallelization of the library
+ * XML reading, used for loading of data/cameras.xml
+ * Lossy JPEG decoding, used for DNG Lossy JPEG compression decoding
+ * ZLIB decoding, used for DNG Deflate compression decoding
+
+-- The following OPTIONAL packages have been found:
+
+ * Gphoto2 (required version >= 2.5)
+ * OpenEXR (required version >= 3.0)
+ * JXL (required version >= 0.7.0)
+ * WebP (required version >= 0.3.0)
+ * libavif
+ * libheif
+ * LibArchive
+ * PortMidi, Portable MIDI library, <https://github.com/PortMidi/portmidi>
+   Used for hardware MIDI input devices
+ * OpenJPEG
+ * IsoCodes (required version >= 3.66)
+ * Libsecret
+ * GraphicsMagick
+ * GMIC
+ * ICU
+ * Lua54 (required version >= 5.4)
+ * OSMGpsMap
+ * Colord
+ * ColordGTK
+ * Cups
+ * SDL2, low level access to audio, keyboard, mouse, joystick, and graphics hardware, <https://www.libsdl.org/>
+ * X11
+
+-- The following REQUIRED packages have been found:
+
+ * Gettext
+ * cmocka (required version >= 1.1.0)
+ * GTK3 (required version >= 3.24.15)
+ * LibXml2 (required version >= 2.6)
+ * Potrace
+ * Threads
+ * Imath
+ * LensFun
+ * SQLite3 (required version >= 3.26)
+ * GIO
+ * GThread
+ * GModule
+ * PangoCairo
+ * Rsvg2
+ * PNG
+ * TIFF
+ * LCMS2
+ * JsonGlib
+ * CURL (required version >= 7.56)
+ * Exiv2 (required version >= 0.27.2)
+ * Pugixml (required version >= 1.5), Light-weight, simple and fast XML parser, <http://pugixml.org/>
+   Used for loading of data/cameras.xml
+ * Glib
+ * PkgConfig
+ * ZLIB, software library used for data compression
+   Used for decoding DNG Deflate compression
+ * JPEG, free library for handling the JPEG image data format, implements a JPEG codec
+   Used for decoding DNG Lossy JPEG compression
+ * OpenMP, Open Multi-Processing, <https://www.openmp.org/>
+   Used for parallelization of the library
+
+-- Configuring done (0.8s)
+-- Generating done (3.5s)
+-- Build files have been written to: /home/exedev/darktable/build

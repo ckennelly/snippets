@@ -1,7 +1,7 @@
 ## fix/lsan-leaks thumbnail filename
 
 reports matching `thumbnail.c:2418`: base 1 (266 B), with the fix 0
-base: `asan_ef98688fc/ubsan-filemanager.29027`, fixed: `asan_san_fixes/asan-filemanager.34399`
+base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_san_fixes/asan-filemanager.34399.gz`
 
 ```
 Direct leak of 266 byte(s) in 19 object(s) allocated from:
@@ -43,7 +43,7 @@ Direct leak of 266 byte(s) in 19 object(s) allocated from:
 ## fix/lsan-leaks ratings undo
 
 reports matching `ratings.c:225`: base 1 (240 B), with the fix 0
-base: `asan_ef98688fc/ubsan-filemanager.29027`, fixed: `asan_san_fixes/asan-filemanager.34399`
+base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_san_fixes/asan-filemanager.34399.gz`
 
 ```
 Direct leak of 240 byte(s) in 20 object(s) allocated from:
@@ -74,7 +74,7 @@ Direct leak of 240 byte(s) in 20 object(s) allocated from:
 ## fix/lsan-leaks range block txt
 
 reports matching `range.c:1901`: base 54 (5280 B), with the fix 0
-base: `asan_ef98688fc/ubsan-filemanager.29027`, fixed: `asan_san_fixes/asan-filemanager.34399`
+base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_san_fixes/asan-filemanager.34399.gz`
 
 ```
 Direct leak of 400 byte(s) in 20 object(s) allocated from:
@@ -92,7 +92,7 @@ Direct leak of 400 byte(s) in 20 object(s) allocated from:
 ## fix/lsan-leaks dt_tag_get_list
 
 reports matching `tags.c:792`: base 1 (240 B), with the fix 0
-base: `asan_ef98688fc/ubsan-filemanager.29027`, fixed: `asan_san_fixes/asan-filemanager.34399`
+base: `asan_ef98688fc/ubsan-filemanager.29027.gz`, fixed: `asan_san_fixes/asan-filemanager.34399.gz`
 
 ```
 Direct leak of 240 byte(s) in 10 object(s) allocated from:
@@ -115,7 +115,7 @@ Direct leak of 240 byte(s) in 10 object(s) allocated from:
 ## fix/lsan-leaks colorlabels undo
 
 reports matching `colorlabels.c:223`: base 1 (80 B), with the fix 0
-base: `sanx-base/asan.44016`, fixed: `sanx-fixes2/asan.64296`
+base: `sanx-base/asan.44016.gz`, fixed: `sanx-fixes2/asan.64296.gz`
 
 ```
 Direct leak of 80 byte(s) in 10 object(s) allocated from:
@@ -145,7 +145,7 @@ Direct leak of 80 byte(s) in 10 object(s) allocated from:
 ## fix/lsan-leaks duplicate undo
 
 reports matching `image.c:1556`: base 1 (36 B), with the fix 0
-base: `sanx-base/asan.44016`, fixed: `sanx-fixes2/asan.64296`
+base: `sanx-base/asan.44016.gz`, fixed: `sanx-fixes2/asan.64296.gz`
 
 ```
 Direct leak of 36 byte(s) in 3 object(s) allocated from:
@@ -178,7 +178,7 @@ Direct leak of 36 byte(s) in 3 object(s) allocated from:
 ## fix/sqlite-stmt-leaks act_on statements
 
 reports matching `act_on.c + sqlite3VdbeCreate`: base 4 (35856 B), with the fix 0
-base: `asan_ef98688fc/ubsan-hover.30041`, fixed: `asan_san_all/ubsan-hover.31890`
+base: `asan_ef98688fc/ubsan-hover.30041.gz`, fixed: `asan_san_all/ubsan-hover.31890.gz`
 
 ```
 Indirect leak of 14224 byte(s) in 14 object(s) allocated from:
@@ -219,7 +219,7 @@ Indirect leak of 14224 byte(s) in 14 object(s) allocated from:
 ## fix/sqlite-stmt-leaks _image_get_set_name_id SELECT
 
 reports matching `_image_get_set_name_id + sqlite3VdbeCreate`: base 14 (9296 B), with the fix 0
-base: `import-base/asan.107982`, fixed: `import-stmtfix/asan.108803`
+base: `import-base/asan.107982.gz`, fixed: `import-stmtfix/asan.108803.gz`
 
 ```
 Indirect leak of 1016 byte(s) in 1 object(s) allocated from:

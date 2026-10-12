@@ -1,13 +1,18 @@
 # evidence.py: for each fix, the first matching report from the base run and the count of
 # matching reports before (base) and after (build with the fix)
-import re, glob, os
-R = os.path.expanduser("~/results/san")
+# usage: evidence.py [RAW_DIR [OUT]]  (default: results/raw, results/EVIDENCE.md)
+import gzip, re, glob, os, sys
+HERE = os.path.dirname(os.path.abspath(__file__))
+R = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "results", "raw")
+OUT = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "results", "EVIDENCE.md")
+def read(path):
+    return (gzip.open if path.endswith(".gz") else open)(path, "rt", errors="replace").read()
 def blocks(path):
-    t = open(path, errors="replace").read()
+    t = read(path)
     b = re.findall(r"((?:Direct|Indirect) leak of \d+ byte\(s\) in \d+ object\(s\) allocated from:\n.*?)(?=\n\n)", t, re.S)
     b += re.findall(r"(\S+: runtime error: .*?\n(?:.*\n)*?)(?=\n|\S+: runtime error)", t)
     return b
-def one(p): return sorted(glob.glob(os.path.join(R, p)))[0]
+def one(p): return sorted(glob.glob(os.path.join(R, p + "*")))[0]
 FIX = [  # (fix, pattern, base report, fixed report)
  ("fix/lsan-leaks thumbnail filename", "thumbnail.c:2418", "asan_ef98688fc/ubsan-filemanager.*", "asan_san_fixes/asan-filemanager.*"),
  ("fix/lsan-leaks ratings undo", "ratings.c:225", "asan_ef98688fc/ubsan-filemanager.*", "asan_san_fixes/asan-filemanager.*"),
@@ -29,5 +34,5 @@ for name, pat, base, fixed in FIX:
                + (f" ({nbytes} B)" if nbytes else "") + f", with the fix {len(fb)}\n"
                f"base: `{os.path.relpath(one(base), R)}`, fixed: `{os.path.relpath(one(fixed), R)}`\n\n```\n"
                + (bb[0].strip() if bb else "(none)") + "\n```\n")
-open(os.path.join(R, "EVIDENCE.md"), "w").write("\n".join(out))
+open(OUT, "w").write("\n".join(out))
 print("\n".join(l for l in "\n".join(out).splitlines() if l.startswith(("##", "reports"))))

@@ -1,7 +1,7 @@
 # sandirect.py: direct leaks only, keyed by the first 4 frames (any library), with sizes
-import re,sys,collections
+import gzip,re,sys,collections
 for f in sys.argv[1:]:
-    t=open(f,errors="replace").read()
+    t=(gzip.open if f.endswith(".gz") else open)(f,"rt",errors="replace").read()
     lk=collections.defaultdict(lambda:[0,0,""])
     for b,n,stack in re.findall(r"Direct leak of (\d+) byte\(s\) in (\d+) object\(s\) allocated from:\n(.*?)(?=\n\n)",t,re.S):
         frames=re.findall(r"#\d+ 0x[0-9a-f]+ in (\S+) (\S+)",stack)

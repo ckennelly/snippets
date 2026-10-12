@@ -1,0 +1,469 @@
+
+=================================================================
+==44997==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 3984 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x704e6d0d5309 in dt_init /home/exedev/darktable/src/common/darktable.c:1075
+    #2 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #3 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #4 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #5 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 128 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fc778 in realloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:85
+    #1 0x704e69a308c9 in g_realloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x638c9) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a55ea6  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x88ea6) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e69a55f20 in g_string_sized_new (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x88f20) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #4 0x704e69a1058d  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x4358d) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #5 0x704e69a10d7c in g_build_filename (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x43d7c) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #6 0x704e695797f7 in lfDatabase::Load() (/lib/x86_64-linux-gnu/liblensfun.so.1+0x157f7) (BuildId: ba57e89694f929392275155168fc23072539a636)
+    #7 0x704e41da2fc5  (<unknown module>)
+    #8 0x704e6d86430d in dt_iop_load_module_so /home/exedev/darktable/src/develop/imageop.c:367
+    #9 0x704e6d42049f in dt_module_load_modules /home/exedev/darktable/src/common/module.c:54
+    #10 0x704e6d86fc8e in dt_iop_load_modules_so /home/exedev/darktable/src/develop/imageop.c:1939
+    #11 0x704e6d0d97e9 in dt_init /home/exedev/darktable/src/common/darktable.c:2139
+    #12 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #13 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #14 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #15 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 80 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a88a11  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbba11) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e69a5120e in g_thread_new (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x8420e) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #4 0x704e6de210e0 in dt_lua_init_call /home/exedev/darktable/src/lua/call.c:726
+    #5 0x704e6de3738b in dt_lua_init /home/exedev/darktable/src/lua/init.c:156
+    #6 0x704e6d0d9888 in dt_init /home/exedev/darktable/src/common/darktable.c:2177
+    #7 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #8 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #9 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #10 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 72 byte(s) in 3 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a24efa in g_list_prepend (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x57efa) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2c380e in dt_grouping_add_to_group /home/exedev/darktable/src/common/grouping.c:46
+    #4 0x704e6d315e2c in _image_read_duplicates /home/exedev/darktable/src/common/image.c:1810
+    #5 0x704e6d325ac0 in _image_import_internal /home/exedev/darktable/src/common/image.c:2070
+    #6 0x5a7650e1b937 in main /home/exedev/darktable/src/cli/main.c:677
+    #7 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #8 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #9 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 52 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2697b2 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d2697b2 in g_realpath /home/exedev/darktable/src/common/grealpath.h:37
+    #5 0x704e6d2697b2 in dt_loc_init_generic /home/exedev/darktable/src/common/file_location.c:209
+    #6 0x704e6d269f51 in dt_loc_init_datadir /home/exedev/darktable/src/common/file_location.c:289
+    #7 0x704e6d26a173 in dt_loc_init /home/exedev/darktable/src/common/file_location.c:62
+    #8 0x5a7650e18af0 in main /home/exedev/darktable/src/cli/main.c:227
+    #9 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #10 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #11 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 50 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2697b2 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d2697b2 in g_realpath /home/exedev/darktable/src/common/grealpath.h:37
+    #5 0x704e6d2697b2 in dt_loc_init_generic /home/exedev/darktable/src/common/file_location.c:209
+    #6 0x704e6d269e11 in dt_loc_init_plugindir /home/exedev/darktable/src/common/file_location.c:239
+    #7 0x704e6d26a182 in dt_loc_init /home/exedev/darktable/src/common/file_location.c:63
+    #8 0x5a7650e18af0 in main /home/exedev/darktable/src/cli/main.c:227
+    #9 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #10 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #11 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 49 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2697b2 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d2697b2 in g_realpath /home/exedev/darktable/src/common/grealpath.h:37
+    #5 0x704e6d2697b2 in dt_loc_init_generic /home/exedev/darktable/src/common/file_location.c:209
+    #6 0x704e6d269eb1 in dt_loc_init_localedir /home/exedev/darktable/src/common/file_location.c:283
+    #7 0x704e6d26a191 in dt_loc_init /home/exedev/darktable/src/common/file_location.c:64
+    #8 0x5a7650e18af0 in main /home/exedev/darktable/src/cli/main.c:227
+    #9 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #10 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #11 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 42 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2697b2 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d2697b2 in g_realpath /home/exedev/darktable/src/common/grealpath.h:37
+    #5 0x704e6d2697b2 in dt_loc_init_generic /home/exedev/darktable/src/common/file_location.c:209
+    #6 0x704e6d269fed in dt_loc_init_sharedir /home/exedev/darktable/src/common/file_location.c:295
+    #7 0x704e6d26a199 in dt_loc_init /home/exedev/darktable/src/common/file_location.c:65
+    #8 0x5a7650e18af0 in main /home/exedev/darktable/src/cli/main.c:227
+    #9 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #10 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #11 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 31 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2697b2 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d2697b2 in g_realpath /home/exedev/darktable/src/common/grealpath.h:37
+    #5 0x704e6d2697b2 in dt_loc_init_generic /home/exedev/darktable/src/common/file_location.c:209
+    #6 0x704e6d269bc9 in dt_loc_init_user_config_dir /home/exedev/darktable/src/common/file_location.c:218
+    #7 0x704e6d26a1ad in dt_loc_init /home/exedev/darktable/src/common/file_location.c:69
+    #8 0x5a7650e18af0 in main /home/exedev/darktable/src/cli/main.c:227
+    #9 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #10 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #11 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 30 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2697b2 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d2697b2 in g_realpath /home/exedev/darktable/src/common/grealpath.h:37
+    #5 0x704e6d2697b2 in dt_loc_init_generic /home/exedev/darktable/src/common/file_location.c:209
+    #6 0x704e6d269d49 in dt_loc_init_user_cache_dir /home/exedev/darktable/src/common/file_location.c:232
+    #7 0x704e6d26a20b in dt_loc_init /home/exedev/darktable/src/common/file_location.c:70
+    #8 0x5a7650e18af0 in main /home/exedev/darktable/src/cli/main.c:227
+    #9 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #10 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #11 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 20 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d0dc293 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d0dc293 in dt_init /home/exedev/darktable/src/common/darktable.c:1392
+    #5 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #6 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 11 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d0d7d97 in dt_init /home/exedev/darktable/src/common/darktable.c:1804
+    #4 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #5 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #6 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #7 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 8 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e4169e4ec  (<unknown module>)
+    #2 0x704e6d86bd64 in dt_iop_init_pipe /home/exedev/darktable/src/develop/imageop.c:469
+    #3 0x704e6da9c755 in dt_dev_pixelpipe_create_nodes /home/exedev/darktable/src/develop/pixelpipe_hb.c:556
+    #4 0x704e6dd11a69 in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1216
+    #5 0x704e6dd1852f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #6 0x704e4204a653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #7 0x5a7650e1c868 in main /home/exedev/darktable/src/cli/main.c:901
+    #8 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #9 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #10 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 6 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d0dc2c9 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d0dc2c9 in dt_init /home/exedev/darktable/src/common/darktable.c:1393
+    #5 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #6 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 5 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2697b2 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d2697b2 in g_realpath /home/exedev/darktable/src/common/grealpath.h:37
+    #5 0x704e6d2697b2 in dt_loc_init_generic /home/exedev/darktable/src/common/file_location.c:209
+    #6 0x704e6d269c91 in dt_loc_init_tmp_dir /home/exedev/darktable/src/common/file_location.c:225
+    #7 0x704e6d26a222 in dt_loc_init /home/exedev/darktable/src/common/file_location.c:71
+    #8 0x5a7650e18af0 in main /home/exedev/darktable/src/cli/main.c:227
+    #9 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #10 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #11 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 5 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x5a7650e1e157 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:317
+    #3 0x5a7650e1e157 in main /home/exedev/darktable/src/cli/main.c:776
+    #4 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #5 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #6 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 3 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d1155ea in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d1155ea in _get_pragma_string_val /home/exedev/darktable/src/common/database.c:4244
+    #5 0x704e6d11ca06 in dt_database_init /home/exedev/darktable/src/common/database.c:4619
+    #6 0x704e6d0d7f2e in dt_init /home/exedev/darktable/src/common/darktable.c:1863
+    #7 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #8 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #9 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #10 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 1 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d409a62 in dt_lib_export_metadata_get_conf /home/exedev/darktable/src/common/metadata_export.c:44
+    #4 0x5a7650e1c721 in main /home/exedev/darktable/src/cli/main.c:892
+    #5 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #6 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #7 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 1 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d0d7da3 in dt_init /home/exedev/darktable/src/common/darktable.c:1805
+    #4 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #5 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #6 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #7 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Direct leak of 1 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d3c140b in dt_l10n_init /home/exedev/darktable/src/common/l10n.c:317
+    #4 0x704e6d0d7d7c in dt_init /home/exedev/darktable/src/common/darktable.c:1744
+    #5 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #6 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #7 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #8 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 30777 byte(s) in 534 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6dc42253 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6dc42253 in dt_action_locate /home/exedev/darktable/src/gui/accelerators.c:5230
+    #5 0x704e6dc5de19 in dt_action_section /home/exedev/darktable/src/gui/accelerators.h:58
+    #6 0x704e6dc5de19 in dt_action_register /home/exedev/darktable/src/gui/accelerators.c:5730
+    #7 0x704e6d5f82bc in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:285
+    #8 0x704e6d606632 in dt_style_save /home/exedev/darktable/src/common/styles.c:1608
+    #9 0x704e6d606632 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1676
+    #10 0x704e6d60bf07 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1843
+    #11 0x704e6d0d8f91 in dt_init /home/exedev/darktable/src/common/darktable.c:1933
+    #12 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #13 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #14 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #15 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 28045 byte(s) in 534 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a4830a in g_strjoinv (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x7b30a) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d628fbb in dt_util_glist_to_str /home/exedev/darktable/src/common/utility.c:224
+    #4 0x704e6d6293d6 in dt_util_localize_segmented_name /home/exedev/darktable/src/common/utility.c:98
+    #5 0x704e6dc420cc in dt_action_locate /home/exedev/darktable/src/gui/accelerators.c:5245
+    #6 0x704e6dc5de19 in dt_action_section /home/exedev/darktable/src/gui/accelerators.h:58
+    #7 0x704e6dc5de19 in dt_action_register /home/exedev/darktable/src/gui/accelerators.c:5730
+    #8 0x704e6d5f82bc in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:285
+    #9 0x704e6d606632 in dt_style_save /home/exedev/darktable/src/common/styles.c:1608
+    #10 0x704e6d606632 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1676
+    #11 0x704e6d60bf07 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1843
+    #12 0x704e6d0d8f91 in dt_init /home/exedev/darktable/src/common/darktable.c:1933
+    #13 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #14 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #15 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #16 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 25632 byte(s) in 534 object(s) allocated from:
+    #0 0x704e726fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x704e6dc42058 in dt_action_locate /home/exedev/darktable/src/gui/accelerators.c:5242
+    #2 0x704e6dc5de19 in dt_action_section /home/exedev/darktable/src/gui/accelerators.h:58
+    #3 0x704e6dc5de19 in dt_action_register /home/exedev/darktable/src/gui/accelerators.c:5730
+    #4 0x704e6d5f82bc in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:285
+    #5 0x704e6d606632 in dt_style_save /home/exedev/darktable/src/common/styles.c:1608
+    #6 0x704e6d606632 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1676
+    #7 0x704e6d60bf07 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1843
+    #8 0x704e6d0d8f91 in dt_init /home/exedev/darktable/src/common/darktable.c:1933
+    #9 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #10 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #11 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #12 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 1920 byte(s) in 30 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e6d493903 in dt_noiseprofile_get_matching /home/exedev/darktable/src/common/noiseprofiles.c:339
+    #2 0x704e4013087e  (<unknown module>)
+    #3 0x704e6d88961f in dt_iop_reload_defaults /home/exedev/darktable/src/develop/imageop.c:1492
+    #4 0x704e6d84f3b4 in _dt_dev_load_pipeline_defaults /home/exedev/darktable/src/develop/develop.c:1017
+    #5 0x704e6d84f3b4 in dt_dev_read_history_ext /home/exedev/darktable/src/develop/develop.c:2458
+    #6 0x704e6d85667b in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1130
+    #7 0x704e6dd1152e in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #8 0x704e6dd1852f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #9 0x704e4204a653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #10 0x5a7650e1c868 in main /home/exedev/darktable/src/cli/main.c:901
+    #11 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #12 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #13 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 751 byte(s) in 30 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d493732 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d493732 in dt_noiseprofile_get_matching /home/exedev/darktable/src/common/noiseprofiles.c:308
+    #5 0x704e4013087e  (<unknown module>)
+    #6 0x704e6d88961f in dt_iop_reload_defaults /home/exedev/darktable/src/develop/imageop.c:1492
+    #7 0x704e6d84f3b4 in _dt_dev_load_pipeline_defaults /home/exedev/darktable/src/develop/develop.c:1017
+    #8 0x704e6d84f3b4 in dt_dev_read_history_ext /home/exedev/darktable/src/develop/develop.c:2458
+    #9 0x704e6d85667b in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1130
+    #10 0x704e6dd1152e in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #11 0x704e6dd1852f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #12 0x704e4204a653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #13 0x5a7650e1c868 in main /home/exedev/darktable/src/cli/main.c:901
+    #14 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #15 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #16 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 720 byte(s) in 30 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a24efa in g_list_prepend (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x57efa) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d4939c1 in dt_noiseprofile_get_matching /home/exedev/darktable/src/common/noiseprofiles.c:341
+    #4 0x704e4013087e  (<unknown module>)
+    #5 0x704e6d88961f in dt_iop_reload_defaults /home/exedev/darktable/src/develop/imageop.c:1492
+    #6 0x704e6d84f3b4 in _dt_dev_load_pipeline_defaults /home/exedev/darktable/src/develop/develop.c:1017
+    #7 0x704e6d84f3b4 in dt_dev_read_history_ext /home/exedev/darktable/src/develop/develop.c:2458
+    #8 0x704e6d85667b in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1130
+    #9 0x704e6dd1152e in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #10 0x704e6dd1852f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #11 0x704e4204a653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #12 0x5a7650e1c868 in main /home/exedev/darktable/src/cli/main.c:901
+    #13 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #14 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #15 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 480 byte(s) in 30 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d4936f7 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d4936f7 in dt_noiseprofile_get_matching /home/exedev/darktable/src/common/noiseprofiles.c:304
+    #5 0x704e4013087e  (<unknown module>)
+    #6 0x704e6d88961f in dt_iop_reload_defaults /home/exedev/darktable/src/develop/imageop.c:1492
+    #7 0x704e6d84f3b4 in _dt_dev_load_pipeline_defaults /home/exedev/darktable/src/develop/develop.c:1017
+    #8 0x704e6d84f3b4 in dt_dev_read_history_ext /home/exedev/darktable/src/develop/develop.c:2458
+    #9 0x704e6d85667b in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1130
+    #10 0x704e6dd1152e in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #11 0x704e6dd1852f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #12 0x704e4204a653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #13 0x5a7650e1c868 in main /home/exedev/darktable/src/cli/main.c:901
+    #14 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #15 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #16 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 180 byte(s) in 30 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d4936c1 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6d4936c1 in dt_noiseprofile_get_matching /home/exedev/darktable/src/common/noiseprofiles.c:301
+    #5 0x704e4013087e  (<unknown module>)
+    #6 0x704e6d88961f in dt_iop_reload_defaults /home/exedev/darktable/src/develop/imageop.c:1492
+    #7 0x704e6d84f3b4 in _dt_dev_load_pipeline_defaults /home/exedev/darktable/src/develop/develop.c:1017
+    #8 0x704e6d84f3b4 in dt_dev_read_history_ext /home/exedev/darktable/src/develop/develop.c:2458
+    #9 0x704e6d85667b in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1130
+    #10 0x704e6dd1152e in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #11 0x704e6dd1852f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #12 0x704e4204a653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #13 0x5a7650e1c868 in main /home/exedev/darktable/src/cli/main.c:901
+    #14 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #15 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #16 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 72 byte(s) in 3 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a24efa in g_list_prepend (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x57efa) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2c2e75 in dt_grouping_remove_from_group /home/exedev/darktable/src/common/grouping.c:135
+    #4 0x704e6d2c379e in dt_grouping_add_to_group /home/exedev/darktable/src/common/grouping.c:39
+    #5 0x704e6d315e2c in _image_read_duplicates /home/exedev/darktable/src/common/image.c:1810
+    #6 0x704e6d325ac0 in _image_import_internal /home/exedev/darktable/src/common/image.c:2070
+    #7 0x5a7650e1b937 in main /home/exedev/darktable/src/cli/main.c:677
+    #8 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #9 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #10 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 72 byte(s) in 3 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a24efa in g_list_prepend (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x57efa) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6d2c2e63 in dt_grouping_remove_from_group /home/exedev/darktable/src/common/grouping.c:133
+    #4 0x704e6d2c379e in dt_grouping_add_to_group /home/exedev/darktable/src/common/grouping.c:39
+    #5 0x704e6d315e2c in _image_read_duplicates /home/exedev/darktable/src/common/image.c:1810
+    #6 0x704e6d325ac0 in _image_import_internal /home/exedev/darktable/src/common/image.c:2070
+    #7 0x5a7650e1b937 in main /home/exedev/darktable/src/cli/main.c:677
+    #8 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #9 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #10 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 48 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x704e6dc42058 in dt_action_locate /home/exedev/darktable/src/gui/accelerators.c:5242
+    #2 0x704e6d5f8294 in dt_action_section /home/exedev/darktable/src/gui/accelerators.h:58
+    #3 0x704e6d5f8294 in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:284
+    #4 0x704e6d606632 in dt_style_save /home/exedev/darktable/src/common/styles.c:1608
+    #5 0x704e6d606632 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1676
+    #6 0x704e6d60bf07 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1843
+    #7 0x704e6d0d8f91 in dt_init /home/exedev/darktable/src/common/darktable.c:1933
+    #8 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #9 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #10 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #11 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 7 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6dc422df in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6dc422df in dt_action_locate /home/exedev/darktable/src/gui/accelerators.c:5246
+    #5 0x704e6d5f8294 in dt_action_section /home/exedev/darktable/src/gui/accelerators.h:58
+    #6 0x704e6d5f8294 in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:284
+    #7 0x704e6d606632 in dt_style_save /home/exedev/darktable/src/common/styles.c:1608
+    #8 0x704e6d606632 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1676
+    #9 0x704e6d60bf07 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1843
+    #10 0x704e6d0d8f91 in dt_init /home/exedev/darktable/src/common/darktable.c:1933
+    #11 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #12 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #13 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #14 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+Indirect leak of 7 byte(s) in 1 object(s) allocated from:
+    #0 0x704e726fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x704e69a2fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x704e69a45988 in g_strdup (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x78988) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x704e6dc42253 in g_strdup_inline /usr/include/glib-2.0/glib/gstrfuncs.h:321
+    #4 0x704e6dc42253 in dt_action_locate /home/exedev/darktable/src/gui/accelerators.c:5230
+    #5 0x704e6d5f8294 in dt_action_section /home/exedev/darktable/src/gui/accelerators.h:58
+    #6 0x704e6d5f8294 in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:284
+    #7 0x704e6d606632 in dt_style_save /home/exedev/darktable/src/common/styles.c:1608
+    #8 0x704e6d606632 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1676
+    #9 0x704e6d60bf07 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1843
+    #10 0x704e6d0d8f91 in dt_init /home/exedev/darktable/src/common/darktable.c:1933
+    #11 0x5a7650e1b35c in main /home/exedev/darktable/src/cli/main.c:604
+    #12 0x704e6382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #13 0x704e6382a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #14 0x5a7650e205e4 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable-cli+0x195e4) (BuildId: bc37b051f4c03360318bd95cdd11e8434aa4e331)
+
+SUMMARY: AddressSanitizer: 93290 byte(s) leaked in 1783 allocation(s).

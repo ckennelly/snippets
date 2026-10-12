@@ -1,0 +1,9 @@
+ninja: Entering directory `build'
+[0/2] Re-checking globbed directories...
+[1/6] Running utility command for deploy
+[2/6] Updating version string (git checkout)
+Version string: 5.7.0+1211~g4d87f6842
+[3/6] Building C object lib/darktable/views/CMakeFiles/map.dir/map.c.o
+[4/6] Linking C shared module lib/darktable/views/libmap.so
+[5/6] Checking validity of noiseprofiles.json
+[6/6] Checking validity of wb_presets.json

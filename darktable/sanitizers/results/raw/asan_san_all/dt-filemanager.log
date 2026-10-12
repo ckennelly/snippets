@@ -1,0 +1,17 @@
+
+(org.darktable.darktable:30775): dbind-WARNING **: 14:43:55.006: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+/home/exedev/darktable/src/develop/imageop.c:273:71: runtime error: store to misaligned address 0x524000be2111 for type 'short int', which requires 2 byte alignment
+0x524000be2111: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00
+              ^ 
+    #0 0x7946d946cb6f in dt_iop_default_init /home/exedev/darktable/src/develop/imageop.c:273
+    #1 0x7946d948e0ea in dt_iop_load_module_by_so /home/exedev/darktable/src/develop/imageop.c:445
+    #2 0x7946d94934f2 in _init_module_so /home/exedev/darktable/src/develop/imageop.c:1870
+    #3 0x7946d90223b9 in dt_module_load_modules /home/exedev/darktable/src/common/module.c:65
+    #4 0x7946d9471c7e in dt_iop_load_modules_so /home/exedev/darktable/src/develop/imageop.c:1939
+    #5 0x7946d8cda8c9 in dt_init /home/exedev/darktable/src/common/darktable.c:2139
+    #6 0x5effea63f2c0 in main /home/exedev/darktable/src/main.c:205
+    #7 0x7946cf42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #8 0x7946cf42a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #9 0x5effea63f734 in _start (/home/exedev/dt-asan/asan_san_all/bin/darktable+0x2734) (BuildId: 8de374a3db26251a224f929ef8a020be0c4ad649)
+

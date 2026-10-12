@@ -1,0 +1,82 @@
+
+(org.darktable.darktable:45029): dbind-WARNING **: 16:04:16.356: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+    28.8558 dt_image_duplicate version forced 1 -> 4
+/home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:359:67: runtime error: left shift of negative value -1
+    #0 0x7b4ed2f56466 in crxDecodeSymbolL1(CrxBandParam*, int, int) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:359
+    #1 0x7b4ed2f56466 in crxDecodeLine(CrxBandParam*) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:425
+    #2 0x7b4ed4005b71 in crxDecodeLine(CrxBandParam*, unsigned char*) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:1021
+    #3 0x7b4ed402c73f in LibRaw::crxDecodePlane(void*, unsigned int) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:1932
+    #4 0x7b4ed402d6f1 in LibRaw::crxLoadDecodeLoop(void*, int) [clone ._omp_fn.0] /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:2627
+    #5 0x7b4ed85cc79e  (/lib/x86_64-linux-gnu/libgomp.so.1+0x2279e) (BuildId: fa0c1b446610c4b7aca51e1183050acf5aa79503)
+    #6 0x7b4ed865ea41 in asan_thread_start ../../../../src/libsanitizer/asan/asan_interceptors.cpp:234
+    #7 0x7b4ec989cb83 in start_thread nptl/pthread_create.c:447
+    #8 0x7b4ec9929ecb in clone3 ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+/home/exedev/darktable/src/common/iop_order.c:2785:23: runtime error: load of misaligned address 0x51b0001cfc96 for type 'int32_t', which requires 4 byte alignment
+0x51b0001cfc96: note: pointer points here
+ 70 61 72 65 00 00  00 00 06 00 00 00 69 6e  76 65 72 74 00 00 00 00  0b 00 00 00 74 65 6d 70  65 72
+             ^ 
+    #0 0x7b4ed337dbd8 in dt_ioppr_deserialize_iop_order_list /home/exedev/darktable/src/common/iop_order.c:2785
+    #1 0x7b4ed38254b2 in _dev_auto_apply_presets /home/exedev/darktable/src/develop/develop.c:2221
+    #2 0x7b4ed384fd57 in dt_dev_read_history_ext /home/exedev/darktable/src/develop/develop.c:2466
+    #3 0x7b4ed3856c4b in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1130
+    #4 0x7b4ed3d11bde in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #5 0x7b4ed3d18bdf in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #6 0x7b4ed3e29dcc in write_image /home/exedev/darktable/src/lua/format.c:176
+    #7 0x7b4ecc3995e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #8 0x7b4ecc3a6672  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1e672) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #9 0x7b4ecc399f6d in lua_callk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x11f6d) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #10 0x7b4ecc3af104  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x27104) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #11 0x7b4ecc3995e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #12 0x7b4ecc3a6672  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1e672) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #13 0x7b4ecc39a115  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x12115) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #14 0x7b4ecc394f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #15 0x7b4ecc3b8a85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #16 0x7b4ecc39a23f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #17 0x7b4ed3e36696 in run_early_script /home/exedev/darktable/src/lua/init.c:128
+    #18 0x7b4ecc3995e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #19 0x7b4ecc39a0fc  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x120fc) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #20 0x7b4ecc394f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #21 0x7b4ecc3b8a85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #22 0x7b4ecc39a23f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #23 0x7b4ed3e1f19a in run_async_thread_main /home/exedev/darktable/src/lua/call.c:136
+    #24 0x7b4ecd7486a1  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x916a1) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #25 0x7b4ecd7430e1  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x8c0e1) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #26 0x7b4ed865ea41 in asan_thread_start ../../../../src/libsanitizer/asan/asan_interceptors.cpp:234
+    #27 0x7b4ec989cb83 in start_thread nptl/pthread_create.c:447
+    #28 0x7b4ec9929ecb in clone3 ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+/home/exedev/darktable/src/common/iop_order.c:2770:19: runtime error: load of misaligned address 0x51b0001cfc9a for type 'int32_t', which requires 4 byte alignment
+0x51b0001cfc9a: note: pointer points here
+ 00 00  00 00 06 00 00 00 69 6e  76 65 72 74 00 00 00 00  0b 00 00 00 74 65 6d 70  65 72 61 74 75 72
+              ^ 
+    #0 0x7b4ed337db48 in dt_ioppr_deserialize_iop_order_list /home/exedev/darktable/src/common/iop_order.c:2770
+    #1 0x7b4ed38254b2 in _dev_auto_apply_presets /home/exedev/darktable/src/develop/develop.c:2221
+    #2 0x7b4ed384fd57 in dt_dev_read_history_ext /home/exedev/darktable/src/develop/develop.c:2466
+    #3 0x7b4ed3856c4b in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1130
+    #4 0x7b4ed3d11bde in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #5 0x7b4ed3d18bdf in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #6 0x7b4ed3e29dcc in write_image /home/exedev/darktable/src/lua/format.c:176
+    #7 0x7b4ecc3995e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #8 0x7b4ecc3a6672  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1e672) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #9 0x7b4ecc399f6d in lua_callk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x11f6d) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #10 0x7b4ecc3af104  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x27104) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #11 0x7b4ecc3995e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #12 0x7b4ecc3a6672  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1e672) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #13 0x7b4ecc39a115  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x12115) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #14 0x7b4ecc394f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #15 0x7b4ecc3b8a85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #16 0x7b4ecc39a23f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #17 0x7b4ed3e36696 in run_early_script /home/exedev/darktable/src/lua/init.c:128
+    #18 0x7b4ecc3995e9  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x115e9) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #19 0x7b4ecc39a0fc  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x120fc) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #20 0x7b4ecc394f34  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0xcf34) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #21 0x7b4ecc3b8a85  (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x30a85) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #22 0x7b4ecc39a23f in lua_pcallk (/lib/x86_64-linux-gnu/liblua5.4.so.0+0x1223f) (BuildId: a97f440d293605d238d6088107182b4aabf457e8)
+    #23 0x7b4ed3e1f19a in run_async_thread_main /home/exedev/darktable/src/lua/call.c:136
+    #24 0x7b4ecd7486a1  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x916a1) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #25 0x7b4ecd7430e1  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x8c0e1) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #26 0x7b4ed865ea41 in asan_thread_start ../../../../src/libsanitizer/asan/asan_interceptors.cpp:234
+    #27 0x7b4ec989cb83 in start_thread nptl/pthread_create.c:447
+    #28 0x7b4ec9929ecb in clone3 ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+

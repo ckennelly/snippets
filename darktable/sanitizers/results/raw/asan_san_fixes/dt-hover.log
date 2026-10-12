@@ -1,0 +1,2 @@
+
+(org.darktable.darktable:35910): dbind-WARNING **: 15:14:09.909: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files

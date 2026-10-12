@@ -1,0 +1,425 @@
+ninja: Entering directory `build-asan'
+[0/2] Re-checking globbed directories...
+[1/261] Running utility command for deploy
+[2/261] Updating version string (git checkout)
+Version string: 5.7.0+1221~g6111862be
+[3/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/dtdata.c.o
+[4/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/gimp.c.o
+[5/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/grouping.c.o
+[6/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/collection.c.o
+[7/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/image_cache.c.o
+[8/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/darktable.c.o
+[9/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/history.c.o
+[10/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/database.c.o
+[11/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/mipmap_cache.c.o
+[12/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/act_on.c.o
+[13/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/film.c.o
+[14/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/iop_profile.c.o
+[15/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/ratings.c.o
+[16/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/selection.c.o
+[17/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/iop_order.c.o
+In file included from /home/exedev/darktable/src/common/iop_order.c:19:
+In function ‘_ioppr_check_rules’,
+    inlined from ‘dt_ioppr_check_iop_order_ext’ at /home/exedev/darktable/src/common/iop_order.c:2577:3:
+/home/exedev/darktable/src/common/iop_order.c:2431:22: warning: ‘%s’ directive argument is null [-Wformat-overflow=]
+ 2431 |                      "[_ioppr_check_rules] found rule %s %s"
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/common/darktable.h:551:14: note: in definition of macro ‘dt_debug_if’
+  551 |         func(__VA_ARGS__); } while(0)
+      |              ^~~~~~~~~~~
+/home/exedev/darktable/src/common/iop_order.c:2430:13: note: in expansion of macro ‘dt_print’
+ 2430 |             dt_print(DT_DEBUG_ALWAYS,
+      |             ^~~~~~~~
+/home/exedev/darktable/src/common/iop_order.c: In function ‘dt_ioppr_check_iop_order_ext’:
+/home/exedev/darktable/src/common/iop_order.c:2431:55: note: format string is defined here
+ 2431 |                      "[_ioppr_check_rules] found rule %s %s"
+      |                                                       ^~
+[18/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/styles.c.o
+[19/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/tags.c.o
+[20/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/undo.c.o
+[21/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/variables.c.o
+[22/261] Building C object bin/CMakeFiles/lib_darktable.dir/control/control.c.o
+[23/261] Building CXX object bin/CMakeFiles/lib_darktable.dir/common/exif.cc.o
+[24/261] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/control_jobs.c.o
+[25/261] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/image_jobs.c.o
+[26/261] Building C object bin/CMakeFiles/lib_darktable.dir/develop/develop.c.o
+[27/261] Building C object bin/CMakeFiles/lib_darktable.dir/develop/imageop.c.o
+[28/261] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/culling.c.o
+[29/261] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/range.c.o
+[30/261] Building C object bin/CMakeFiles/lib_darktable.dir/lua/image.c.o
+[31/261] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/thumbnail.c.o
+[32/261] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/thumbtable.c.o
+[33/261] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio.c.o
+[34/261] Building C object bin/CMakeFiles/lib_darktable.dir/views/view.c.o
+[35/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/cups_print.c.o
+[36/261] Building C object bin/CMakeFiles/darktable.dir/main.c.o
+[37/261] Building C object lib/darktable/views/CMakeFiles/lighttable.dir/lighttable.c.o
+[38/261] Building C object lib/darktable/views/CMakeFiles/tethering.dir/tethering.c.o
+[39/261] Building C object lib/darktable/views/CMakeFiles/map.dir/map.c.o
+[40/261] Building C object lib/darktable/views/CMakeFiles/print.dir/print.c.o
+[41/261] Building C object lib/darktable/views/CMakeFiles/darkroom.dir/darkroom.c.o
+[42/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/copy_history.dir/copy_history.c.o
+[43/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/image.dir/image.c.o
+[44/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/metadata_view.dir/metadata_view.c.o
+/home/exedev/darktable/src/libs/metadata_view.c: In function ‘gui_update’:
+/home/exedev/darktable/src/libs/metadata_view.c:1025:48: warning: ‘%s’ directive argument is null [-Wformat-overflow=]
+ 1025 |                 dt_util_str_cat(&tagstring, "\n%s, ", tagname);
+      |                                                ^~
+[45/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/navigation.dir/navigation.c.o
+[46/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/backgroundjobs.dir/backgroundjobs.c.o
+[47/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/histogram.dir/scopes/vectorscope.c.o
+[48/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/modulegroups.dir/modulegroups.c.o
+[49/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/viewswitcher.dir/tools/viewswitcher.c.o
+[50/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/filmstrip.dir/tools/filmstrip.c.o
+[51/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/darktable_label.dir/tools/darktable.c.o
+[52/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/hinter.dir/tools/hinter.c.o
+[53/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/image_infos.dir/tools/image_infos.c.o
+[54/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/live_view.dir/live_view.c.o
+[55/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/geotagging.dir/geotagging.c.o
+[56/261] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/disk.dir/disk.c.o
+[57/261] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/email.dir/email.c.o
+[58/261] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/gallery.dir/gallery.c.o
+[59/261] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/latex.dir/latex.c.o
+[60/261] Building C object lib/darktable/plugins/lighttable/CMakeFiles/print_settings.dir/print_settings.c.o
+[61/261] Building C object bin/cli/CMakeFiles/darktable-cli.dir/main.c.o
+[62/261] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/piwigo.dir/piwigo.c.o
+[63/261] Building C object bin/mcp/CMakeFiles/darktable-mcp.dir/dt_bridge.c.o
+[64/261] Building C object bin/tests/unittests/mcp/CMakeFiles/test_mcp_paths.dir/test_mcp_paths.c.o
+[65/261] Building C object bin/tests/unittests/iop/CMakeFiles/test_colorin_hsm.dir/test_colorin_hsm.c.o
+In file included from /home/exedev/darktable/src/tests/unittests/iop/test_colorin_hsm.c:29:
+/home/exedev/darktable/src/iop/colorin.c: In function ‘commit_params’:
+/home/exedev/darktable/src/iop/colorin.c:1597:18: warning: ‘dt_colorspaces_create_xyzimatrix_profile’ accessing 36 bytes in a region of size 12 [-Wstringop-overflow=]
+ 1597 |       d->input = dt_colorspaces_create_xyzimatrix_profile((float(*)[3])pipe->image.adobe_XYZ_to_CAM);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1597:18: note: referencing argument 1 of type ‘float[3][3]’
+In file included from /home/exedev/darktable/src/common/image.h:22,
+                 from /home/exedev/darktable/src/develop/pixelpipe_hb.h:22,
+                 from /home/exedev/darktable/src/develop/pixelpipe.h:130,
+                 from /home/exedev/darktable/src/develop/imageop.h:36,
+                 from /home/exedev/darktable/src/common/history.h:24,
+                 from /home/exedev/darktable/src/views/view.h:23,
+                 from /home/exedev/darktable/src/control/jobs.h:24,
+                 from /home/exedev/darktable/src/control/control.h:32,
+                 from /home/exedev/darktable/src/bauhaus/bauhaus.h:24,
+                 from /home/exedev/darktable/src/iop/colorin.c:19:
+/home/exedev/darktable/src/common/colorspaces.h:226:13: note: in a call to function ‘dt_colorspaces_create_xyzimatrix_profile’
+  226 | cmsHPROFILE dt_colorspaces_create_xyzimatrix_profile(float cam_xyz[3][3]);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1663:8: warning: ‘dt_colorspaces_get_matrix_from_input_profile’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1663 |     if(dt_colorspaces_get_matrix_from_input_profile
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1664 |        (d->input, d->cmatrix,
+      |        ~~~~~~~~~~~~~~~~~~~~~~
+ 1665 |         d->lut[0], d->lut[1], d->lut[2], LUT_SAMPLES))
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1663:8: note: referencing argument 2 of type ‘float[4][4]’
+/home/exedev/darktable/src/common/colorspaces.h:264:5: note: in a call to function ‘dt_colorspaces_get_matrix_from_input_profile’
+  264 | int dt_colorspaces_get_matrix_from_input_profile(cmsHPROFILE prof,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1682:7: warning: ‘dt_colorspaces_get_matrix_from_input_profile’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1682 |       dt_colorspaces_get_matrix_from_input_profile(d->nrgb, d->lmatrix,
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1683 |                                                    lutr, lutg, lutb, 1);
+      |                                                    ~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1682:7: note: referencing argument 2 of type ‘float[4][4]’
+/home/exedev/darktable/src/common/colorspaces.h:264:5: note: in a call to function ‘dt_colorspaces_get_matrix_from_input_profile’
+  264 | int dt_colorspaces_get_matrix_from_input_profile(cmsHPROFILE prof,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1689:8: warning: ‘dt_colorspaces_get_matrix_from_input_profile’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1689 |     if(dt_colorspaces_get_matrix_from_input_profile(d->input, d->cmatrix,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1690 |                                                     d->lut[0], d->lut[1], d->lut[2],
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1691 |                                                     LUT_SAMPLES))
+      |                                                     ~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1689:8: note: referencing argument 2 of type ‘float[4][4]’
+/home/exedev/darktable/src/common/colorspaces.h:264:5: note: in a call to function ‘dt_colorspaces_get_matrix_from_input_profile’
+  264 | int dt_colorspaces_get_matrix_from_input_profile(cmsHPROFILE prof,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1732:8: warning: ‘dt_colorspaces_get_matrix_from_input_profile’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1732 |     if(dt_colorspaces_get_matrix_from_input_profile(d->input, d->cmatrix,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1733 |                                                     d->lut[0], d->lut[1], d->lut[2],
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1734 |                                                     LUT_SAMPLES))
+      |                                                     ~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1732:8: note: referencing argument 2 of type ‘float[4][4]’
+/home/exedev/darktable/src/common/colorspaces.h:264:5: note: in a call to function ‘dt_colorspaces_get_matrix_from_input_profile’
+  264 | int dt_colorspaces_get_matrix_from_input_profile(cmsHPROFILE prof,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1770:3: warning: ‘dt_ioppr_set_pipe_input_profile_info’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1770 |   dt_ioppr_set_pipe_input_profile_info(self->dev, piece->pipe, d->type,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1771 |                                        d->filename, p->intent, d->cmatrix);
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1770:3: note: referencing argument 6 of type ‘const float[4][4]’
+In file included from /home/exedev/darktable/src/develop/blend.h:21,
+                 from /home/exedev/darktable/src/common/history.h:25:
+/home/exedev/darktable/src/common/iop_profile.h:105:1: note: in a call to function ‘dt_ioppr_set_pipe_input_profile_info’
+  105 | dt_ioppr_set_pipe_input_profile_info(struct dt_develop_t *dev,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[66/261] Checking validity of noiseprofiles.json
+[67/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/colorlabels.c.o
+[68/261] Checking validity of wb_presets.json
+[69/261] Building C object bin/CMakeFiles/lib_darktable.dir/common/image.c.o
+[70/261] Linking C shared library bin/libdarktable.so
+[71/261] Linking C shared module lib/darktable/views/libprint.so
+[72/261] Linking C shared module lib/darktable/views/liblighttable.so
+[73/261] Linking C shared module lib/darktable/plugins/lighttable/libstyles.so
+[74/261] Linking C shared module lib/darktable/plugins/lighttable/librecentcollect.so
+[75/261] Linking C shared module lib/darktable/plugins/lighttable/libcopy_history.so
+[76/261] Linking C shared module lib/darktable/plugins/lighttable/libimport.so
+[77/261] Linking C shared module lib/darktable/views/libslideshow.so
+[78/261] Linking C shared module lib/darktable/plugins/lighttable/libimage.so
+[79/261] Linking C shared module lib/darktable/plugins/lighttable/libexport.so
+[80/261] Linking C shared module lib/darktable/plugins/lighttable/libcollect.so
+[81/261] Linking C shared module lib/darktable/views/libtethering.so
+[82/261] Linking C shared module lib/darktable/views/libdarkroom.so
+[83/261] Linking C shared module lib/darktable/views/libmap.so
+[84/261] Linking C shared module lib/darktable/plugins/lighttable/libmetadata.so
+[85/261] Linking C shared module lib/darktable/plugins/lighttable/libtagging.so
+[86/261] Linking C shared module lib/darktable/plugins/lighttable/libfiltering.so
+[87/261] Linking C shared module lib/darktable/plugins/lighttable/libselect.so
+[88/261] Linking C shared module lib/darktable/plugins/lighttable/libnavigation.so
+[89/261] Linking C shared module lib/darktable/plugins/lighttable/libcolorpicker.so
+[90/261] Linking C shared module lib/darktable/plugins/lighttable/libsession.so
+[91/261] Linking C shared module lib/darktable/plugins/lighttable/libsnapshots.so
+[92/261] Linking C shared module lib/darktable/plugins/lighttable/libmodulegroups.so
+[93/261] Linking C shared module lib/darktable/plugins/lighttable/libmasks.so
+[94/261] Linking C shared module lib/darktable/plugins/lighttable/libmetadata_view.so
+[95/261] Linking C shared module lib/darktable/plugins/lighttable/libhistogram.so
+[96/261] Linking C shared module lib/darktable/plugins/lighttable/libhistory.so
+[97/261] Linking C shared module lib/darktable/plugins/lighttable/libbackgroundjobs.so
+[98/261] Linking C shared module lib/darktable/plugins/lighttable/libdarktable_label.so
+[99/261] Linking C shared module lib/darktable/plugins/lighttable/libviewswitcher.so
+[100/261] Linking C shared module lib/darktable/plugins/lighttable/libcolorlabels.so
+[101/261] Linking C shared module lib/darktable/plugins/lighttable/libioporder.so
+[102/261] Linking C shared module lib/darktable/plugins/lighttable/libduplicate.so
+[103/261] Linking C shared module lib/darktable/plugins/lighttable/libfilter.so
+[104/261] Linking C shared module lib/darktable/plugins/lighttable/libratings.so
+[105/261] Linking C shared module lib/darktable/plugins/lighttable/libview_toolbox.so
+[106/261] Linking C shared module lib/darktable/plugins/lighttable/libimage_infos.so
+[107/261] Linking C shared module lib/darktable/plugins/lighttable/libtimeline.so
+[108/261] Linking C shared module lib/darktable/plugins/lighttable/libglobal_toolbox.so
+[109/261] Linking C shared module lib/darktable/plugins/lighttable/liblighttable_mode.so
+[110/261] Building C object lib/darktable/plugins/CMakeFiles/rawprepare.dir/introspection_rawprepare.c.o
+[111/261] Linking C shared module lib/darktable/plugins/lighttable/libhinter.so
+[112/261] Linking C shared module lib/darktable/plugins/lighttable/libfilmstrip.so
+[113/261] Linking C shared module lib/darktable/plugins/lighttable/libmodule_toolbox.so
+[114/261] Linking C shared module lib/darktable/plugins/lighttable/libgamepad.so
+[115/261] Linking C shared module lib/darktable/plugins/lighttable/liblog_history.so
+[116/261] Linking C shared module lib/darktable/plugins/lighttable/liblive_view.so
+[117/261] Linking C shared module lib/darktable/plugins/lighttable/libmap_settings.so
+[118/261] Linking C shared module lib/darktable/plugins/lighttable/libmidi.so
+[119/261] Linking C shared module lib/darktable/plugins/lighttable/liblocation.so
+[120/261] Linking C shared module lib/darktable/plugins/lighttable/libcamera.so
+[121/261] Linking C shared module lib/darktable/plugins/lighttable/libmap_locations.so
+[122/261] Linking C shared module lib/darktable/plugins/lighttable/libgeotagging.so
+[123/261] Building C object lib/darktable/plugins/CMakeFiles/exposure.dir/introspection_exposure.c.o
+[124/261] Linking C shared module lib/darktable/plugins/libsoften.so
+[125/261] Linking C shared module lib/darktable/plugins/libbloom.so
+[126/261] Linking C shared module lib/darktable/plugins/liblowpass.so
+[127/261] Linking C shared module lib/darktable/plugins/lighttable/libprint_settings.so
+[128/261] Linking C shared module lib/darktable/plugins/libhighpass.so
+[129/261] Building C object lib/darktable/plugins/CMakeFiles/colorin.dir/introspection_colorin.c.o
+In file included from /home/exedev/darktable/build-asan/lib/darktable/plugins/introspection_colorin.c:115:
+/home/exedev/darktable/src/iop/colorin.c: In function ‘commit_params’:
+/home/exedev/darktable/src/iop/colorin.c:1597:18: warning: ‘dt_colorspaces_create_xyzimatrix_profile’ accessing 36 bytes in a region of size 12 [-Wstringop-overflow=]
+ 1597 |       d->input = dt_colorspaces_create_xyzimatrix_profile((float(*)[3])pipe->image.adobe_XYZ_to_CAM);
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1597:18: note: referencing argument 1 of type ‘float[3][3]’
+In file included from /home/exedev/darktable/src/iop/iop_api.h:20,
+                 from <command-line>:
+/home/exedev/darktable/src/common/colorspaces.h:226:13: note: in a call to function ‘dt_colorspaces_create_xyzimatrix_profile’
+  226 | cmsHPROFILE dt_colorspaces_create_xyzimatrix_profile(float cam_xyz[3][3]);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1663:8: warning: ‘dt_colorspaces_get_matrix_from_input_profile’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1663 |     if(dt_colorspaces_get_matrix_from_input_profile
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1664 |        (d->input, d->cmatrix,
+      |        ~~~~~~~~~~~~~~~~~~~~~~
+ 1665 |         d->lut[0], d->lut[1], d->lut[2], LUT_SAMPLES))
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1663:8: note: referencing argument 2 of type ‘float[4][4]’
+/home/exedev/darktable/src/common/colorspaces.h:264:5: note: in a call to function ‘dt_colorspaces_get_matrix_from_input_profile’
+  264 | int dt_colorspaces_get_matrix_from_input_profile(cmsHPROFILE prof,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1682:7: warning: ‘dt_colorspaces_get_matrix_from_input_profile’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1682 |       dt_colorspaces_get_matrix_from_input_profile(d->nrgb, d->lmatrix,
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1683 |                                                    lutr, lutg, lutb, 1);
+      |                                                    ~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1682:7: note: referencing argument 2 of type ‘float[4][4]’
+/home/exedev/darktable/src/common/colorspaces.h:264:5: note: in a call to function ‘dt_colorspaces_get_matrix_from_input_profile’
+  264 | int dt_colorspaces_get_matrix_from_input_profile(cmsHPROFILE prof,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1689:8: warning: ‘dt_colorspaces_get_matrix_from_input_profile’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1689 |     if(dt_colorspaces_get_matrix_from_input_profile(d->input, d->cmatrix,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1690 |                                                     d->lut[0], d->lut[1], d->lut[2],
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1691 |                                                     LUT_SAMPLES))
+      |                                                     ~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1689:8: note: referencing argument 2 of type ‘float[4][4]’
+/home/exedev/darktable/src/common/colorspaces.h:264:5: note: in a call to function ‘dt_colorspaces_get_matrix_from_input_profile’
+  264 | int dt_colorspaces_get_matrix_from_input_profile(cmsHPROFILE prof,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1732:8: warning: ‘dt_colorspaces_get_matrix_from_input_profile’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1732 |     if(dt_colorspaces_get_matrix_from_input_profile(d->input, d->cmatrix,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1733 |                                                     d->lut[0], d->lut[1], d->lut[2],
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1734 |                                                     LUT_SAMPLES))
+      |                                                     ~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1732:8: note: referencing argument 2 of type ‘float[4][4]’
+/home/exedev/darktable/src/common/colorspaces.h:264:5: note: in a call to function ‘dt_colorspaces_get_matrix_from_input_profile’
+  264 | int dt_colorspaces_get_matrix_from_input_profile(cmsHPROFILE prof,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1770:3: warning: ‘dt_ioppr_set_pipe_input_profile_info’ accessing 64 bytes in a region of size 16 [-Wstringop-overflow=]
+ 1770 |   dt_ioppr_set_pipe_input_profile_info(self->dev, piece->pipe, d->type,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1771 |                                        d->filename, p->intent, d->cmatrix);
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/exedev/darktable/src/iop/colorin.c:1770:3: note: referencing argument 6 of type ‘const float[4][4]’
+In file included from /home/exedev/darktable/src/develop/blend.h:21,
+                 from /home/exedev/darktable/src/common/history.h:25,
+                 from /home/exedev/darktable/src/views/view.h:23,
+                 from /home/exedev/darktable/src/control/jobs.h:24,
+                 from /home/exedev/darktable/src/control/control.h:32,
+                 from /home/exedev/darktable/src/bauhaus/bauhaus.h:24,
+                 from /home/exedev/darktable/src/iop/colorin.c:19:
+/home/exedev/darktable/src/common/iop_profile.h:105:1: note: in a call to function ‘dt_ioppr_set_pipe_input_profile_info’
+  105 | dt_ioppr_set_pipe_input_profile_info(struct dt_develop_t *dev,
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[130/261] Linking C shared module lib/darktable/plugins/libcolorharmonizer.so
+[131/261] Linking C shared module lib/darktable/plugins/libcolorreconstruct.so
+[132/261] Linking C shared module lib/darktable/plugins/librawprepare.so
+[133/261] Linking C executable bin/darktable
+[134/261] Linking C shared module lib/darktable/plugins/libshadhi.so
+[135/261] Linking C shared module lib/darktable/plugins/libgamma.so
+[136/261] Linking C shared module lib/darktable/plugins/libcolisa.so
+[137/261] Linking C shared module lib/darktable/plugins/libtonecurve.so
+[138/261] Linking CXX shared module lib/darktable/plugins/libtonemap.so
+[139/261] Linking C shared module lib/darktable/plugins/libcolorcorrection.so
+[140/261] Linking C shared module lib/darktable/plugins/libtemperature.so
+[141/261] Linking C shared module lib/darktable/plugins/libequalizer.so
+[142/261] Linking C shared module lib/darktable/plugins/libbasicadj.so
+[143/261] Linking C shared module lib/darktable/plugins/libcolorbalance.so
+[144/261] Linking C shared module lib/darktable/plugins/librgbcurve.so
+[145/261] Linking C shared module lib/darktable/plugins/libcolorout.so
+[146/261] Linking C shared module lib/darktable/plugins/libcolorchecker.so
+[147/261] Linking C shared module lib/darktable/plugins/libcolorin.so
+[148/261] Linking C shared module lib/darktable/plugins/libclipping.so
+[149/261] Linking C shared module lib/darktable/plugins/libcrop.so
+[150/261] Linking C shared module lib/darktable/plugins/libsharpen.so
+[151/261] Linking C shared module lib/darktable/plugins/libexposure.so
+[152/261] Linking C shared module lib/darktable/plugins/libenlargecanvas.so
+[153/261] Linking C shared module lib/darktable/plugins/libmonochrome.so
+[154/261] Linking C shared module lib/darktable/plugins/libdither.so
+[155/261] Linking C shared module lib/darktable/plugins/libcolorzones.so
+[156/261] Linking C shared module lib/darktable/plugins/libbasecurve.so
+[157/261] Linking C shared module lib/darktable/plugins/libhighlights.so
+[158/261] Linking C shared module lib/darktable/plugins/librawoverexposed.so
+[159/261] Building C object lib/darktable/plugins/CMakeFiles/demosaic.dir/introspection_demosaic.c.o
+[160/261] Linking C shared module lib/darktable/plugins/libvelvia.so
+[161/261] Linking C shared module lib/darktable/plugins/liboverlay.so
+[162/261] Linking C shared module lib/darktable/plugins/libvignette.so
+[163/261] Linking C shared module lib/darktable/plugins/libgrain.so
+[164/261] Linking C shared module lib/darktable/plugins/libspektrafilm.so
+[165/261] Linking C shared module lib/darktable/plugins/libclahe.so
+[166/261] Linking CXX shared module lib/darktable/plugins/libbilateral.so
+[167/261] Linking C shared module lib/darktable/plugins/libcolortransfer.so
+[168/261] Linking C shared module lib/darktable/plugins/libprofile_gamma.so
+[169/261] Linking C shared module lib/darktable/plugins/librelight.so
+[170/261] Linking C shared module lib/darktable/plugins/libsplittoning.so
+[171/261] Linking C shared module lib/darktable/plugins/libgraduatednd.so
+[172/261] Linking C shared module lib/darktable/plugins/librotatepixels.so
+[173/261] Linking C shared module lib/darktable/plugins/libcolormapping.so
+[174/261] Linking C shared module lib/darktable/plugins/libzonesystem.so
+[175/261] Linking C shared module lib/darktable/plugins/libchannelmixer.so
+[176/261] Linking C shared module lib/darktable/plugins/liboverexposed.so
+[177/261] Linking C shared module lib/darktable/plugins/libatrous.so
+[178/261] Linking C shared module lib/darktable/plugins/libcacorrect.so
+[179/261] Linking C shared module lib/darktable/plugins/libscalepixels.so
+[180/261] Linking C shared module lib/darktable/plugins/libhotpixels.so
+[181/261] Linking CXX shared module lib/darktable/plugins/libdemosaic.so
+[182/261] Linking C shared module lib/darktable/plugins/libspots.so
+[183/261] Linking C shared module lib/darktable/plugins/liblowlight.so
+[184/261] Linking C shared module lib/darktable/plugins/libretouch.so
+[185/261] Linking C shared module lib/darktable/plugins/libborders.so
+[186/261] Linking C shared module lib/darktable/plugins/libcolorcontrast.so
+[187/261] Linking C shared module lib/darktable/plugins/libliquify.so
+[188/261] Linking C shared module lib/darktable/plugins/librawdenoise.so
+[189/261] Linking C shared module lib/darktable/plugins/libinvert.so
+[190/261] Linking C shared module lib/darktable/plugins/libnlmeans.so
+[191/261] Linking C shared module lib/darktable/plugins/libfinalscale.so
+[192/261] Linking C shared module lib/darktable/plugins/libcolorize.so
+[193/261] Linking C shared module lib/darktable/plugins/libvibrance.so
+[194/261] Linking C shared module lib/darktable/plugins/libflip.so
+[195/261] Linking C shared module lib/darktable/plugins/liblevels.so
+[196/261] Linking C shared module lib/darktable/plugins/librgblevels.so
+[197/261] Linking C shared module lib/darktable/plugins/libglobaltonemap.so
+[198/261] Linking C shared module lib/darktable/plugins/libbilat.so
+[199/261] Linking C shared module lib/darktable/plugins/libdenoiseprofile.so
+[200/261] Linking C shared module lib/darktable/plugins/libdefringe.so
+[201/261] Linking C shared module lib/darktable/plugins/libdemosaicscale.so
+[202/261] Linking C shared module lib/darktable/plugins/libhazeremoval.so
+[203/261] Linking C shared module lib/darktable/plugins/libmask_manager.so
+[204/261] Linking C shared module lib/darktable/plugins/libfilmic.so
+[205/261] Linking C shared module lib/darktable/plugins/libashift.so
+[206/261] Linking C shared module lib/darktable/plugins/libcensorize.so
+[207/261] Linking C shared module lib/darktable/plugins/libnegadoctor.so
+[208/261] Linking C shared module lib/darktable/plugins/libdiffuse.so
+[209/261] Linking C shared module lib/darktable/plugins/libcolorbalancergb.so
+[210/261] Linking C shared module lib/darktable/plugins/libfilmicrgb.so
+[211/261] Linking C shared module lib/darktable/plugins/libcacorrectrgb.so
+[212/261] Linking C shared module lib/darktable/plugins/libblurs.so
+[213/261] Linking C shared module lib/darktable/plugins/libsigmoid.so
+[214/261] Linking CXX shared module lib/darktable/plugins/liblut3d.so
+[215/261] Linking C shared module lib/darktable/plugins/libchannelmixerrgb.so
+[216/261] Linking C shared module lib/darktable/plugins/libtoneequal.so
+[217/261] Linking C shared module lib/darktable/plugins/libagx.so
+[218/261] Linking C shared module lib/darktable/plugins/libprimaries.so
+[219/261] Linking C shared module lib/darktable/plugins/libcontrastntexture.so
+[220/261] Linking C shared module lib/darktable/plugins/librasterfile.so
+[221/261] Linking C shared module lib/darktable/plugins/libcolorequal.so
+[222/261] Linking C shared module lib/darktable/plugins/libsatcurvergb.so
+[223/261] Linking C shared module lib/darktable/plugins/imageio/format/libjpeg.so
+[224/261] Linking C shared module lib/darktable/plugins/imageio/format/libpdf.so
+[225/261] Linking C shared module lib/darktable/plugins/imageio/format/libcopy.so
+[226/261] Linking C shared module lib/darktable/plugins/imageio/format/libpng.so
+[227/261] Linking C shared module lib/darktable/plugins/libwatermark.so
+[228/261] Linking C shared module lib/darktable/plugins/imageio/format/libpfm.so
+[229/261] Linking CXX shared module lib/darktable/plugins/liblens.so
+[230/261] Linking C shared module lib/darktable/plugins/imageio/format/libppm.so
+[231/261] Linking C shared module lib/darktable/plugins/imageio/format/libwebp.so
+[232/261] Linking C shared module lib/darktable/plugins/imageio/format/libjpegxl.so
+[233/261] Linking C shared module lib/darktable/plugins/imageio/format/libtiff.so
+[234/261] Linking C shared module lib/darktable/plugins/imageio/format/libheif.so
+[235/261] Linking C shared module lib/darktable/plugins/imageio/format/libj2k.so
+[236/261] Linking C shared module lib/darktable/plugins/imageio/storage/libclipboard.so
+[237/261] Linking CXX shared module lib/darktable/plugins/imageio/format/libexr.so
+[238/261] Linking C shared module lib/darktable/plugins/imageio/storage/libemail.so
+[239/261] Linking C shared module lib/darktable/plugins/imageio/format/libxcf.so
+[240/261] Linking C shared module lib/darktable/plugins/imageio/storage/libgallery.so
+[241/261] Linking C shared module lib/darktable/plugins/imageio/format/libavif.so
+[242/261] Linking C shared module lib/darktable/plugins/imageio/storage/libdisk.so
+[243/261] Linking C shared module lib/darktable/plugins/imageio/storage/libpiwigo.so
+[244/261] Linking C shared module lib/darktable/plugins/imageio/storage/liblatex.so
+[245/261] Linking C executable bin/darktable-cli
+[246/261] Linking C executable bin/tests/darktable-test-variables
+[247/261] Linking C executable bin/darktable-generate-cache
+[248/261] Linking CXX executable bin/tests/unittests/test_hdr_alignment_internal
+[249/261] Linking C executable bin/chart/darktable-chart
+[250/261] Linking C executable bin/darktable-mcp
+[251/261] Linking C executable bin/tests/unittests/common/test_spektra_sim
+[252/261] Linking C executable bin/tests/unittests/test_hdr_alignment
+[253/261] Linking C executable bin/tests/unittests/common/test_fixed_strings
+[254/261] Linking C executable bin/tests/unittests/common/test_dtdata
+[255/261] Linking C executable bin/tests/unittests/common/test_draw_curve
+[256/261] Linking C executable bin/tests/unittests/common/test_spektra_pack
+[257/261] Linking C executable bin/tests/unittests/iop/test_lut3d_bounds
+[258/261] Linking C executable bin/tests/unittests/iop/test_colorin_hsm
+[259/261] Linking C executable bin/tests/unittests/common/test_history_strings
+[260/261] Linking C executable bin/tests/unittests/mcp/test_mcp_paths
+[261/261] Linking C executable bin/tests/unittests/iop/test_filmicrgb

@@ -1,0 +1,260 @@
+ninja: Entering directory `build'
+[0/2] Re-checking globbed directories...
+[1/257] Running utility command for deploy
+[2/257] Updating version string (git checkout)
+Version string: 5.7.0+1212~g1c3707e51
+[3/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/dtdata.c.o
+[4/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/film.c.o
+[5/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/image_cache.c.o
+[6/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/colorlabels.c.o
+[7/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/history.c.o
+[8/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/ratings.c.o
+[9/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/act_on.c.o
+[10/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/darktable.c.o
+[11/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/grouping.c.o
+[12/257] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/culling.c.o
+[13/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/image.c.o
+[14/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/gimp.c.o
+[15/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/iop_profile.c.o
+[16/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/mipmap_cache.c.o
+[17/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/iop_order.c.o
+[18/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/collection.c.o
+[19/257] Building CXX object bin/CMakeFiles/lib_darktable.dir/common/exif.cc.o
+[20/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/selection.c.o
+[21/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/variables.c.o
+[22/257] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/control_jobs.c.o
+[23/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/undo.c.o
+[24/257] Building C object bin/CMakeFiles/lib_darktable.dir/develop/develop.c.o
+[25/257] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/thumbtable.c.o
+[26/257] Building C object bin/CMakeFiles/lib_darktable.dir/control/control.c.o
+[27/257] Building C object bin/CMakeFiles/lib_darktable.dir/views/view.c.o
+[28/257] Building C object bin/CMakeFiles/lib_darktable.dir/dtgtk/thumbnail.c.o
+[29/257] Building C object bin/CMakeFiles/lib_darktable.dir/lua/image.c.o
+[30/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/styles.c.o
+[31/257] Checking validity of noiseprofiles.json
+[32/257] Building C object bin/CMakeFiles/lib_darktable.dir/control/jobs/image_jobs.c.o
+[33/257] Building C object bin/CMakeFiles/lib_darktable.dir/imageio/imageio.c.o
+[34/257] Building C object bin/CMakeFiles/lib_darktable.dir/common/cups_print.c.o
+[35/257] Building C object bin/CMakeFiles/darktable.dir/main.c.o
+[36/257] Building C object lib/darktable/views/CMakeFiles/lighttable.dir/lighttable.c.o
+[37/257] Building C object lib/darktable/views/CMakeFiles/darkroom.dir/darkroom.c.o
+[38/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/image.dir/image.c.o
+[39/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/copy_history.dir/copy_history.c.o
+[40/257] Building C object lib/darktable/views/CMakeFiles/map.dir/map.c.o
+[41/257] Building C object lib/darktable/views/CMakeFiles/tethering.dir/tethering.c.o
+[42/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/metadata_view.dir/metadata_view.c.o
+[43/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/histogram.dir/scopes/vectorscope.c.o
+[44/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/navigation.dir/navigation.c.o
+[45/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/filmstrip.dir/tools/filmstrip.c.o
+[46/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/backgroundjobs.dir/backgroundjobs.c.o
+[47/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/darktable_label.dir/tools/darktable.c.o
+[48/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/modulegroups.dir/modulegroups.c.o
+[49/257] Building C object lib/darktable/views/CMakeFiles/print.dir/print.c.o
+[50/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/viewswitcher.dir/tools/viewswitcher.c.o
+[51/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/hinter.dir/tools/hinter.c.o
+[52/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/image_infos.dir/tools/image_infos.c.o
+[53/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/live_view.dir/live_view.c.o
+[54/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/geotagging.dir/geotagging.c.o
+[55/257] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/disk.dir/disk.c.o
+[56/257] Building C object lib/darktable/plugins/lighttable/CMakeFiles/print_settings.dir/print_settings.c.o
+[57/257] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/gallery.dir/gallery.c.o
+[58/257] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/latex.dir/latex.c.o
+[59/257] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/email.dir/email.c.o
+[60/257] Building C object bin/cli/CMakeFiles/darktable-cli.dir/main.c.o
+[61/257] Building C object lib/darktable/plugins/imageio/storage/CMakeFiles/piwigo.dir/piwigo.c.o
+[62/257] Building C object bin/mcp/CMakeFiles/darktable-mcp.dir/dt_bridge.c.o
+[63/257] Building C object bin/tests/unittests/mcp/CMakeFiles/test_mcp_paths.dir/test_mcp_paths.c.o
+[64/257] Building C object bin/tests/unittests/iop/CMakeFiles/test_colorin_hsm.dir/test_colorin_hsm.c.o
+[65/257] Checking validity of wb_presets.json
+[66/257] Linking C shared library bin/libdarktable.so
+[67/257] Linking C shared module lib/darktable/plugins/lighttable/libcopy_history.so
+[68/257] Linking C shared module lib/darktable/views/libprint.so
+[69/257] Linking C shared module lib/darktable/plugins/lighttable/libselect.so
+[70/257] Linking C shared module lib/darktable/views/liblighttable.so
+[71/257] Linking C shared module lib/darktable/plugins/lighttable/librecentcollect.so
+[72/257] Linking C shared module lib/darktable/plugins/lighttable/libimage.so
+[73/257] Linking C shared module lib/darktable/views/libmap.so
+[74/257] Linking C shared module lib/darktable/plugins/lighttable/libimport.so
+[75/257] Linking C shared module lib/darktable/plugins/lighttable/libexport.so
+[76/257] Linking C shared module lib/darktable/plugins/lighttable/libstyles.so
+[77/257] Linking C executable bin/darktable
+[78/257] Linking C shared module lib/darktable/views/libslideshow.so
+[79/257] Linking C shared module lib/darktable/plugins/lighttable/libcollect.so
+[80/257] Linking C shared module lib/darktable/views/libtethering.so
+[81/257] Linking C shared module lib/darktable/plugins/lighttable/libtagging.so
+[82/257] Linking C shared module lib/darktable/views/libdarkroom.so
+[83/257] Linking C shared module lib/darktable/plugins/lighttable/libmetadata.so
+[84/257] Linking C shared module lib/darktable/plugins/lighttable/libmetadata_view.so
+[85/257] Linking C shared module lib/darktable/plugins/lighttable/libbackgroundjobs.so
+[86/257] Linking C shared module lib/darktable/plugins/lighttable/libsession.so
+[87/257] Linking C shared module lib/darktable/plugins/lighttable/libfiltering.so
+[88/257] Linking C shared module lib/darktable/plugins/lighttable/libduplicate.so
+[89/257] Linking C shared module lib/darktable/plugins/lighttable/libnavigation.so
+[90/257] Linking C shared module lib/darktable/plugins/lighttable/libsnapshots.so
+[91/257] Linking C shared module lib/darktable/plugins/lighttable/libcolorlabels.so
+[92/257] Linking C shared module lib/darktable/plugins/lighttable/libhistory.so
+[93/257] Linking C shared module lib/darktable/plugins/lighttable/libratings.so
+[94/257] Linking C shared module lib/darktable/plugins/lighttable/libview_toolbox.so
+[95/257] Linking C shared module lib/darktable/plugins/lighttable/libioporder.so
+[96/257] Linking C shared module lib/darktable/plugins/lighttable/libhistogram.so
+[97/257] Linking C shared module lib/darktable/plugins/lighttable/libmasks.so
+[98/257] Linking C shared module lib/darktable/plugins/lighttable/libviewswitcher.so
+[99/257] Linking C shared module lib/darktable/plugins/lighttable/libcolorpicker.so
+[100/257] Linking C shared module lib/darktable/plugins/lighttable/libmodulegroups.so
+[101/257] Linking C shared module lib/darktable/plugins/lighttable/libmodule_toolbox.so
+[102/257] Linking C shared module lib/darktable/plugins/lighttable/libdarktable_label.so
+[103/257] Linking C shared module lib/darktable/plugins/lighttable/libfilter.so
+[104/257] Linking C shared module lib/darktable/plugins/lighttable/libfilmstrip.so
+[105/257] Linking C shared module lib/darktable/plugins/lighttable/liblighttable_mode.so
+[106/257] Linking C shared module lib/darktable/plugins/lighttable/libgamepad.so
+[107/257] Linking C shared module lib/darktable/plugins/lighttable/liblog_history.so
+[108/257] Linking C shared module lib/darktable/plugins/lighttable/libmidi.so
+[109/257] Linking C shared module lib/darktable/plugins/lighttable/libhinter.so
+[110/257] Linking C shared module lib/darktable/plugins/lighttable/libimage_infos.so
+[111/257] Linking C shared module lib/darktable/plugins/lighttable/libmap_settings.so
+[112/257] Linking C shared module lib/darktable/plugins/lighttable/libcamera.so
+[113/257] Linking C shared module lib/darktable/plugins/lighttable/liblocation.so
+[114/257] Building C object lib/darktable/plugins/CMakeFiles/rawprepare.dir/introspection_rawprepare.c.o
+[115/257] Linking C shared module lib/darktable/plugins/lighttable/libgeotagging.so
+[116/257] Linking C shared module lib/darktable/plugins/lighttable/liblive_view.so
+[117/257] Linking C shared module lib/darktable/plugins/lighttable/libtimeline.so
+[118/257] Linking C shared module lib/darktable/plugins/lighttable/libmap_locations.so
+[119/257] Linking C shared module lib/darktable/plugins/lighttable/libglobal_toolbox.so
+[120/257] Linking C shared module lib/darktable/plugins/lighttable/libprint_settings.so
+[121/257] Linking C shared module lib/darktable/plugins/libcolorharmonizer.so
+[122/257] Linking C shared module lib/darktable/plugins/liblowpass.so
+[123/257] Linking CXX shared module lib/darktable/plugins/libtonemap.so
+[124/257] Linking C shared module lib/darktable/plugins/libsoften.so
+[125/257] Linking C shared module lib/darktable/plugins/libbloom.so
+[126/257] Linking C shared module lib/darktable/plugins/libhighpass.so
+[127/257] Linking C shared module lib/darktable/plugins/libgamma.so
+[128/257] Linking C shared module lib/darktable/plugins/libcolorcorrection.so
+[129/257] Linking C shared module lib/darktable/plugins/libcolorreconstruct.so
+[130/257] Linking C shared module lib/darktable/plugins/libshadhi.so
+[131/257] Building C object lib/darktable/plugins/CMakeFiles/exposure.dir/introspection_exposure.c.o
+[132/257] Linking C shared module lib/darktable/plugins/libcolisa.so
+[133/257] Linking C shared module lib/darktable/plugins/libtonecurve.so
+[134/257] Linking C shared module lib/darktable/plugins/librawprepare.so
+[135/257] Linking C shared module lib/darktable/plugins/libtemperature.so
+[136/257] Linking C shared module lib/darktable/plugins/libequalizer.so
+[137/257] Linking C shared module lib/darktable/plugins/libbasicadj.so
+[138/257] Building C object lib/darktable/plugins/CMakeFiles/colorin.dir/introspection_colorin.c.o
+[139/257] Linking C shared module lib/darktable/plugins/libcolorchecker.so
+[140/257] Linking C shared module lib/darktable/plugins/librgbcurve.so
+[141/257] Linking C shared module lib/darktable/plugins/libcolorbalance.so
+[142/257] Linking C shared module lib/darktable/plugins/librawoverexposed.so
+[143/257] Linking C shared module lib/darktable/plugins/libclipping.so
+[144/257] Linking C shared module lib/darktable/plugins/libcolorout.so
+[145/257] Linking C shared module lib/darktable/plugins/libenlargecanvas.so
+[146/257] Linking C shared module lib/darktable/plugins/libdither.so
+[147/257] Linking C shared module lib/darktable/plugins/libsharpen.so
+[148/257] Linking C shared module lib/darktable/plugins/libcrop.so
+[149/257] Linking C shared module lib/darktable/plugins/libmonochrome.so
+[150/257] Linking C shared module lib/darktable/plugins/libexposure.so
+[151/257] Linking C shared module lib/darktable/plugins/libcolorzones.so
+[152/257] Linking C shared module lib/darktable/plugins/liboverlay.so
+[153/257] Linking C shared module lib/darktable/plugins/libbasecurve.so
+[154/257] Linking C shared module lib/darktable/plugins/libhighlights.so
+[155/257] Linking C shared module lib/darktable/plugins/libclahe.so
+[156/257] Linking C shared module lib/darktable/plugins/libcolorin.so
+[157/257] Linking C shared module lib/darktable/plugins/libvelvia.so
+[158/257] Linking C shared module lib/darktable/plugins/libsplittoning.so
+[159/257] Linking C shared module lib/darktable/plugins/libvignette.so
+[160/257] Linking C shared module lib/darktable/plugins/libgrain.so
+[161/257] Linking CXX shared module lib/darktable/plugins/libbilateral.so
+[162/257] Linking C shared module lib/darktable/plugins/libprofile_gamma.so
+[163/257] Linking C shared module lib/darktable/plugins/librotatepixels.so
+[164/257] Linking C shared module lib/darktable/plugins/libspektrafilm.so
+[165/257] Linking C shared module lib/darktable/plugins/liboverexposed.so
+[166/257] Linking C shared module lib/darktable/plugins/libcolortransfer.so
+[167/257] Linking C shared module lib/darktable/plugins/libcolormapping.so
+[168/257] Linking C shared module lib/darktable/plugins/libchannelmixer.so
+[169/257] Linking C shared module lib/darktable/plugins/librelight.so
+[170/257] Linking C shared module lib/darktable/plugins/libscalepixels.so
+[171/257] Linking C shared module lib/darktable/plugins/libgraduatednd.so
+[172/257] Building C object lib/darktable/plugins/CMakeFiles/demosaic.dir/introspection_demosaic.c.o
+[173/257] Linking C shared module lib/darktable/plugins/libcacorrect.so
+[174/257] Linking C shared module lib/darktable/plugins/libhotpixels.so
+[175/257] Linking C shared module lib/darktable/plugins/libzonesystem.so
+[176/257] Linking C shared module lib/darktable/plugins/libatrous.so
+[177/257] Linking C shared module lib/darktable/plugins/libspots.so
+[178/257] Linking C shared module lib/darktable/plugins/liblowlight.so
+[179/257] Linking C shared module lib/darktable/plugins/libcolorcontrast.so
+[180/257] Linking C shared module lib/darktable/plugins/libdemosaicscale.so
+[181/257] Linking C shared module lib/darktable/plugins/libretouch.so
+[182/257] Linking C shared module lib/darktable/plugins/librawdenoise.so
+[183/257] Linking C shared module lib/darktable/plugins/libborders.so
+[184/257] Linking C shared module lib/darktable/plugins/libfinalscale.so
+[185/257] Linking C shared module lib/darktable/plugins/libcolorize.so
+[186/257] Linking C shared module lib/darktable/plugins/libliquify.so
+[187/257] Linking C shared module lib/darktable/plugins/libnlmeans.so
+[188/257] Linking C shared module lib/darktable/plugins/libinvert.so
+[189/257] Linking C shared module lib/darktable/plugins/librgblevels.so
+[190/257] Linking C shared module lib/darktable/plugins/liblevels.so
+[191/257] Linking C shared module lib/darktable/plugins/libvibrance.so
+[192/257] Linking C shared module lib/darktable/plugins/libbilat.so
+[193/257] Linking C shared module lib/darktable/plugins/libdenoiseprofile.so
+[194/257] Linking C shared module lib/darktable/plugins/libflip.so
+[195/257] Linking CXX shared module lib/darktable/plugins/libdemosaic.so
+[196/257] Linking C shared module lib/darktable/plugins/libmask_manager.so
+[197/257] Linking C shared module lib/darktable/plugins/libglobaltonemap.so
+[198/257] Linking C shared module lib/darktable/plugins/libdefringe.so
+[199/257] Linking C shared module lib/darktable/plugins/libashift.so
+[200/257] Linking CXX shared module lib/darktable/plugins/liblut3d.so
+[201/257] Linking C shared module lib/darktable/plugins/libfilmicrgb.so
+[202/257] Linking C shared module lib/darktable/plugins/libfilmic.so
+[203/257] Linking C shared module lib/darktable/plugins/libtoneequal.so
+[204/257] Linking C shared module lib/darktable/plugins/libcacorrectrgb.so
+[205/257] Linking C shared module lib/darktable/plugins/libnegadoctor.so
+[206/257] Linking C shared module lib/darktable/plugins/libcensorize.so
+[207/257] Linking C shared module lib/darktable/plugins/libcolorbalancergb.so
+[208/257] Linking C shared module lib/darktable/plugins/libhazeremoval.so
+[209/257] Linking C shared module lib/darktable/plugins/libchannelmixerrgb.so
+[210/257] Linking C shared module lib/darktable/plugins/libsigmoid.so
+[211/257] Linking C shared module lib/darktable/plugins/libblurs.so
+[212/257] Linking C shared module lib/darktable/plugins/imageio/format/libppm.so
+[213/257] Linking C shared module lib/darktable/plugins/libdiffuse.so
+[214/257] Linking C shared module lib/darktable/plugins/libprimaries.so
+[215/257] Linking C shared module lib/darktable/plugins/libcolorequal.so
+[216/257] Linking C shared module lib/darktable/plugins/imageio/format/libpfm.so
+[217/257] Linking C shared module lib/darktable/plugins/libagx.so
+[218/257] Linking C shared module lib/darktable/plugins/imageio/format/libcopy.so
+[219/257] Linking C shared module lib/darktable/plugins/imageio/format/libjpeg.so
+[220/257] Linking C shared module lib/darktable/plugins/libsatcurvergb.so
+[221/257] Linking C shared module lib/darktable/plugins/libcontrastntexture.so
+[222/257] Linking C shared module lib/darktable/plugins/librasterfile.so
+[223/257] Linking C shared module lib/darktable/plugins/libwatermark.so
+[224/257] Linking C shared module lib/darktable/plugins/imageio/format/libpdf.so
+[225/257] Linking C shared module lib/darktable/plugins/imageio/storage/libemail.so
+[226/257] Linking C shared module lib/darktable/plugins/imageio/format/libwebp.so
+[227/257] Linking C shared module lib/darktable/plugins/imageio/format/libpng.so
+[228/257] Linking C shared module lib/darktable/plugins/imageio/format/libtiff.so
+[229/257] Linking CXX shared module lib/darktable/plugins/liblens.so
+[230/257] Linking C shared module lib/darktable/plugins/imageio/storage/libclipboard.so
+[231/257] Linking C shared module lib/darktable/plugins/imageio/storage/libgallery.so
+[232/257] Linking C shared module lib/darktable/plugins/imageio/format/libheif.so
+[233/257] Linking C shared module lib/darktable/plugins/imageio/storage/libdisk.so
+[234/257] Linking C shared module lib/darktable/plugins/imageio/format/libjpegxl.so
+[235/257] Linking C shared module lib/darktable/plugins/imageio/format/libj2k.so
+[236/257] Linking C shared module lib/darktable/plugins/imageio/format/libxcf.so
+[237/257] Linking C shared module lib/darktable/plugins/imageio/storage/libpiwigo.so
+[238/257] Linking C shared module lib/darktable/plugins/imageio/storage/liblatex.so
+[239/257] Linking C shared module lib/darktable/plugins/imageio/format/libavif.so
+[240/257] Linking CXX shared module lib/darktable/plugins/imageio/format/libexr.so
+[241/257] Linking C executable bin/darktable-cli
+[242/257] Linking C executable bin/darktable-mcp
+[243/257] Linking C executable bin/tests/unittests/test_hdr_alignment
+[244/257] Linking C executable bin/tests/darktable-test-variables
+[245/257] Linking C executable bin/tests/unittests/common/test_fixed_strings
+[246/257] Linking C executable bin/darktable-generate-cache
+[247/257] Linking C executable bin/tests/unittests/common/test_draw_curve
+[248/257] Linking C executable bin/tests/unittests/common/test_dtdata
+[249/257] Linking C executable bin/tests/unittests/common/test_spektra_pack
+[250/257] Linking C executable bin/chart/darktable-chart
+[251/257] Linking C executable bin/tests/unittests/common/test_spektra_sim
+[252/257] Linking C executable bin/tests/unittests/iop/test_filmicrgb
+[253/257] Linking C executable bin/tests/unittests/mcp/test_mcp_paths
+[254/257] Linking C executable bin/tests/unittests/common/test_history_strings
+[255/257] Linking C executable bin/tests/unittests/iop/test_colorin_hsm
+[256/257] Linking C executable bin/tests/unittests/iop/test_lut3d_bounds
+[257/257] Linking CXX executable bin/tests/unittests/test_hdr_alignment_internal
