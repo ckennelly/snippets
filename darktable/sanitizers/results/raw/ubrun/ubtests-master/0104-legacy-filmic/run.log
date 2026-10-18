@@ -1,0 +1,21 @@
+Test 0104-legacy-filmic
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.29732
+      Avg dE                   : 0.00292
+      Std dE                   : 0.04121
+      ----------------------------------
+      Pixels below avg + 0 std : 99.39 %
+      Pixels below avg + 1 std : 99.39 %
+      Pixels below avg + 3 std : 99.43 %
+      Pixels below avg + 6 std : 99.49 %
+      Pixels below avg + 9 std : 99.58 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-172708.log

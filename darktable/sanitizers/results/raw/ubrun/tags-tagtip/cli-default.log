@@ -1,0 +1,60 @@
+/home/exedev/darktable/src/gui/styles_dialog.c:930:9: runtime error: null pointer passed as argument 1, which is declared to never be null
+    #0 0x7d53bf6d9dda in dt_gui_style_content_dialog /home/exedev/darktable/src/gui/styles_dialog.c:930
+    #1 0x7d53bfdb91ed in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:311
+    #2 0x7d53bfdc7d42 in dt_style_save /home/exedev/darktable/src/common/styles.c:1632
+    #3 0x7d53bfdc7d42 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1700
+    #4 0x7d53bfdcd617 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1867
+    #5 0x7d53bf86db87 in dt_init /home/exedev/darktable/src/common/darktable.c:2211
+    #6 0x5dc4592f635c in main /home/exedev/darktable/src/cli/main.c:604
+    #7 0x7d53b602a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #8 0x7d53b602a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #9 0x5dc4592fb5f4 in _start (/home/exedev/dt-asan/m_tagtip/bin/darktable-cli+0x195f4) (BuildId: 09a2bb48c1955197ec7d8bd27de63c6e07bd610b)
+
+/home/exedev/darktable/src/gui/styles_dialog.c:930:9: runtime error: null pointer passed as argument 2, which is declared to never be null
+    #0 0x7d53bf6d9d9f in dt_gui_style_content_dialog /home/exedev/darktable/src/gui/styles_dialog.c:930
+    #1 0x7d53bfdb91ed in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:311
+    #2 0x7d53bfdc7d42 in dt_style_save /home/exedev/darktable/src/common/styles.c:1632
+    #3 0x7d53bfdc7d42 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1700
+    #4 0x7d53bfdcd617 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1867
+    #5 0x7d53bf86db87 in dt_init /home/exedev/darktable/src/common/darktable.c:2211
+    #6 0x5dc4592f635c in main /home/exedev/darktable/src/cli/main.c:604
+    #7 0x7d53b602a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #8 0x7d53b602a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #9 0x5dc4592fb5f4 in _start (/home/exedev/dt-asan/m_tagtip/bin/darktable-cli+0x195f4) (BuildId: 09a2bb48c1955197ec7d8bd27de63c6e07bd610b)
+
+     3.1575 [xmp_import] creating tag: aaa tag
+     3.1586 [xmp_import] creating tag: aaa|sub
+     3.1595 [xmp_import] creating tag: darktable|format|cr3
+     3.1604 [xmp_import] creating tag: sanx|alpha
+     3.1612 [xmp_import] creating tag: sanx|beta|deep
+     3.1621 [xmp_import] creating tag: sanx|beta|wide
+     3.1629 [xmp_import] creating tag: solo
+     3.1637 [xmp_import] creating tag: sanx
+     3.1645 [xmp_import] creating tag: sanx|beta
+/home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:359:67: runtime error: left shift of negative value -1
+    #0 0x7d53bf6e85c7 in crxDecodeSymbolL1(CrxBandParam*, int, int) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:359
+    #1 0x7d53bf6e85c7 in crxDecodeLine(CrxBandParam*) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:379
+    #2 0x7d53c0926841 in crxDecodeLine(CrxBandParam*, unsigned char*) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:1021
+    #3 0x7d53c094d40f in LibRaw::crxDecodePlane(void*, unsigned int) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:1932
+    #4 0x7d53c094e3c1 in LibRaw::crxLoadDecodeLoop(void*, int) [clone ._omp_fn.0] /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:2627
+    #5 0x7d53c594179e  (/lib/x86_64-linux-gnu/libgomp.so.1+0x2279e) (BuildId: fa0c1b446610c4b7aca51e1183050acf5aa79503)
+    #6 0x7d53c525ea41 in asan_thread_start ../../../../src/libsanitizer/asan/asan_interceptors.cpp:234
+    #7 0x7d53b609cb83 in start_thread nptl/pthread_create.c:447
+    #8 0x7d53b6129ecb in clone3 ../sysdeps/unix/sysv/linux/x86_64/clone3.S:78
+
+/home/exedev/darktable/src/develop/imageop.c:275:71: runtime error: store to misaligned address 0x52400330e111 for type 'short int', which requires 2 byte alignment
+0x52400330e111: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00
+              ^ 
+    #0 0x7d53c00b989f in dt_iop_default_init /home/exedev/darktable/src/develop/imageop.c:275
+    #1 0x7d53c00dcc7a in dt_iop_load_module_by_so /home/exedev/darktable/src/develop/imageop.c:447
+    #2 0x7d53c00e28a1 in dt_iop_load_modules_ext /home/exedev/darktable/src/develop/imageop.c:1990
+    #3 0x7d53c00a2afb in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1128
+    #4 0x7d53c06301e9 in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #5 0x7d53c063723f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #6 0x7d53943f6653  (/home/exedev/dt-asan/m_tagtip/lib/darktable/plugins/imageio/storage/libdisk.so+0xb653) (BuildId: e2abac9a7776e8c10654d6b6ca48321f974cd209)
+    #7 0x5dc4592f7871 in main /home/exedev/darktable/src/cli/main.c:901
+    #8 0x7d53b602a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #9 0x7d53b602a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #10 0x5dc4592fb5f4 in _start (/home/exedev/dt-asan/m_tagtip/bin/darktable-cli+0x195f4) (BuildId: 09a2bb48c1955197ec7d8bd27de63c6e07bd610b)
+

@@ -1,0 +1,21 @@
+Test 0066-demosaic-mark3
+      Image mire1-xtrans.raf
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.17857
+      Avg dE                   : 0.00097
+      Std dE                   : 0.02325
+      ----------------------------------
+      Pixels below avg + 0 std : 99.80 %
+      Pixels below avg + 1 std : 99.80 %
+      Pixels below avg + 3 std : 99.80 %
+      Pixels below avg + 6 std : 99.81 %
+      Pixels below avg + 9 std : 99.81 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-170559.log

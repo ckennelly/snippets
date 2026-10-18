@@ -1,0 +1,21 @@
+Test 0055-rgblevels-indep
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.08918
+      Avg dE                   : 0.00238
+      Std dE                   : 0.03092
+      ----------------------------------
+      Pixels below avg + 0 std : 99.33 %
+      Pixels below avg + 1 std : 99.33 %
+      Pixels below avg + 3 std : 99.34 %
+      Pixels below avg + 6 std : 99.37 %
+      Pixels below avg + 9 std : 99.54 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-170150.log

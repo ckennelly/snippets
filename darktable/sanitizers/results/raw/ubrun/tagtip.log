@@ -1,0 +1,16 @@
+plain ok 6077b8917 tags: free the whole tag list in dt_tag_get_list_export()
+plain ok 21aeefc00 tags: free the sorted list in dt_tag_export()
+plain ok f69c2a5ef RELEASE_NOTES.md: tag export leaks
+plain ctest: 100% tests passed, 0 tests failed out of 33
+asan ctest: 100% tests passed, 0 tests failed out of 33
+Warning: [minor] Ignored empty rdf:Seq list for darktable:masks_history - /tmp/tmp.zcgv3J5Nm7/img/img.CR3.xmp
+default rc=0 keywords: aaa aaa tag alpha beta cr3 darktable deep format sanx solo sub wide 
+tags: sanx|alpha|0 sanx|beta|deep|0 sanx|beta|wide|0 solo|0 sanx|2 sanx|beta|2 
+attached-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+attached-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 
+Warning: [minor] Ignored empty rdf:Seq list for darktable:masks_history - /tmp/tmp.zcgv3J5Nm7/img/img.CR3.xmp
+parents-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+parents-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 
+tagtip list_export reports: 0
+tagtip rc=0 tagged export action returned done  accepted 2098933 files=darktable_tags_2026-10-18_16-35.txt lines=9 dt_tag_export reports=0
+TAGTIP_DONE

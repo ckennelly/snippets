@@ -1,0 +1,24 @@
+Test 0077-croprotate-keystone
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 3.55099
+      Avg dE                   : 0.00196
+      Std dE                   : 0.03767
+      ----------------------------------
+      Pixels below avg + 0 std : 99.64 %
+      Pixels below avg + 1 std : 99.64 %
+      Pixels below avg + 3 std : 99.65 %
+      Pixels below avg + 6 std : 99.68 %
+      Pixels below avg + 9 std : 99.72 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (9883 pixels changed)
+
+Total test 1
+Errors     1
+   - 0077-croprotate-keystone
+see test-20261018-171237.log

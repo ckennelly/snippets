@@ -1,0 +1,21 @@
+Test 0063-velvia
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.17061
+      Avg dE                   : 0.00295
+      Std dE                   : 0.03826
+      ----------------------------------
+      Pixels below avg + 0 std : 99.27 %
+      Pixels below avg + 1 std : 99.28 %
+      Pixels below avg + 3 std : 99.31 %
+      Pixels below avg + 6 std : 99.41 %
+      Pixels below avg + 9 std : 99.58 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-170415.log

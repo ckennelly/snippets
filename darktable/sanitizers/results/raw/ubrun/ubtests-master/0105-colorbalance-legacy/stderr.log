@@ -1,0 +1,40 @@
+/home/exedev/darktable/src/gui/styles_dialog.c:930:9: runtime error: null pointer passed as argument 1, which is declared to never be null
+    #0 0x7c6c482cc920 in dt_gui_style_content_dialog /home/exedev/darktable/src/gui/styles_dialog.c:930
+    #1 0x7c6c4899bb9d in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:311
+    #2 0x7c6c489aa6f2 in dt_style_save /home/exedev/darktable/src/common/styles.c:1632
+    #3 0x7c6c489aa6f2 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1700
+    #4 0x7c6c489affc7 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1867
+    #5 0x7c6c4845eeae in dt_init /home/exedev/darktable/src/common/darktable.c:2210
+    #6 0x639b6e6af35c in main /home/exedev/darktable/src/cli/main.c:604
+    #7 0x7c6c3ec2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #8 0x7c6c3ec2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #9 0x639b6e6b45f4 in _start (/home/exedev/dt-asan/m_master/bin/darktable-cli+0x195f4) (BuildId: 146930b836ad675f4cf702887eb992e2557a192e)
+
+/home/exedev/darktable/src/gui/styles_dialog.c:930:9: runtime error: null pointer passed as argument 2, which is declared to never be null
+    #0 0x7c6c482cc8e5 in dt_gui_style_content_dialog /home/exedev/darktable/src/gui/styles_dialog.c:930
+    #1 0x7c6c4899bb9d in dt_styles_create_style_header /home/exedev/darktable/src/common/styles.c:311
+    #2 0x7c6c489aa6f2 in dt_style_save /home/exedev/darktable/src/common/styles.c:1632
+    #3 0x7c6c489aa6f2 in dt_styles_import_from_file /home/exedev/darktable/src/common/styles.c:1700
+    #4 0x7c6c489affc7 in dt_import_default_styles /home/exedev/darktable/src/common/styles.c:1867
+    #5 0x7c6c4845eeae in dt_init /home/exedev/darktable/src/common/darktable.c:2210
+    #6 0x639b6e6af35c in main /home/exedev/darktable/src/cli/main.c:604
+    #7 0x7c6c3ec2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #8 0x7c6c3ec2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #9 0x639b6e6b45f4 in _start (/home/exedev/dt-asan/m_master/bin/darktable-cli+0x195f4) (BuildId: 146930b836ad675f4cf702887eb992e2557a192e)
+
+/home/exedev/darktable/src/develop/imageop.c:275:71: runtime error: store to misaligned address 0x524002ebc111 for type 'short int', which requires 2 byte alignment
+0x524002ebc111: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00
+              ^ 
+    #0 0x7c6c48c9d8ff in dt_iop_default_init /home/exedev/darktable/src/develop/imageop.c:275
+    #1 0x7c6c48cc0cda in dt_iop_load_module_by_so /home/exedev/darktable/src/develop/imageop.c:447
+    #2 0x7c6c48cc6901 in dt_iop_load_modules_ext /home/exedev/darktable/src/develop/imageop.c:1990
+    #3 0x7c6c48c86b5b in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1128
+    #4 0x7c6c4920da09 in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #5 0x7c6c49214a0f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #6 0x7c6c1d5c1653  (/home/exedev/dt-asan/m_master/lib/darktable/plugins/imageio/storage/libdisk.so+0xb653) (BuildId: 29aa1551bdb62963906905400526b366a2ea69fa)
+    #7 0x639b6e6b0871 in main /home/exedev/darktable/src/cli/main.c:901
+    #8 0x7c6c3ec2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #9 0x7c6c3ec2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #10 0x639b6e6b45f4 in _start (/home/exedev/dt-asan/m_master/bin/darktable-cli+0x195f4) (BuildId: 146930b836ad675f4cf702887eb992e2557a192e)
+

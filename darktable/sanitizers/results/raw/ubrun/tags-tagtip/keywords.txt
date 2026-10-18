@@ -1,0 +1,5 @@
+default rc=0 keywords: aaa aaa tag alpha beta cr3 darktable deep format sanx solo sub wide 
+tags: sanx|alpha|0 sanx|beta|deep|0 sanx|beta|wide|0 solo|0 sanx|2 sanx|beta|2 attached-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+attached-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 
+parents-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+parents-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 

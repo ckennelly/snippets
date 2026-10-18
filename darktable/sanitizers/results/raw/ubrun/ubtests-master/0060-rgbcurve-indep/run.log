@@ -1,0 +1,21 @@
+Test 0060-rgbcurve-indep
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.05700
+      Avg dE                   : 0.00219
+      Std dE                   : 0.02384
+      ----------------------------------
+      Pixels below avg + 0 std : 99.07 %
+      Pixels below avg + 1 std : 99.07 %
+      Pixels below avg + 3 std : 99.11 %
+      Pixels below avg + 6 std : 99.16 %
+      Pixels below avg + 9 std : 99.32 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-170322.log

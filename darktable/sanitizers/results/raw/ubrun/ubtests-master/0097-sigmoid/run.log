@@ -1,0 +1,24 @@
+Test 0097-sigmoid
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 3.87786
+      Avg dE                   : 0.05757
+      Std dE                   : 0.17662
+      ----------------------------------
+      Pixels below avg + 0 std : 88.78 %
+      Pixels below avg + 1 std : 89.50 %
+      Pixels below avg + 3 std : 96.77 %
+      Pixels below avg + 6 std : 99.81 %
+      Pixels below avg + 9 std : 99.99 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (317567 pixels changed)
+
+Total test 1
+Errors     1
+   - 0097-sigmoid
+see test-20261018-172051.log

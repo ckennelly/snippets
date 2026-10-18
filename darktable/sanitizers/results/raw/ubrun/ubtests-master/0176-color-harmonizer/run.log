@@ -1,0 +1,24 @@
+Test 0176-color-harmonizer
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 4.84508
+      Avg dE                   : 0.00016
+      Std dE                   : 0.01309
+      ----------------------------------
+      Pixels below avg + 0 std : 99.98 %
+      Pixels below avg + 1 std : 99.98 %
+      Pixels below avg + 3 std : 99.98 %
+      Pixels below avg + 6 std : 99.98 %
+      Pixels below avg + 9 std : 99.98 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (661 pixels changed)
+
+Total test 1
+Errors     1
+   - 0176-color-harmonizer
+see test-20261018-175545.log

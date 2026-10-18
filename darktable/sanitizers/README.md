@@ -47,13 +47,16 @@ by a report from the base build that is gone in a build with the fix
   test at a time, one log directory per test.
 * `tagjob.sh`, `iopjob.sh`: the build and run jobs for the two fix branches
   below (per-commit plain builds, ASan build and `ctest`, then the runs).
+* `santests-ubsan.sh`: the suite again, keeping darktable-cli's stderr for
+  UBSan. `tagtip.sh`: `fix/tag-export-leaks` rechecked at its pushed tip.
 * `nodlclose.c`, `sym.sh`: darktable dlcloses its modules before LSan
   reports, so every frame in `src/iop` prints as `<unknown module>`. This
   preload makes `dlclose()` a no-op so that they symbolize. libasan has to
   come first: `LD_PRELOAD=$(gcc -print-file-name=libasan.so):nodlclose.so`.
 
 ASan and UBSan share the `log_path` flag, and whichever options string is
-parsed last wins, so the scripts set the same `log_path` in both.
+parsed last wins, so the scripts set the same `log_path` in both. ASan and
+LSan reports follow it; UBSan's runtime errors still go to stderr.
 
 ## Raw logs
 
@@ -83,6 +86,8 @@ parsed last wins, so the scripts set the same `log_path` in both.
   `ctest` runs, and `sym`, the first symbolized runs. The preload also
   reaches the test harness's own `date`, `sort` and `python3`, whose leak
   reports sit next to darktable-cli's.
+* `ubrun`: `santests-ubsan.sh` on master (`ubtests-master`), and
+  `tagtip.sh`'s results.
 * `*.build.log`, `*.ctest.log`: the builds and the `ctest` runs, plain
   (`plain_*`) and under the sanitizers (`asan_*`).
 
@@ -138,8 +143,22 @@ Not fixed:
 ## Second round: the integration suite
 
 On darktable `c24afcc4a`, the full integration suite (181 tests, CPU path)
-under ASan+UBSan+LSan: every test passes, with no ASan memory errors and no
-UBSan reports. `ctest` (32 tests) passes plain and under the sanitizers on
+under ASan+UBSan+LSan shows no ASan memory errors. 159 tests pass; the
+other 22 fail the pixel comparison in both sanitizer runs, the same 22 each
+time, while a plain build fails 12 of them (11 in common), so the extra
+failures come with the sanitizer build. `./run` exits 0 either way, so count
+the `OK` lines in its output.
+
+UBSan prints its runtime errors to stderr whatever `log_path` says, and
+`./run` discards darktable-cli's stderr, so the first suite run
+(`santests.sh`) shows none. `santests-ubsan.sh` keeps it through a wrapper
+(`ubrun/ubtests-master/*/stderr.log`): 597 reports, all at five places. Three
+come in every test: `imageop.c:275`, the int8 store
+(`fix/introspection-int8-default`), and `styles_dialog.c:930`, both
+arguments of `memcmp(NULL, NULL, 0)`. The others are in X-Trans
+demosaicing (`xtrans.c:437-439` and `1430-1432`, 9 tests): row offsets of
+±`TS` through a `float[122]` row, which the code comments on as staying
+inside the padded multi-dimensional array, and ASan agrees. `ctest` (32 tests) passes plain and under the sanitizers on
 master and on both branches below, and every commit builds.
 
 Most of the leaks it reports are allocations made once at startup and not

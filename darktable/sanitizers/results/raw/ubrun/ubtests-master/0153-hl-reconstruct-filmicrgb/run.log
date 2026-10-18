@@ -1,0 +1,21 @@
+Test 0153-hl-reconstruct-filmicrgb
+      Image hlrecovery.arw
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.25072
+      Avg dE                   : 0.00318
+      Std dE                   : 0.04618
+      ----------------------------------
+      Pixels below avg + 0 std : 99.48 %
+      Pixels below avg + 1 std : 99.48 %
+      Pixels below avg + 3 std : 99.48 %
+      Pixels below avg + 6 std : 99.49 %
+      Pixels below avg + 9 std : 99.53 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-174453.log

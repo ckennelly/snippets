@@ -1,0 +1,21 @@
+Test 0140-filmicrgb-v4-nochroma
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.37960
+      Avg dE                   : 0.00470
+      Std dE                   : 0.05271
+      ----------------------------------
+      Pixels below avg + 0 std : 99.07 %
+      Pixels below avg + 1 std : 99.07 %
+      Pixels below avg + 3 std : 99.12 %
+      Pixels below avg + 6 std : 99.26 %
+      Pixels below avg + 9 std : 99.50 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-173829.log

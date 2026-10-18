@@ -1,0 +1,24 @@
+Test 0158-coloreq-no-guided-filter
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 4.52429
+      Avg dE                   : 0.16451
+      Std dE                   : 0.28218
+      ----------------------------------
+      Pixels below avg + 0 std : 68.42 %
+      Pixels below avg + 1 std : 83.15 %
+      Pixels below avg + 3 std : 98.73 %
+      Pixels below avg + 6 std : 99.85 %
+      Pixels below avg + 9 std : 99.97 %
+      ----------------------------------
+      Pixels above tolerance   : 0.06 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (888127 pixels changed)
+
+Total test 1
+Errors     1
+   - 0158-coloreq-no-guided-filter
+see test-20261018-174743.log

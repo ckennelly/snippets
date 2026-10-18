@@ -1,0 +1,71 @@
+Test project /home/exedev/darktable/build
+      Start  1: test_sample
+ 1/33 Test  #1: test_sample ......................   Passed    0.00 sec
+      Start  2: test_hdr_alignment
+ 2/33 Test  #2: test_hdr_alignment ...............   Passed    0.06 sec
+      Start  3: test_hdr_alignment_internal
+ 3/33 Test  #3: test_hdr_alignment_internal ......   Passed    0.00 sec
+      Start  4: test_catalog_basics
+ 4/33 Test  #4: test_catalog_basics ..............   Passed    0.49 sec
+      Start  5: test_catalog_film
+ 5/33 Test  #5: test_catalog_film ................   Passed    0.49 sec
+      Start  6: test_catalog_metadata
+ 6/33 Test  #6: test_catalog_metadata ............   Passed    0.49 sec
+      Start  7: test_catalog_styles
+ 7/33 Test  #7: test_catalog_styles ..............   Passed    0.50 sec
+      Start  8: test_catalog_tags
+ 8/33 Test  #8: test_catalog_tags ................   Passed    0.50 sec
+      Start  9: test_spektra_sim
+ 9/33 Test  #9: test_spektra_sim .................   Passed    0.03 sec
+      Start 10: test_spektra_pack
+10/33 Test #10: test_spektra_pack ................   Passed    0.03 sec
+      Start 11: test_draw_curve
+11/33 Test #11: test_draw_curve ..................   Passed    0.03 sec
+      Start 12: test_fixed_strings
+12/33 Test #12: test_fixed_strings ...............   Passed    0.03 sec
+      Start 13: test_history_strings
+13/33 Test #13: test_history_strings .............   Passed    0.03 sec
+      Start 14: test_dtdata
+14/33 Test #14: test_dtdata ......................   Passed    0.05 sec
+      Start 15: test_hdr_transfer
+15/33 Test #15: test_hdr_transfer ................   Passed    0.00 sec
+      Start 16: test_filmicrgb
+16/33 Test #16: test_filmicrgb ...................   Passed    0.04 sec
+      Start 17: test_lut3d_bounds
+17/33 Test #17: test_lut3d_bounds ................   Passed    0.03 sec
+      Start 18: test_colorin_hsm
+18/33 Test #18: test_colorin_hsm .................   Passed    0.03 sec
+      Start 19: test_rawdenoise
+19/33 Test #19: test_rawdenoise ..................   Passed    0.11 sec
+      Start 20: test_flexi_model
+20/33 Test #20: test_flexi_model .................   Passed    0.05 sec
+      Start 21: test_flexi_cache
+21/33 Test #21: test_flexi_cache .................   Passed    0.03 sec
+      Start 22: test_flexi_persistence
+22/33 Test #22: test_flexi_persistence ...........   Passed    0.03 sec
+      Start 23: test_flexi_dnd
+23/33 Test #23: test_flexi_dnd ...................   Passed    0.03 sec
+      Start 24: test_flexi_groups
+24/33 Test #24: test_flexi_groups ................   Passed    0.03 sec
+      Start 25: test_flexi_panel
+25/33 Test #25: test_flexi_panel .................   Passed    0.04 sec
+      Start 26: test_flexi_migrate
+26/33 Test #26: test_flexi_migrate ...............   Passed    0.03 sec
+      Start 27: test_flexi_compose
+27/33 Test #27: test_flexi_compose ...............   Passed    0.03 sec
+      Start 28: test_flexi_controls
+28/33 Test #28: test_flexi_controls ..............   Passed    0.03 sec
+      Start 29: test_flexi_ui_coverage
+29/33 Test #29: test_flexi_ui_coverage ...........   Passed    0.03 sec
+      Start 30: test_flexi_raster_prune
+30/33 Test #30: test_flexi_raster_prune ..........   Passed    0.03 sec
+      Start 31: test_probe_image
+31/33 Test #31: test_probe_image .................   Passed    1.40 sec
+      Start 32: test_flexi_styling
+32/33 Test #32: test_flexi_styling ...............   Passed    0.06 sec
+      Start 33: test_mcp_paths
+33/33 Test #33: test_mcp_paths ...................   Passed    0.03 sec
+
+100% tests passed, 0 tests failed out of 33
+
+Total Test time (real) =   4.79 sec

@@ -1,0 +1,21 @@
+Test 0090-mask-combine
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.27464
+      Avg dE                   : 0.00284
+      Std dE                   : 0.04046
+      ----------------------------------
+      Pixels below avg + 0 std : 99.43 %
+      Pixels below avg + 1 std : 99.44 %
+      Pixels below avg + 3 std : 99.44 %
+      Pixels below avg + 6 std : 99.48 %
+      Pixels below avg + 9 std : 99.57 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-171741.log

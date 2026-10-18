@@ -1,0 +1,21 @@
+Test 0081-mask-groups
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.18013
+      Avg dE                   : 0.00126
+      Std dE                   : 0.02713
+      ----------------------------------
+      Pixels below avg + 0 std : 99.73 %
+      Pixels below avg + 1 std : 99.73 %
+      Pixels below avg + 3 std : 99.74 %
+      Pixels below avg + 6 std : 99.76 %
+      Pixels below avg + 9 std : 99.78 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-171402.log

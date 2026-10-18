@@ -1,0 +1,21 @@
+Test 0121-blending-rgb-scene-3
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.11647
+      Avg dE                   : 0.00040
+      Std dE                   : 0.01497
+      ----------------------------------
+      Pixels below avg + 0 std : 99.92 %
+      Pixels below avg + 1 std : 99.92 %
+      Pixels below avg + 3 std : 99.92 %
+      Pixels below avg + 6 std : 99.92 %
+      Pixels below avg + 9 std : 99.92 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-173231.log
