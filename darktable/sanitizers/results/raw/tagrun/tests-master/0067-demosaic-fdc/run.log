@@ -1,0 +1,21 @@
+Test 0067-demosaic-fdc
+      Image mire1-xtrans.raf
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.21977
+      Avg dE                   : 0.00110
+      Std dE                   : 0.02471
+      ----------------------------------
+      Pixels below avg + 0 std : 99.78 %
+      Pixels below avg + 1 std : 99.78 %
+      Pixels below avg + 3 std : 99.78 %
+      Pixels below avg + 6 std : 99.78 %
+      Pixels below avg + 9 std : 99.78 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-052623.log

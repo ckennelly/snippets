@@ -1,0 +1,21 @@
+Test 0146-lens-metadata-xtransIV-modversion-7
+      Image xtransIV.raf
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.24499
+      Avg dE                   : 0.00405
+      Std dE                   : 0.05363
+      ----------------------------------
+      Pixels below avg + 0 std : 99.39 %
+      Pixels below avg + 1 std : 99.39 %
+      Pixels below avg + 3 std : 99.39 %
+      Pixels below avg + 6 std : 99.39 %
+      Pixels below avg + 9 std : 99.42 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-060212.log

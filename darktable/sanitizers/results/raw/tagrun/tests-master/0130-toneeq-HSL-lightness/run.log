@@ -1,0 +1,21 @@
+Test 0130-toneeq-HSL-lightness
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.14276
+      Avg dE                   : 0.00978
+      Std dE                   : 0.07972
+      ----------------------------------
+      Pixels below avg + 0 std : 98.34 %
+      Pixels below avg + 1 std : 98.34 %
+      Pixels below avg + 3 std : 98.41 %
+      Pixels below avg + 6 std : 98.80 %
+      Pixels below avg + 9 std : 99.57 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-055551.log

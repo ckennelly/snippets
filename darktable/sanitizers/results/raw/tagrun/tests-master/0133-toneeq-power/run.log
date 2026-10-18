@@ -1,0 +1,21 @@
+Test 0133-toneeq-power
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.18466
+      Avg dE                   : 0.00426
+      Std dE                   : 0.05098
+      ----------------------------------
+      Pixels below avg + 0 std : 99.19 %
+      Pixels below avg + 1 std : 99.19 %
+      Pixels below avg + 3 std : 99.21 %
+      Pixels below avg + 6 std : 99.33 %
+      Pixels below avg + 9 std : 99.48 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-055649.log

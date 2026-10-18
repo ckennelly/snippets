@@ -1,0 +1,11 @@
+Test 0001-exposure
+      Image mire1.cr2
+========== COMMAND fails
+To reproduce and debug:
+cd /home/exedev/dt-tests/0001-exposure; gdb --args /home/exedev/dt-asan/m_master/bin/darktable-cli --width 2048 --height 2048 --hq true --apply-custom-presets false /home/exedev/dt-tests/images/mire1.cr2 exposure.xmp output.png --core --disable-opencl --configdir /tmp/darktable-test --conf host_memory_limit=8192 --conf resourcelevel=reference --conf worker_threads=4 -t 4 --conf clplatform_other=TRUE --conf opencl_fast=FALSE --conf plugins/lighttable/export/force_lcms2=FALSE --conf plugins/lighttable/export/pixel_interpolator=lanczos3 --conf plugins/lighttable/export/pixel_interpolator_warp=bicubic --conf plugins/lighttable/export/iccintent=0
+  FAILS : darktable-cli errored
+
+Total test 1
+Errors     1
+   - 0001-exposure
+see test-20261018-062413.log

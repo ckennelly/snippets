@@ -1,0 +1,79 @@
+plain ok bf17586db denoiseprofile: free the matching profiles without a GUI
+plain ok 8261eb05d cacorrect: free the pipe data in cleanup_pipe()
+plain ok 09c0e8b07 watermark: free the color string
+plain ok 159ad62d1 RELEASE_NOTES.md: denoise profile, cacorrect and watermark leaks
+plain ctest: 100% tests passed, 0 tests failed out of 32
+asan ctest: 100% tests passed, 0 tests failed out of 32
+master 0001-exposure rc=0 1ok noiseprofile=5 cacorrect=1 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 91035 byte(s) leaked in 1711 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+master 0013-denoiseprofile-wavelets rc=0 1ok noiseprofile=5 cacorrect=1 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 91035 byte(s) leaked in 1711 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+master 0027-denoiseprofile-nlmeans rc=0 1ok noiseprofile=5 cacorrect=1 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 91035 byte(s) leaked in 1711 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+master 0032-watermark rc=0 1ok noiseprofile=5 cacorrect=1 watermark=1 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 120522 byte(s) leaked in 2702 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+master 0103-almost-all rc=0 1ok noiseprofile=5 cacorrect=1 watermark=1 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 120522 byte(s) leaked in 2702 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+master 0160-overlay rc=0 1ok noiseprofile=10 cacorrect=2 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 92783 byte(s) leaked in 1782 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+iop-leaks 0001-exposure rc=0 1ok noiseprofile=0 cacorrect=0 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 89299 byte(s) leaked in 1640 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+iop-leaks 0013-denoiseprofile-wavelets rc=0 1ok noiseprofile=0 cacorrect=0 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 89299 byte(s) leaked in 1640 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+iop-leaks 0027-denoiseprofile-nlmeans rc=0 1ok noiseprofile=0 cacorrect=0 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 89299 byte(s) leaked in 1640 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+iop-leaks 0032-watermark rc=0 1ok noiseprofile=0 cacorrect=0 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 118775 byte(s) leaked in 2630 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+iop-leaks 0103-almost-all rc=0 1ok noiseprofile=0 cacorrect=0 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 118775 byte(s) leaked in 2630 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+iop-leaks 0160-overlay rc=0 1ok noiseprofile=0 cacorrect=0 watermark=0 errors=0 SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 89299 byte(s) leaked in 1640 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 959651 byte(s) leaked in 871 allocation(s).
+SUMMARY: AddressSanitizer: 8 byte(s) leaked in 1 allocation(s).
+SUMMARY: AddressSanitizer: 128 byte(s) leaked in 1 allocation(s).
+IOPJOB_DONE

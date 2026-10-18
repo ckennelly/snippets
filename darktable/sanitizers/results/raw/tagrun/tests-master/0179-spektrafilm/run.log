@@ -1,0 +1,24 @@
+Test 0179-spektrafilm
+      Image hlrecovery.arw
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 49.98467
+      Avg dE                   : 13.61240
+      Std dE                   : 4.25632
+      ----------------------------------
+      Pixels below avg + 0 std : 48.61 %
+      Pixels below avg + 1 std : 84.82 %
+      Pixels below avg + 3 std : 99.74 %
+      Pixels below avg + 6 std : 100.00 %
+      Pixels below avg + 9 std : 100.00 %
+      ----------------------------------
+      Pixels above tolerance   : 100.00 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (2803712 pixels changed)
+
+Total test 1
+Errors     1
+   - 0179-spektrafilm
+see test-20261018-061857.log

@@ -1,0 +1,24 @@
+Test 0136-posterize
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 24.41963
+      Avg dE                   : 0.00001
+      Std dE                   : 0.01462
+      ----------------------------------
+      Pixels below avg + 0 std : 100.00 %
+      Pixels below avg + 1 std : 100.00 %
+      Pixels below avg + 3 std : 100.00 %
+      Pixels below avg + 6 std : 100.00 %
+      Pixels below avg + 9 std : 100.00 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (1 pixels changed)
+
+Total test 1
+Errors     1
+   - 0136-posterize
+see test-20261018-055748.log

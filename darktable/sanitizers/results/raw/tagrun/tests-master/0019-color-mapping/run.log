@@ -1,0 +1,24 @@
+Test 0019-color-mapping
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 3.42092
+      Avg dE                   : 0.00002
+      Std dE                   : 0.00464
+      ----------------------------------
+      Pixels below avg + 0 std : 100.00 %
+      Pixels below avg + 1 std : 100.00 %
+      Pixels below avg + 3 std : 100.00 %
+      Pixels below avg + 6 std : 100.00 %
+      Pixels below avg + 9 std : 100.00 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (121 pixels changed)
+
+Total test 1
+Errors     1
+   - 0019-color-mapping
+see test-20261018-050622.log

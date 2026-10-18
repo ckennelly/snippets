@@ -1,0 +1,24 @@
+Test 0151-sigmoid-no-hue-preservation
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 3.87786
+      Avg dE                   : 0.05788
+      Std dE                   : 0.17690
+      ----------------------------------
+      Pixels below avg + 0 std : 88.70 %
+      Pixels below avg + 1 std : 89.44 %
+      Pixels below avg + 3 std : 96.77 %
+      Pixels below avg + 6 std : 99.81 %
+      Pixels below avg + 9 std : 99.99 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (319073 pixels changed)
+
+Total test 1
+Errors     1
+   - 0151-sigmoid-no-hue-preservation
+see test-20261018-060451.log

@@ -1,0 +1,21 @@
+Test 0131-toneeq-RGB-max
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.19437
+      Avg dE                   : 0.00497
+      Std dE                   : 0.05546
+      ----------------------------------
+      Pixels below avg + 0 std : 99.08 %
+      Pixels below avg + 1 std : 99.09 %
+      Pixels below avg + 3 std : 99.11 %
+      Pixels below avg + 6 std : 99.24 %
+      Pixels below avg + 9 std : 99.48 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-055610.log

@@ -37,6 +37,23 @@ by a report from the base build that is gone in a build with the fix
   CPU path) on base and on a candidate, then a pixel comparison of every
   output. `det.sh` reruns the tests whose pixels differ, to separate
   run-to-run noise from the change.
+* `santags.sh`: exports one CR3 with six tags through `darktable-cli`, with
+  the default metadata flags and then with private tags on and off, and
+  records the exported `dc:subject` keywords.
+* `tagexport.lua`, `sanexport.sh`: attaches tags whose sort order moves the
+  list head, then runs the tagging module's "export..." action and accepts
+  the file dialog with `xdotool`.
+* `santests.sh`: the whole integration suite under ASan+UBSan+LSan, one
+  test at a time, one log directory per test.
+* `tagjob.sh`, `iopjob.sh`: the build and run jobs for the two fix branches
+  below (per-commit plain builds, ASan build and `ctest`, then the runs).
+* `nodlclose.c`, `sym.sh`: darktable dlcloses its modules before LSan
+  reports, so every frame in `src/iop` prints as `<unknown module>`. This
+  preload makes `dlclose()` a no-op so that they symbolize. libasan has to
+  come first: `LD_PRELOAD=$(gcc -print-file-name=libasan.so):nodlclose.so`.
+
+ASan and UBSan share the `log_path` flag, and whichever options string is
+parsed last wins, so the scripts set the same `log_path` in both.
 
 ## Raw logs
 
@@ -56,6 +73,16 @@ by a report from the base build that is gone in a build with the fix
   `undo.lua` on base and on that tip.
 * `import-base`, `import-stmtfix`: `sanimport.sh` on base and with the
   statement fix. darktable's own log of these two runs is left out.
+* `tagrun`: on `c24afcc4a`, `santags.sh` on master, on
+  `fix/tag-export-leaks` and on a probe of the private flag loop,
+  `sanexport.sh` on master and the fix, and `tests-master`: the full
+  integration suite under the sanitizers, one directory per test (the
+  sanitizer reports are in its `ubsan.*` files, see above).
+* `ioprun`: `iopjob.sh`: six integration tests with `nodlclose.so` on
+  master (`iop-master`) and on `fix/iop-leaks` (`iop-iop-leaks`), with the
+  `ctest` runs, and `sym`, the first symbolized runs. The preload also
+  reaches the test harness's own `date`, `sort` and `python3`, whose leak
+  reports sit next to darktable-cli's.
 * `*.build.log`, `*.ctest.log`: the builds and the `ctest` runs, plain
   (`plain_*`) and under the sanitizers (`asan_*`).
 
@@ -107,7 +134,36 @@ Not fixed:
 * `dt_gui_style_content_dialog()` calls `memcmp(NULL, NULL, 0)`
   (`styles_dialog.c:930`, UBSan `nonnull-attribute`), defined in C2y and
   harmless with glibc.
-* a review also found partial frees of the sorted tag list in
-  `dt_tag_get_list_export()` and `dt_tag_export()`. Neither the Lua export nor
-  `darktable-cli` (with its default metadata flags) reaches them, so there is
-  no report to back a fix yet.
+
+## Second round: the integration suite
+
+On darktable `c24afcc4a`, the full integration suite (181 tests, CPU path)
+under ASan+UBSan+LSan: every test passes, with no ASan memory errors and no
+UBSan reports. `ctest` (32 tests) passes plain and under the sanitizers on
+master and on both branches below, and every commit builds.
+
+Most of the leaks it reports are allocations made once at startup and not
+freed at exit (accelerators, module `.so` data, Lua, l10n). Four grow with
+the work done:
+
+| finding | report (master -> fixed) | branch |
+|---|---|---|
+| `dt_tag_get_list_export()` frees the sorted, reversed tag list from its old head, leaking every tag before it; this runs on every export with tags in the metadata, as with the default settings | `santags.sh`: 3 reports -> none; also in 13 suite tests | `fix/tag-export-leaks` |
+| `dt_tag_export()` frees the sorted list from its old head | `sanexport.sh`: 3 reports -> none | `fix/tag-export-leaks` |
+| denoiseprofile's `reload_defaults()` drops the matching noise profile list without a GUI: every export, thumbnail and `darktable-cli` run of an image with a noise profile | 5 reports per pipe, 1728 B -> none; in 180 of 181 suite tests | `fix/iop-leaks` |
+| cacorrect's `cleanup_pipe()` clears `piece->data` without freeing it, on every pipe | 8 B per pipe -> none; in every suite test | `fix/iop-leaks` |
+| watermark leaks `gdk_rgba_to_string()`'s string on every SVG render | 11 B -> none | `fix/iop-leaks` |
+
+Per darktable-cli process, `fix/iop-leaks` takes 1736 B in 71 allocations
+off each pipe (1747 B with a watermark; the overlay test runs two pipes).
+The six tests' outputs still match.
+
+The private-tag loop in `dt_tag_get_list_export()` reads
+`sorted_tags->data` instead of the loop's `tagt`, so it clears the flag on
+one tag only. Fixing it (`probe/private-loop`) changes no exported keyword
+in any of `santags.sh`'s five runs: the parents come back from
+`_tag_get_attached_export()` as rows of their own, so the loop has no
+visible effect. It is left out of the branch.
+
+Also not fixed: lens's `init_global()` (128 B once per process), and
+pango and fontconfig caches in the two text overlay tests.

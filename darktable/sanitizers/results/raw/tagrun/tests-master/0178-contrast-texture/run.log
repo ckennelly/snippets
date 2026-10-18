@@ -1,0 +1,24 @@
+Test 0178-contrast-texture
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 33.40138
+      Avg dE                   : 1.02691
+      Std dE                   : 2.12378
+      ----------------------------------
+      Pixels below avg + 0 std : 73.81 %
+      Pixels below avg + 1 std : 91.65 %
+      Pixels below avg + 3 std : 98.07 %
+      Pixels below avg + 6 std : 99.43 %
+      Pixels below avg + 9 std : 99.83 %
+      ----------------------------------
+      Pixels above tolerance   : 12.69 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (1543936 pixels changed)
+
+Total test 1
+Errors     1
+   - 0178-contrast-texture
+see test-20261018-061817.log

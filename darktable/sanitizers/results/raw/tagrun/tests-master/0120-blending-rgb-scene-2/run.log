@@ -1,0 +1,24 @@
+Test 0120-blending-rgb-scene-2
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 9.99810
+      Avg dE                   : 0.00029
+      Std dE                   : 0.02081
+      ----------------------------------
+      Pixels below avg + 0 std : 99.93 %
+      Pixels below avg + 1 std : 99.93 %
+      Pixels below avg + 3 std : 99.93 %
+      Pixels below avg + 6 std : 99.93 %
+      Pixels below avg + 9 std : 99.94 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (1875 pixels changed)
+
+Total test 1
+Errors     1
+   - 0120-blending-rgb-scene-2
+see test-20261018-055220.log

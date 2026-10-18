@@ -1,0 +1,21 @@
+Test 0071-tonecurve-lab-linked
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.22168
+      Avg dE                   : 0.00264
+      Std dE                   : 0.04091
+      ----------------------------------
+      Pixels below avg + 0 std : 99.53 %
+      Pixels below avg + 1 std : 99.53 %
+      Pixels below avg + 3 std : 99.54 %
+      Pixels below avg + 6 std : 99.55 %
+      Pixels below avg + 9 std : 99.60 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-052855.log

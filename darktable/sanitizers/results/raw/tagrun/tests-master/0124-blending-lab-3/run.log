@@ -1,0 +1,21 @@
+Test 0124-blending-lab-3
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 0.89435
+      Avg dE                   : 0.00002
+      Std dE                   : 0.00360
+      ----------------------------------
+      Pixels below avg + 0 std : 99.99 %
+      Pixels below avg + 1 std : 99.99 %
+      Pixels below avg + 3 std : 99.99 %
+      Pixels below avg + 6 std : 99.99 %
+      Pixels below avg + 9 std : 99.99 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-055350.log

@@ -1,0 +1,21 @@
+Test 0177-bayer4
+      Image bayer4.crw
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 0.95686
+      Avg dE                   : 0.00009
+      Std dE                   : 0.00627
+      ----------------------------------
+      Pixels below avg + 0 std : 99.98 %
+      Pixels below avg + 1 std : 99.98 %
+      Pixels below avg + 3 std : 99.98 %
+      Pixels below avg + 6 std : 99.98 %
+      Pixels below avg + 9 std : 99.98 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-061758.log

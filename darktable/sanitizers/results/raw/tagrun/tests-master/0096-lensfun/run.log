@@ -1,0 +1,24 @@
+Test 0096-lensfun
+      Image hlrecovery.arw
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 2.99275
+      Avg dE                   : 0.02779
+      Std dE                   : 0.13563
+      ----------------------------------
+      Pixels below avg + 0 std : 95.48 %
+      Pixels below avg + 1 std : 95.50 %
+      Pixels below avg + 3 std : 96.22 %
+      Pixels below avg + 6 std : 99.28 %
+      Pixels below avg + 9 std : 99.95 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (126729 pixels changed)
+
+Total test 1
+Errors     1
+   - 0096-lensfun
+see test-20261018-053959.log

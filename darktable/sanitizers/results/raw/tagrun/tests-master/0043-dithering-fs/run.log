@@ -1,0 +1,24 @@
+Test 0043-dithering-fs
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 100.00000
+      Avg dE                   : 13.46141
+      Std dE                   : 34.13109
+      ----------------------------------
+      Pixels below avg + 0 std : 86.54 %
+      Pixels below avg + 1 std : 86.54 %
+      Pixels below avg + 3 std : 100.00 %
+      Pixels below avg + 6 std : 100.00 %
+      Pixels below avg + 9 std : 100.00 %
+      ----------------------------------
+      Pixels above tolerance   : 13.46 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (375765 pixels changed)
+
+Total test 1
+Errors     1
+   - 0043-dithering-fs
+see test-20261018-051702.log

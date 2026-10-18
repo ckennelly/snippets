@@ -1,0 +1,21 @@
+Test 0014-filmic-rgb
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.24145
+      Avg dE                   : 0.00267
+      Std dE                   : 0.03935
+      ----------------------------------
+      Pixels below avg + 0 std : 99.46 %
+      Pixels below avg + 1 std : 99.47 %
+      Pixels below avg + 3 std : 99.48 %
+      Pixels below avg + 6 std : 99.52 %
+      Pixels below avg + 9 std : 99.59 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-050439.log

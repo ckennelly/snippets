@@ -1,0 +1,35 @@
+build m_master c24afcc4a RELEASE_NOTES.md: minor edit.
+ctest: 100% tests passed, 0 tests failed out of 32
+build m_tag-export-leaks 3a6cbda17 tags: free the sorted list in dt_tag_export()
+build m_private-loop 87c082bd6 probe: clear the private flag on every tag
+Warning: [minor] Ignored empty rdf:Seq list for darktable:masks_history - /tmp/tmp.Z9fZXx7RGt/img/img.CR3.xmp
+default rc=0 keywords: aaa aaa tag alpha beta cr3 darktable deep format sanx solo sub wide 
+tags: sanx|alpha|0 sanx|beta|deep|0 sanx|beta|wide|0 solo|0 sanx|2 sanx|beta|2 
+attached-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+attached-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 
+Warning: [minor] Ignored empty rdf:Seq list for darktable:masks_history - /tmp/tmp.Z9fZXx7RGt/img/img.CR3.xmp
+parents-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+parents-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 
+master list_export reports: 3
+Warning: [minor] Ignored empty rdf:Seq list for darktable:masks_history - /tmp/tmp.Ufbn3tSpMB/img/img.CR3.xmp
+default rc=0 keywords: aaa aaa tag alpha beta cr3 darktable deep format sanx solo sub wide 
+tags: sanx|alpha|0 sanx|beta|deep|0 sanx|beta|wide|0 solo|0 sanx|2 sanx|beta|2 
+attached-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+attached-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 
+Warning: [minor] Ignored empty rdf:Seq list for darktable:masks_history - /tmp/tmp.Ufbn3tSpMB/img/img.CR3.xmp
+parents-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+parents-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 
+tag-export-leaks list_export reports: 0
+Warning: [minor] Ignored empty rdf:Seq list for darktable:masks_history - /tmp/tmp.FCOSqW7e5X/img/img.CR3.xmp
+default rc=0 keywords: aaa aaa tag alpha beta cr3 darktable deep format sanx solo sub wide 
+tags: sanx|alpha|0 sanx|beta|deep|0 sanx|beta|wide|0 solo|0 sanx|2 sanx|beta|2 
+attached-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+attached-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 
+Warning: [minor] Ignored empty rdf:Seq list for darktable:masks_history - /tmp/tmp.FCOSqW7e5X/img/img.CR3.xmp
+parents-private-on rc=0 keywords: aaa aaa tag alpha beta deep sanx solo sub wide 
+parents-private-off rc=0 keywords: aaa aaa tag alpha deep solo sub wide 
+private-loop list_export reports: 0
+master rc=0 tagged export action returned done  accepted 2098551 files=darktable_tags_2026-10-18_04-50.txt lines=9 dt_tag_export reports=3
+tag-export-leaks rc=0 tagged export action returned done  accepted 2098564 files=darktable_tags_2026-10-18_04-54.txt lines=9 dt_tag_export reports=0
+master: 181 tests, 181 rc=0, asan errors in 0, ubsan reports 0
+TAGJOB_DONE

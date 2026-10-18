@@ -1,0 +1,24 @@
+Test 0112-perspective-lanczos3
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 11.05630
+      Avg dE                   : 0.00183
+      Std dE                   : 0.05432
+      ----------------------------------
+      Pixels below avg + 0 std : 99.82 %
+      Pixels below avg + 1 std : 99.82 %
+      Pixels below avg + 3 std : 99.82 %
+      Pixels below avg + 6 std : 99.83 %
+      Pixels below avg + 9 std : 99.86 %
+      ----------------------------------
+      Pixels above tolerance   : 0.01 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (4971 pixels changed)
+
+Total test 1
+Errors     1
+   - 0112-perspective-lanczos3
+see test-20261018-054937.log

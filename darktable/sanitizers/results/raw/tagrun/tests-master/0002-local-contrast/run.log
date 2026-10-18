@@ -1,0 +1,21 @@
+Test 0002-local-contrast
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 2.11336
+      Avg dE                   : 0.29503
+      Std dE                   : 0.27298
+      ----------------------------------
+      Pixels below avg + 0 std : 46.15 %
+      Pixels below avg + 1 std : 84.45 %
+      Pixels below avg + 3 std : 99.95 %
+      Pixels below avg + 6 std : 100.00 %
+      Pixels below avg + 9 std : 100.00 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-045955.log

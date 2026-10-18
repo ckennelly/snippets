@@ -1,0 +1,24 @@
+Test 0138-filmic-v7
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 58.93830
+      Avg dE                   : 0.11821
+      Std dE                   : 0.92452
+      ----------------------------------
+      Pixels below avg + 0 std : 94.66 %
+      Pixels below avg + 1 std : 97.64 %
+      Pixels below avg + 3 std : 98.97 %
+      Pixels below avg + 6 std : 99.44 %
+      Pixels below avg + 9 std : 99.66 %
+      ----------------------------------
+      Pixels above tolerance   : 1.26 %
+ 
+  FAILS: image visually changed
+         see diff.png for visual difference
+         (153125 pixels changed)
+
+Total test 1
+Errors     1
+   - 0138-filmic-v7
+see test-20261018-055825.log

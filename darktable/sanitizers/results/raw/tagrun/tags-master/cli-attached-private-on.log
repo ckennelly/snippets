@@ -1,0 +1,40 @@
+/home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:359:67: runtime error: left shift of negative value -1
+    #0 0x737ee92db403 in crxDecodeSymbolL1(CrxBandParam*, int, int) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:359
+    #1 0x737ee92db403 in crxDecodeLine(CrxBandParam*) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:379
+    #2 0x737eea500691 in crxDecodeLine(CrxBandParam*, unsigned char*) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:1021
+    #3 0x737eea52725f in LibRaw::crxDecodePlane(void*, unsigned int) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:1932
+    #4 0x737eea528211 in LibRaw::crxLoadDecodeLoop(void*, int) [clone ._omp_fn.0] /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:2627
+    #5 0x737eef56f976 in GOMP_parallel (/lib/x86_64-linux-gnu/libgomp.so.1+0x18976) (BuildId: fa0c1b446610c4b7aca51e1183050acf5aa79503)
+    #6 0x737eea536d18 in LibRaw::crxLoadDecodeLoop(void*, int) /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:2624
+    #7 0x737eea544b8f in LibRaw::crxLoadRaw() /home/exedev/darktable/src/external/LibRaw/src/decoders/crx.cpp:2706
+    #8 0x737eea6ca8c6 in LibRaw::unpack() /home/exedev/darktable/src/external/LibRaw/src/decoders/unpack.cpp:447
+    #9 0x737eea303444 in dt_imageio_open_libraw /home/exedev/darktable/src/imageio/imageio_libraw.c:407
+    #10 0x737eea21531a in _open_by_magic_number /home/exedev/darktable/src/imageio/imageio.c:609
+    #11 0x737eea21531a in dt_imageio_open /home/exedev/darktable/src/imageio/imageio.c:1642
+    #12 0x737ee97b4296 in dt_mipmap_cache_get_with_caller /home/exedev/darktable/src/common/mipmap_cache.c:1006
+    #13 0x737ee9c53110 in _dt_dev_load_raw /home/exedev/darktable/src/develop/develop.c:1029
+    #14 0x737ee9c8671d in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1114
+    #15 0x737eea20da09 in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #16 0x737eea214a0f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #17 0x737ec677e653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #18 0x5d76a92db871 in main /home/exedev/darktable/src/cli/main.c:901
+    #19 0x737edfc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #20 0x737edfc2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #21 0x5d76a92df5f4 in _start (/home/exedev/dt-asan/m_master/bin/darktable-cli+0x195f4) (BuildId: 146930b836ad675f4cf702887eb992e2557a192e)
+
+/home/exedev/darktable/src/develop/imageop.c:275:71: runtime error: store to misaligned address 0x5240002b0111 for type 'short int', which requires 2 byte alignment
+0x5240002b0111: note: pointer points here
+ 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00 00 00 00  00 00 00 00 00
+              ^ 
+    #0 0x737ee9c9d8ff in dt_iop_default_init /home/exedev/darktable/src/develop/imageop.c:275
+    #1 0x737ee9cc0cda in dt_iop_load_module_by_so /home/exedev/darktable/src/develop/imageop.c:447
+    #2 0x737ee9cc6901 in dt_iop_load_modules_ext /home/exedev/darktable/src/develop/imageop.c:1990
+    #3 0x737ee9c86b5b in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1128
+    #4 0x737eea20da09 in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #5 0x737eea214a0f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #6 0x737ec677e653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #7 0x5d76a92db871 in main /home/exedev/darktable/src/cli/main.c:901
+    #8 0x737edfc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #9 0x737edfc2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #10 0x5d76a92df5f4 in _start (/home/exedev/dt-asan/m_master/bin/darktable-cli+0x195f4) (BuildId: 146930b836ad675f4cf702887eb992e2557a192e)
+

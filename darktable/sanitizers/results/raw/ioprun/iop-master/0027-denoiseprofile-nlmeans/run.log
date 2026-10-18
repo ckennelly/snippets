@@ -1,0 +1,9 @@
+Test 0027-denoiseprofile-nlmeans
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-063203.log

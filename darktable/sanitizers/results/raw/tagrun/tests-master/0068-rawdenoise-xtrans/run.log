@@ -1,0 +1,21 @@
+Test 0068-rawdenoise-xtrans
+      Image mire1-xtrans.raf
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 1.69726
+      Avg dE                   : 0.00126
+      Std dE                   : 0.02701
+      ----------------------------------
+      Pixels below avg + 0 std : 99.76 %
+      Pixels below avg + 1 std : 99.76 %
+      Pixels below avg + 3 std : 99.76 %
+      Pixels below avg + 6 std : 99.76 %
+      Pixels below avg + 9 std : 99.77 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-052727.log

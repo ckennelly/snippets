@@ -1,0 +1,21 @@
+Test 0070-tonecurve-xyz-linked
+      Image mire1.cr2
+      Expected CPU vs. current CPU report :
+      ----------------------------------
+      Max dE                   : 0.98270
+      Avg dE                   : 0.00002
+      Std dE                   : 0.00360
+      ----------------------------------
+      Pixels below avg + 0 std : 100.00 %
+      Pixels below avg + 1 std : 100.00 %
+      Pixels below avg + 3 std : 100.00 %
+      Pixels below avg + 6 std : 100.00 %
+      Pixels below avg + 9 std : 100.00 %
+      ----------------------------------
+      Pixels above tolerance   : 0.00 %
+ 
+  OK
+
+Total test 1
+Errors     0
+see test-20261018-052836.log
