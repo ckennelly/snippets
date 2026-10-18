@@ -150,7 +150,7 @@ the work done:
 |---|---|---|
 | `dt_tag_get_list_export()` frees the sorted, reversed tag list from its old head, leaking every tag before it; this runs on every export with tags in the metadata, as with the default settings | `santags.sh`: 3 reports -> none; also in 13 suite tests | `fix/tag-export-leaks` |
 | `dt_tag_export()` frees the sorted list from its old head | `sanexport.sh`: 3 reports -> none | `fix/tag-export-leaks` |
-| denoiseprofile's `reload_defaults()` drops the matching noise profile list without a GUI: every export, thumbnail and `darktable-cli` run of an image with a noise profile | 5 reports per pipe, 1728 B -> none; in 180 of 181 suite tests | `fix/iop-leaks` |
+| denoiseprofile's `reload_defaults()` drops the matching noise profile list without a GUI: every export, thumbnail and `darktable-cli` run of an image with a noise profile | 5 reports per pipe, 1740 B -> none; in 180 of 181 suite tests | `fix/iop-leaks` |
 | cacorrect's `cleanup_pipe()` clears `piece->data` without freeing it, on every pipe | 8 B per pipe -> none; in every suite test | `fix/iop-leaks` |
 | watermark leaks `gdk_rgba_to_string()`'s string on every SVG render | 11 B -> none | `fix/iop-leaks` |
 

@@ -269,3 +269,126 @@ base: `asan_ef98688fc/dt-filemanager.log`, fixed: `asan_san_fixes/dt-filemanager
     #8 0x7d5b9842a28a in __libc_start_main_impl ../csu/libc-start.c:360
     #9 0x632c2e645734 in _start (/home/exedev/dt-asan/asan_ef98688fc/bin/darktable+0x2734) (BuildId: 8de374a3db26251a224f929ef8a020be0c4ad649)
 ```
+
+## fix/tag-export-leaks dt_tag_get_list_export
+
+reports matching `_tag_get_attached_export`: base 3 (586 B), with the fix 0
+base: `tagrun/tags-master/asan-default.10457.gz`, fixed: `tagrun/tags-tag-export-leaks/asan-default.10680.gz`
+
+```
+Indirect leak of 336 byte(s) in 7 object(s) allocated from:
+    #0 0x7e46b98fd340 in calloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:77
+    #1 0x7e46b0630821 in g_malloc0 (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x63821) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x7e46b43c7480 in _tag_get_attached_export /home/exedev/darktable/src/common/tags.c:829
+    #3 0x7e46b43c7480 in dt_tag_get_list_export /home/exedev/darktable/src/common/tags.c:1056
+    #4 0x7e46b3fc927b in _exif_xmp_read_data_export /home/exedev/darktable/src/common/exif.cc:5884
+    #5 0x7e46b3fc927b in dt_exif_xmp_attach_export /home/exedev/darktable/src/common/exif.cc:6374
+    #6 0x7e46b4c11285 in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1526
+    #7 0x7e46b4c14a0f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #8 0x7e46889b4653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #9 0x615b532ef871 in main /home/exedev/darktable/src/cli/main.c:901
+    #10 0x7e46aa62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #11 0x7e46aa62a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #12 0x615b532f35f4 in _start (/home/exedev/dt-asan/m_master/bin/darktable-cli+0x195f4) (BuildId: 146930b836ad675f4cf702887eb992e2557a192e)
+```
+
+## fix/tag-export-leaks dt_tag_export
+
+reports matching `dt_tag_export`: base 3 (80 B), with the fix 0
+base: `tagrun/tagexport-master/asan.11081.gz`, fixed: `tagrun/tagexport-tag-export-leaks/asan.11645.gz`
+
+```
+Direct leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7231712fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x72316802fb79 in g_malloc (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x62b79) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #2 0x723168024ea0 in g_list_append (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x57ea0) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x72316bdc05f6 in dt_tag_get_with_usage /home/exedev/darktable/src/common/tags.c:1618
+    #4 0x72316bdc4b9f in dt_tag_export /home/exedev/darktable/src/common/tags.c:1924
+    #5 0x7231029b2829  (<unknown module>)
+    #6 0x723167ba46bc  (/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x356bc) (BuildId: dcd75e756070510e18346edaed1a601e1f41f8f5)
+    #7 0x723167ba47c0 in g_signal_emit_valist (/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x357c0) (BuildId: dcd75e756070510e18346edaed1a601e1f41f8f5)
+    #8 0x723167ba4882 in g_signal_emit (/lib/x86_64-linux-gnu/libgobject-2.0.so.0+0x35882) (BuildId: dcd75e756070510e18346edaed1a601e1f41f8f5)
+    #9 0x7231652db1a5  (/lib/x86_64-linux-gnu/libgtk-3.so.0+0xdb1a5) (BuildId: e3bf6367082e76a6e85218c0a84a5a0e29af05b1)
+    #10 0x723165d38c6c  (/lib/x86_64-linux-gnu/libgdk-3.so.0+0x33c6c) (BuildId: b923a8ebed88d2cb4baecd7915ee302c9544fa3f)
+    #11 0x72316802b5a1  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5e5a1) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #12 0x72316802a50d  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5d50d) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #13 0x723168089bf6  (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xbcbf6) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #14 0x72316802aff6 in g_main_loop_run (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x5dff6) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #15 0x72316c56dfa4 in dt_gui_gtk_run /home/exedev/darktable/src/gui/gtk.c:2374
+    #16 0x5e47807c1584 in main /home/exedev/darktable/src/main.c:246
+    #17 0x72316202a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #18 0x72316202a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #19 0x5e47807c1734 in _start (/home/exedev/dt-asan/m_master/bin/darktable+0x2734) (BuildId: 8beade133c2ca4b89ce7a148e2cf398d7684ed95)
+```
+
+## fix/iop-leaks denoiseprofile profiles
+
+reports matching `noiseprofiles.c`: base 5 (1740 B), with the fix 0
+base: `ioprun/iop-master/0013-denoiseprofile-wavelets/asan.84860.gz`, fixed: `ioprun/iop-iop-leaks/0013-denoiseprofile-wavelets/asan.88582.gz`
+
+```
+Indirect leak of 896 byte(s) in 14 object(s) allocated from:
+    #0 0x7f0d072fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x7f0d01c31cb3 in dt_noiseprofile_get_matching /home/exedev/darktable/src/common/noiseprofiles.c:339
+    #2 0x7f0cd417387e in reload_defaults /home/exedev/darktable/src/iop/denoiseprofile.c:2699
+    #3 0x7f0d020be1ff in dt_iop_reload_defaults /home/exedev/darktable/src/develop/imageop.c:1500
+    #4 0x7f0d0207f854 in _dt_dev_load_pipeline_defaults /home/exedev/darktable/src/develop/develop.c:1017
+    #5 0x7f0d0207f854 in dt_dev_read_history_ext /home/exedev/darktable/src/develop/develop.c:2545
+    #6 0x7f0d02086bdb in dt_dev_load_image /home/exedev/darktable/src/develop/develop.c:1130
+    #7 0x7f0d0260da09 in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1068
+    #8 0x7f0d02614a0f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #9 0x7f0cd6080653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #10 0x5a0701975871 in main /home/exedev/darktable/src/cli/main.c:901
+    #11 0x7f0cf7e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #12 0x7f0cf7e2a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #13 0x5a07019795f4 in _start (/home/exedev/dt-asan/m_master/bin/darktable-cli+0x195f4) (BuildId: 146930b836ad675f4cf702887eb992e2557a192e)
+```
+
+## fix/iop-leaks cacorrect pipe data
+
+reports matching `cacorrect.c`: base 1 (8 B), with the fix 0
+base: `ioprun/iop-master/0001-exposure/asan.84301.gz`, fixed: `ioprun/iop-iop-leaks/0001-exposure/asan.88023.gz`
+
+```
+Direct leak of 8 byte(s) in 1 object(s) allocated from:
+    #0 0x7275ca4fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x7275989304ec in init_pipe /home/exedev/darktable/src/iop/cacorrect.c:1276
+    #2 0x7275c529eae4 in dt_iop_init_pipe /home/exedev/darktable/src/develop/imageop.c:471
+    #3 0x7275c557fd05 in dt_dev_pixelpipe_create_nodes /home/exedev/darktable/src/develop/pixelpipe_hb.c:557
+    #4 0x7275c580df44 in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1216
+    #5 0x7275c5814a0f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #6 0x7275992ec653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #7 0x5e8d4e564871 in main /home/exedev/darktable/src/cli/main.c:901
+    #8 0x7275bb02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #9 0x7275bb02a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #10 0x5e8d4e5685f4 in _start (/home/exedev/dt-asan/m_master/bin/darktable-cli+0x195f4) (BuildId: 146930b836ad675f4cf702887eb992e2557a192e)
+```
+
+## fix/iop-leaks watermark color
+
+reports matching `_watermark_get_svgdoc`: base 1 (11 B), with the fix 0
+base: `ioprun/iop-master/0032-watermark/asan.86096.gz`, fixed: `ioprun/iop-iop-leaks/0032-watermark/asan.89817.gz`
+
+```
+Direct leak of 11 byte(s) in 1 object(s) allocated from:
+    #0 0x7f5a6f8fd9c7 in malloc ../../../../src/libsanitizer/asan/asan_malloc_linux.cpp:69
+    #1 0x7f5a6068fa27 in __vasprintf_internal libio/vasprintf.c:116
+    #2 0x7f5a64567d52 in g_vasprintf (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0xb0d52) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #3 0x7f5a64538824 in g_strdup_vprintf (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x81824) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #4 0x7f5a64538b80 in g_strdup_printf (/lib/x86_64-linux-gnu/libglib-2.0.so.0+0x81b80) (BuildId: 559554a70029e72a04fb73e3b34fc142e8383293)
+    #5 0x7f5a3b13196b in _watermark_get_svgdoc /home/exedev/darktable/src/iop/watermark.c:605
+    #6 0x7f5a3b13196b in process /home/exedev/darktable/src/iop/watermark.c:686
+    #7 0x7f5a6a9840c0 in _pixelpipe_process_on_CPU /home/exedev/darktable/src/develop/pixelpipe_hb.c:1859
+    #8 0x7f5a6a98fda7 in _dev_pixelpipe_process_rec /home/exedev/darktable/src/develop/pixelpipe_hb.c:3240
+    #9 0x7f5a6a98ce26 in _dev_pixelpipe_process_rec /home/exedev/darktable/src/develop/pixelpipe_hb.c:2188
+    #10 0x7f5a6a99e667 in _dev_pixelpipe_process_rec_and_backcopy /home/exedev/darktable/src/develop/pixelpipe_hb.c:3467
+    #11 0x7f5a6a99e667 in dt_dev_pixelpipe_process /home/exedev/darktable/src/develop/pixelpipe_hb.c:3588
+    #12 0x7f5a6a9a109d in dt_dev_pixelpipe_process_no_gamma /home/exedev/darktable/src/develop/pixelpipe_hb.c:3421
+    #13 0x7f5a6ac0f33d in dt_imageio_export_with_flags /home/exedev/darktable/src/imageio/imageio.c:1345
+    #14 0x7f5a6ac14a0f in dt_imageio_export /home/exedev/darktable/src/imageio/imageio.c:1016
+    #15 0x7f5a3e7f2653 in store /home/exedev/darktable/src/imageio/storage/disk.c:572
+    #16 0x55cfc7f83871 in main /home/exedev/darktable/src/cli/main.c:901
+    #17 0x7f5a6062a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #18 0x7f5a6062a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #19 0x55cfc7f875f4 in _start (/home/exedev/dt-asan/m_master/bin/darktable-cli+0x195f4) (BuildId: 146930b836ad675f4cf702887eb992e2557a192e)
+```
